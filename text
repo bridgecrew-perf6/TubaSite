@@ -1,0 +1,7 @@
+Username: issac
+MongoPw: XqRw1VouxsqfBWae
+
+mongodb+srv://issac:XqRw1VouxsqfBWae@merntry.xitkw.mongodb.net/MernTry?retryWrites=true&w=majority
+
+
+npm run dev
