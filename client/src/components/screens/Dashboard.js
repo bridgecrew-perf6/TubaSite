@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { logoutUser } from "../../actions/authActions";
+import { logoutUser } from "../../redux/actions/authActions";
+import HomePage from  "./homepage";
+import CompanyPage from  "./Tuba/companyPage";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import "../../stylesheet.css"
 class Dashboard extends Component {
   onLogoutClick = e => {
@@ -25,31 +29,21 @@ render() {
 return (
   
   <div id="main">
-      <div className="container valign-wrapper">
-        
-        <div className="row">
-        
-          <div className="col s12 center-align">
-          <div class="upperContent">
-            <h3 style={{  textAlign: "center"}}>
-              <b>Welcome Back!</b> {user.name.split(" ")[0]}
-            </h3>
-
-
-
-
+      <div>
+            <Router>
+            <div className="App"  style={{ left:"40%" , position: "absolute"}}>
+              <Route exact path="/dashboard" component={HomePage} />
+              <Route exact path="/companyPage" component={CompanyPage} />
             </div>
-
             <button class="openbtn" onClick={this.openNav}>☰</button>  
             <div id="mySidebar" className="sidebar">
-            <a href="#"class="closebtn" style={{padding: 10}} onClick={this.closeNav} ><p style={{color: "white"}}>x</p></a>
+            <a class="closebtn" style={{padding: 10}} onClick={this.closeNav} ><p style={{color: "white"}}>x</p></a>
             <br></br><br></br><br></br><br></br>
             <a href="#">About</a>
             <a href="#"onClick={this.onLogoutClick}>Logout</a>
             </div>
-            </div>
+            </Router>
           </div>
-        </div>
       </div>
     );
   }

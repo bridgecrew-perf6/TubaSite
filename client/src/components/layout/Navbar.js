@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   render() {
     return (
-      <div className="navbar-fixed">
+      <div className="navbar-fixed"style={{marginright: "35vw" }} >
         <nav className="z-depth-0">
-          <div className="nav-wrapper white">
+          <div className="nav-wrapper white"  >
             <Link
               to="/"
               style={{
