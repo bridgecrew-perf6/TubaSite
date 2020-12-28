@@ -27,14 +27,13 @@ class Dashboard extends Component {
 render() {
     const { user } = this.props.auth;
 return (
-  
-  <div id="main">
+  <div className="container" style={{justifyContent:"center"}}>
       <div>
             <Router>
-            <div className="App"  style={{ left:"40%" , position: "absolute"}}>
-              <Route exact path="/dashboard" component={HomePage} />
-              <Route exact path="/companyPage" component={CompanyPage} />
-            </div>
+             <div style ={{position:"fixed"}}>
+            <Route exact path="/dashboard" component={HomePage} />
+            <Route exact path="/companyPage" component={CompanyPage} />
+            </div> 
             <button class="openbtn" onClick={this.openNav}>☰</button>  
             <div id="mySidebar" className="sidebar">
             <a class="closebtn" style={{padding: 10}} onClick={this.closeNav} ><p style={{color: "white"}}>x</p></a>
@@ -43,7 +42,7 @@ return (
             <a href="#"onClick={this.onLogoutClick}>Logout</a>
             </div>
             </Router>
-          </div>
+      </div>
       </div>
     );
   }
