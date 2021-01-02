@@ -34,6 +34,7 @@ class App extends Component {
     super(props);
     this.state = {height: props.height};
   }
+  
 
   componentWillMount(){
     this.setState({height: window.innerHeight + 'px'});
@@ -52,6 +53,7 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>
+            
           </div>
         </Router>
       </Provider>

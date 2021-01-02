@@ -4,9 +4,12 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../redux/actions/authActions";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../../stylesheet.css";
-import BaSLogo from'../Images/Company/bas.png';
-import MiraphoneLogo from'../Images/Company/miraphone.png';
-import MWLogo from'../Images/Company/mw.png';
+import BaSLogo from'../Images/Company/tuba/bas.png';
+import MiraphoneLogo from'../Images/Company/tuba/miraphone.png';
+import MWLogo from'../Images/Company/tuba/mw.png';
+import DWLogo from'../Images/Company/mouthpeice/dw.png';
+import BachLogo from'../Images/Company/mouthpeice/bach.png';
+import PTLogo from'../Images/Company/mouthpeice/pt.jpg';
 
 
 class HomePage extends Component {
@@ -14,47 +17,50 @@ class HomePage extends Component {
         super();
       }
     goCompany(name){
-        this.props.history.push({pathname: "companyPage", state: {companyName: name} });
+        this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
     }
-render() {
-    const { user } = this.props.auth;
-    
-return (
+  render() {
+      const { user } = this.props.auth;
+      
+  return (
   
  
-    <div >
-        <div class="upperContent" style={{justifyContent: "center"}}>
+      <div >
+        <div  style={{textAlign: "center"}}>
         <h3 >
             <b>Welcome Back!</b> {user.name.split(" ")[0]}
         </h3>
         <br></br>
-        <h4>Tuba</h4>
+        <div class="topTableSection">
+        <h4 >Tuba</h4>
         <hr></hr>
         <br></br>
         <tr></tr>
         <table>
         <tr>
-          <td><img src={BaSLogo}/></td>
-          <td><img src={MiraphoneLogo}/></td>
-          <td><img src={MWLogo}/></td>
+          <td><img src={BaSLogo} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
+          <td><img src={MiraphoneLogo} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
+          <td><img src={MWLogo} onClick={() => this.goCompany("Meinl Weston")} style={{width: "40%"}}/></td>
         </tr>
-        <tr>
-        <td><button class= "buttonCompany"onClick={() => this.goCompany("BaS")}
-          type="submit"
-          className="btn btn-large waves-effect waves-light hoverable blue accent-3">B&S
-          </button></td>
-        <td><button class= "buttonCompany"onClick={() => this.goCompany("Miraphone")}
-          type="submit"
-          className="btn btn-large waves-effect waves-light hoverable blue accent-3">Miraphone
-          </button>
-            </td> 
-        <td><button class= "buttonCompany"onClick={() => this.goCompany("Meinl Weston")}
-          type="submit"
-          className="btn btn-large waves-effect waves-light hoverable blue accent-3">Meinl Weston
-          </button></td>
-        </tr>
-        </table>
         
+        </table>
+        </div>
+        
+        <div class="tableSection">
+        <h4 >Mouthpeice</h4>
+        <hr></hr>
+        <br></br>
+        <tr></tr>
+        <table>
+        <tr>
+          <td><img src={DWLogo} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
+          <td><img src={BachLogo} onClick={() => this.goCompany("Miraphone")} style={{width: "40%"}}/></td>
+          <td><img src={PTLogo} onClick={() => this.goCompany("Meinl Weston")} style={{width: "40%"}}/></td>
+        </tr>
+        
+        </table>
+        </div>
+
         </div>
         </div>
    
