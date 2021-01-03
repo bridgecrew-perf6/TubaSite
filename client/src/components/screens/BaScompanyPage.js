@@ -26,14 +26,8 @@ class BaSCompanyPage extends Component {
     constructor(props) {
       super(props);
       console.log(props);
-      this.state = {isBaS: true};
+      this.state = {isGR55: true};
     }
-    onMouseOver = event => {
-      this.setState({isBaS:false});
-    }
-    onMouseOut = event => {
-      this.setState({isBaS:true})
-    };
     goCompany(name){
       this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
   }
@@ -51,8 +45,8 @@ class BaSCompanyPage extends Component {
         <tr></tr>
         <table>
         <tr>
-          <td><img  onMouseEnter={event => this.onMouseOver(event)}  onMouseOut={event => this.onMouseOut(event)}
-           src={this.state.isBaS? BaSLogo: ""} 
+          <td><img 
+           src={ BaSLogo} 
            onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
           <td>Heyey</td>
         </tr>
@@ -66,7 +60,9 @@ class BaSCompanyPage extends Component {
         <tr></tr>
         <table class = "tubaTable">
         <tr>
-        <td><img src={GR55Photo} onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
+        <td><img onMouseEnter={(e) =>this.setState({isGR55:false})}  onMouseOut={(e) =>this.setState({isGR55:true})} 
+           src={this.state.isGR55? GR55Photo: ""} 
+           onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
           <td><img src={GR51Photo} onClick={() => this.goCompany("BaS")} class="tubaImage"/></td>
         </tr>
         </table>
