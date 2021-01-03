@@ -22,12 +22,18 @@ import "../../stylesheet.css"
 
 
 
-
 class BaSCompanyPage extends Component {
     constructor(props) {
       super(props);
       console.log(props);
+      this.state = {isBaS: true};
     }
+    onMouseOver = event => {
+      this.setState({isBaS:false});
+    }
+    onMouseOut = event => {
+      this.setState({isBaS:true})
+    };
     goCompany(name){
       this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
   }
@@ -45,11 +51,12 @@ class BaSCompanyPage extends Component {
         <tr></tr>
         <table>
         <tr>
-          <td><img src={BaSLogo} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
+          <td><img  onMouseEnter={event => this.onMouseOver(event)}  onMouseOut={event => this.onMouseOut(event)}
+           src={this.state.isBaS? BaSLogo: ""} 
+           onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
           <td>Heyey</td>
         </tr>
         </table>
-        
         </div>
         
         <div class="tableSection">

@@ -10,7 +10,8 @@ import MWLogo from'../Images/Company/tuba/mw.png';
 import DWLogo from'../Images/Company/mouthpeice/dw.png';
 import BachLogo from'../Images/Company/mouthpeice/bach.png';
 import PTLogo from'../Images/Company/mouthpeice/pt.jpg';
-
+import YamahaLogo from'../Images/Company/tuba/yamaha.jpg';
+import BessonLogo from'../Images/Company/tuba/besson.jpg';
 
 class HomePage extends Component {
     constructor() {
@@ -41,6 +42,10 @@ class HomePage extends Component {
           <td><img src={BaSLogo} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
           <td><img src={MiraphoneLogo} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
           <td><img src={MWLogo} onClick={() => this.goCompany("Meinl Weston")} style={{width: "40%"}}/></td>
+        </tr>
+        <tr>
+          <td><img src={YamahaLogo} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
+          <td><img src={BessonLogo} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
         </tr>
         
         </table>
