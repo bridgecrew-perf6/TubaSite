@@ -12,12 +12,6 @@ import BS3099Photo from '../Images/Tubas/BaS/FTuba/3099_full.jpg';
 import BS3100Photo from '../Images/Tubas/BaS/FTuba/3100wgj-l.jpg';
 import BS5100Photo from '../Images/Tubas/BaS/FTuba/bs5100w_full-1.jpg';
 import MRPFPhoto from '../Images/Tubas/BaS/FTuba/bsmrpf_full.png';
-
-
-
-
-
- 
 import "../../stylesheet.css"
 
 
@@ -61,7 +55,8 @@ class BaSCompanyPage extends Component {
         <table class = "tubaTable">
         <tr>
         <td><img onMouseEnter={(e) =>this.setState({isGR55:false})}  onMouseOut={(e) =>this.setState({isGR55:true})} 
-           src={this.state.isGR55? GR55Photo: ""} 
+           src={this.state.isGR55? GR55Photo: null} 
+           
            onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
           <td><img src={GR51Photo} onClick={() => this.goCompany("BaS")} class="tubaImage"/></td>
         </tr>

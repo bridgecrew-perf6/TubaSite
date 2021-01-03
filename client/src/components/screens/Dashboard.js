@@ -33,13 +33,12 @@ return (
       <div>
             <Router>
              <div class= "main">
-             <Route exact path="/BaScompanyPage" component={BaScompanyPage} />
+            <Route exact path="/BaScompanyPage" component={BaScompanyPage} />
             <Route exact path="/dashboard" component={HomePage} />
             </div> 
             <button class="openbtn" onClick={this.openNav}>☰</button>  
             <div id="mySidebar" className="sidebar">
             <a class="closebtn" style={{padding: 10}} onClick={this.closeNav} ><p style={{color: "white"}}>x</p></a>
-            
             <br></br><br></br><br></br><br></br>
             <a href="/dashboard">HomePage</a>
             <a href="#">Your Profile</a>

@@ -120,10 +120,17 @@ td{
 }
 
 .tubaImage{
-
+  
   width: 50%;
 }
 
 .main{
   padding-bottom:4%;
+}
+
+.bottombar{
+  position:absolute;
+  width:100%;
+  line-height: 250px;
+  background:goldenrod;
 }
