@@ -13,13 +13,30 @@ import PTLogo from'../Images/Company/mouthpeice/pt.jpg';
 import YamahaLogo from'../Images/Company/tuba/yamaha.jpg';
 import BessonLogo from'../Images/Company/tuba/besson.jpg';
 
+
+const TubaLogos = [BaSLogo,MiraphoneLogo,MWLogo,YamahaLogo,BessonLogo]
+const MouthpeiceLogos = [PTLogo,DWLogo,BachLogo]
+
 class HomePage extends Component {
     constructor() {
         super();
+        
+        this.state = {TubaCompaniesPhotosList: [],MouthpeiceCompaniesPhotosList: [] };
+        let TubaPosition = Math.floor(Math.random()* TubaLogos.length);
+        let MouthpeicePosition = Math.floor(Math.random()* MouthpeiceLogos.length);
+        for(var i =0; i< TubaLogos.length;i++){
+          this.state.TubaCompaniesPhotosList[i] = (i+TubaPosition)%5;
+          if(i<3){
+            this.state.MouthpeiceCompaniesPhotosList[i] = (i+MouthpeicePosition)%3;
+          }
+        }
       }
     goCompany(name){
         this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
     }
+    componentWillMount() {
+      
+  }
   render() {
       const { user } = this.props.auth;
       
@@ -39,13 +56,13 @@ class HomePage extends Component {
         <tr></tr>
         <table>
         <tr>
-          <td><img src={BaSLogo} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
-          <td><img src={MiraphoneLogo} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
-          <td><img src={MWLogo} onClick={() => this.goCompany("Meinl Weston")} style={{width: "40%"}}/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[0]]} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[1]]} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[2]]}onClick={() => this.goCompany("Meinl Weston")} class="logoImage"/></td>
         </tr>
         <tr>
-          <td><img src={YamahaLogo} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
-          <td><img src={BessonLogo} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[3]]} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[4]]} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
         </tr>
         
         </table>
@@ -58,9 +75,9 @@ class HomePage extends Component {
         <tr></tr>
         <table>
         <tr>
-          <td><img src={DWLogo} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
-          <td><img src={BachLogo} onClick={() => this.goCompany("Miraphone")} style={{width: "40%"}}/></td>
-          <td><img src={PTLogo} onClick={() => this.goCompany("Meinl Weston")} style={{width: "40%"}}/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[0]]} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[1]]} onClick={() => this.goCompany("Miraphone")} style={{width: "40%"}}/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[2]]} onClick={() => this.goCompany("Meinl Weston")} style={{width: "40%"}}/></td>
         </tr>
         
         </table>

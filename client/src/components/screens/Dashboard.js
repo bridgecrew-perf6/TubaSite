@@ -18,7 +18,7 @@ class Dashboard extends Component {
   };
   openNav() {
     console.log("HERE");
-    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("mySidebar").style.width = "15%";
    
   }
   

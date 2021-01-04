@@ -45,23 +45,22 @@ class App extends Component {
 
   render() {
     return (
-      <Provider store={store} style ={{marginBottom: 0}}>
+      <Provider store={store} >
         <Router>
-          <div className="App" style ={{marginBottom: 0}}>
+          <div className="App" >
             <Navbar />
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
-              
             </Switch>
             
-            
+            <Bottombar />
           </div>
         
         </Router>
-        <Bottombar/>
+        
       </Provider>
     );
   }
