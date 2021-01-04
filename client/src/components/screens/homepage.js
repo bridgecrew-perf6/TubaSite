@@ -14,8 +14,10 @@ import YamahaLogo from'../Images/Company/tuba/yamaha.jpg';
 import BessonLogo from'../Images/Company/tuba/besson.jpg';
 
 
-const TubaLogos = [BaSLogo,MiraphoneLogo,MWLogo,YamahaLogo,BessonLogo]
-const MouthpeiceLogos = [PTLogo,DWLogo,BachLogo]
+const TubaLogos = [BaSLogo,MiraphoneLogo,MWLogo,YamahaLogo,BessonLogo];
+const MouthpeiceLogos = [PTLogo,DWLogo,BachLogo];
+
+const CompanyPagesString = ["BaScompanyPage","MiraphonePage","MeinlWestonPage","YamahaPage","BessonPage"];
 
 class HomePage extends Component {
     constructor() {
@@ -32,7 +34,25 @@ class HomePage extends Component {
         }
       }
     goCompany(name){
-        this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
+      switch (name) {
+        case 0:
+        this.props.history.push({pathname: CompanyPagesString[0], state: {companyName: name} });
+        break;
+        case 1:
+          console.log("YOYO");
+        this.props.history.push({pathname: CompanyPagesString[1], state: {companyName: name} });
+        break;
+        case 2:
+        this.props.history.push({pathname: CompanyPagesString[2], state: {companyName: name} });
+        break;
+        case 3:
+        this.props.history.push({pathname: CompanyPagesString[3], state: {companyName: name} });
+        break;
+        case 4:
+        this.props.history.push({pathname:  CompanyPagesString[4], state: {companyName: name} });
+        break;
+
+      }
     }
     componentWillMount() {
       
@@ -41,8 +61,6 @@ class HomePage extends Component {
       const { user } = this.props.auth;
       
   return (
-  
- 
       <div >
         <div  style={{textAlign: "center"}}>
         <h3 >
@@ -56,13 +74,13 @@ class HomePage extends Component {
         <tr></tr>
         <table>
         <tr>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[0]]} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[1]]} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[2]]}onClick={() => this.goCompany("Meinl Weston")} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[0]]} onClick={() => this.goCompany(this.state.TubaCompaniesPhotosList[0])} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[1]]} onClick={() => this.goCompany(this.state.TubaCompaniesPhotosList[1])} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[2]]}onClick={() => this.goCompany(this.state.TubaCompaniesPhotosList[2])} class="logoImage"/></td>
         </tr>
         <tr>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[3]]} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[4]]} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[3]]} onClick={() => this.goCompany(this.state.TubaCompaniesPhotosList[3])} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[4]]} onClick={() => this.goCompany(this.state.TubaCompaniesPhotosList[4])} class="logoImage"/></td>
         </tr>
         
         </table>
@@ -76,8 +94,8 @@ class HomePage extends Component {
         <table>
         <tr>
           <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[0]]} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
-          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[1]]} onClick={() => this.goCompany("Miraphone")} style={{width: "40%"}}/></td>
-          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[2]]} onClick={() => this.goCompany("Meinl Weston")} style={{width: "40%"}}/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[1]]} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[2]]} onClick={() => this.goCompany("Meinl Weston")} class="logoImage"/></td>
         </tr>
         
         </table>

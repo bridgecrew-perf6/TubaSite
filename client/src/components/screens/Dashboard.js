@@ -3,7 +3,12 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../redux/actions/authActions";
 import HomePage from  "./homepage";
-import BaScompanyPage from  "./BaScompanyPage";
+import BaScompanyPage from  "./CompanyPages/BaScompanyPage";
+import MiraphoneCompanyPage from  "./CompanyPages/MiraphoneCompanyPage";
+import YamahaCompanyPage from  "./CompanyPages/YamahaCompanyPage";
+import MeinlWestonCompanyPage from  "./CompanyPages/MeinlWestonCompanyPage";
+import BessonCompanyPage from  "./CompanyPages/BessonCompanyPage";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "../../stylesheet.css"
@@ -34,7 +39,12 @@ return (
             <Router>
              <div class= "main">
             <Route exact path="/BaScompanyPage" component={BaScompanyPage} />
+            <Route exact path="/MiraphonePage" component={MiraphoneCompanyPage} />
+            <Route exact path="/YamahaPage" component={YamahaCompanyPage} />
+            <Route exact path="/MeinlWestonPage" component={MeinlWestonCompanyPage} />
+            <Route exact path="/BessonPage" component={BessonCompanyPage} />
             <Route exact path="/dashboard" component={HomePage} />
+
             </div> 
             <button class="openbtn" onClick={this.openNav}>☰</button>  
             <div id="mySidebar" className="sidebar">

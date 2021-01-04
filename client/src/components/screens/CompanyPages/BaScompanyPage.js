@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { logoutUser } from "../../redux/actions/authActions";
-import BaSLogo from'../Images/Company/tuba/bas.png';
-import GR55Photo from'../Images/Tubas/BaS/BbTuba/bsgr55_full.png';
-import GR51Photo from'../Images/Tubas/BaS/BbTuba/bsgr51_full.png';
-import BS3198Photo from '../Images/Tubas/BaS/CTuba/bs3198_full.png';
-import GR41Photo from '../Images/Tubas/BaS/CTuba/bsgr41_full.png';
-import MRPCPhoto from '../Images/Tubas/BaS/CTuba/bsmrpc_full.png';
-import BS3099Photo from '../Images/Tubas/BaS/FTuba/3099_full.jpg';
-import BS3100Photo from '../Images/Tubas/BaS/FTuba/3100wgj-l.jpg';
-import BS5100Photo from '../Images/Tubas/BaS/FTuba/bs5100w_full-1.jpg';
-import MRPFPhoto from '../Images/Tubas/BaS/FTuba/bsmrpf_full.png';
-import "../../stylesheet.css"
+import { logoutUser } from "../../../redux/actions/authActions";
+import BaSLogo from'../../Images/Company/tuba/bas.png';
+import GR55Photo from'../../Images/Tubas/BaS/BbTuba/bsgr55_full.png';
+import GR51Photo from'../../Images/Tubas/BaS/BbTuba/bsgr51_full.png';
+import BS3198Photo from '../../Images/Tubas/BaS/CTuba/bs3198_full.png';
+import GR41Photo from '../../Images/Tubas/BaS/CTuba/bsgr41_full.png';
+import MRPCPhoto from '../../Images/Tubas/BaS/CTuba/bsmrpc_full.png';
+import BS3099Photo from '../../Images/Tubas/BaS/FTuba/3099_full.jpeg';
+import BS3100Photo from '../../Images/Tubas/BaS/FTuba/3100wgj-l.jpg';
+import BS5100Photo from '../../Images/Tubas/BaS/FTuba/bs5100w_full-1.jpg';
+import MRPFPhoto from '../../Images/Tubas/BaS/FTuba/bsmrpf_full.png';
+import "../../../stylesheet.css"
 
 
 
@@ -56,7 +56,7 @@ class BaSCompanyPage extends Component {
         <tr>
         <td><img onMouseEnter={(e) =>this.setState({isGR55:false})}  onMouseOut={(e) =>this.setState({isGR55:true})} 
            src={this.state.isGR55? GR55Photo: null} 
-           
+
            
            onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
           <td><img src={GR51Photo} onClick={() => this.goCompany("BaS")} class="tubaImage"/></td>
