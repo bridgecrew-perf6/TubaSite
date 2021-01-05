@@ -37,7 +37,7 @@ return (
   //<div className="container" style={{justifyContent:"center"}}>
       <div>
             <Router>
-             <div class= "main">
+             <div class= "main" style={{marginBottom:"5%"}}>
             <Route exact path="/BaScompanyPage" component={BaScompanyPage} />
             <Route exact path="/MiraphonePage" component={MiraphoneCompanyPage} />
             <Route exact path="/YamahaPage" component={YamahaCompanyPage} />

@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../../stylesheet.css";
 import BaSLogo from'../Images/Company/tuba/bas.png';
 import MiraphoneLogo from'../Images/Company/tuba/miraphone.png';
-import MWLogo from'../Images/Company/tuba/mw.png';
+import MWLogo from'../Images/Company/tuba/mw.gif';
 import DWLogo from'../Images/Company/mouthpeice/dw.png';
 import BachLogo from'../Images/Company/mouthpeice/bach.png';
 import PTLogo from'../Images/Company/mouthpeice/pt.jpg';

@@ -6,6 +6,7 @@ class BottomBar extends Component {
     return (
       <div className="bottombar" >
           <p> @copyright Toto2020</p>
+          <br></br>
         
       </div>
     );

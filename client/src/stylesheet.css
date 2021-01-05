@@ -92,6 +92,10 @@ td{
 
   width: 60%;
 }
+.mwLogoImage{
+
+  width: 40%;
+}
 .topTableSection{
   margin-top: 2%;
 }
@@ -129,8 +133,11 @@ td{
 }
 
 .bottombar{
-  position:absolute;
-  width:100%;
-  line-height: 100px;
-  background:goldenrod;
+  margin-top:10%;
+  padding: 1rem;
+  background-color: rgb(235, 195, 64);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
