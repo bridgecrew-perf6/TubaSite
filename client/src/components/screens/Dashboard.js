@@ -1,3 +1,11 @@
+//
+//
+//
+// This file is not used will delte later
+//
+//
+//
+//
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -8,6 +16,7 @@ import MiraphoneCompanyPage from  "./CompanyPages/MiraphoneCompanyPage";
 import YamahaCompanyPage from  "./CompanyPages/YamahaCompanyPage";
 import MeinlWestonCompanyPage from  "./CompanyPages/MeinlWestonCompanyPage";
 import BessonCompanyPage from  "./CompanyPages/BessonCompanyPage";
+
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 

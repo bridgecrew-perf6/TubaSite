@@ -2,17 +2,16 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
-import BessonLogo from'../../Images/Company/tuba/besson.jpg';
-import PhotoBb994 from '../../Images/Tubas/Besson/BbTuba/be994.jpg';
-import PhotoEb980 from '../../Images/Tubas/Besson/EbTuba/be980.jpg';
-import PhotoEb983 from '../../Images/Tubas/Besson/EbTuba/be983.jpg';
+import PTLogo from'../../Images/Company/mouthpeice/pt.jpg';
+import mouthpeice from'../../Images/Mouthpeice/pt.jpg';
+
 
 
 import "../../../stylesheet.css"
 
 
 
-class BessonCompanyPage extends Component {
+class PTCompanyPage extends Component {
     constructor(props) {
       super(props);
       console.log(props);
@@ -28,58 +27,47 @@ class BessonCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >Besson</h4>
+        <h4 >BaS</h4>
         <hr></hr>
         <br></br>
-        <table><tbody>
+        <table>
+          <tbody>
         <tr>
           <td><img 
-           src={ BessonLogo} 
+           src={ PTLogo} 
            onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
           <td>Heyey</td>
-        </tr></tbody>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+
+        <div className="tableSection">
+        <h4 >Perantucci</h4>
+        <hr></hr>
+        <br></br>
+        <table>
+        <tr>
+          <td><img 
+           src={ mouthpeice} 
+           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+          <td><img 
+           src={ mouthpeice} 
+           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+        </tr>
         </table>
         </div>
         
-        <div className="tableSection">
-        <h4 >BBb Tuba</h4>
-        <hr></hr>
-        <br></br>
-        <table className = "tubaTable"><tbody>
-        <tr>
-        <td><img src={PhotoBb994}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-          <td></td>
-        </tr></tbody>
         
-        </table>
-        </div>
 
 
-       
-
-       
-
-
-        <div className="tableSection">
-        <h4 >EEb Tuba</h4>
-        <hr></hr>
-        <br></br>
-        <table className = "tubaTable">
-        <tbody>
-        <tr>
-        <td><img src={PhotoEb980}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td><img src={PhotoEb983}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-
-        </tr></tbody>
-        </table>
-        </div>
 
         </div>
         </div>
       );
     }
   }
-  BessonCompanyPage.propTypes = {
+  PTCompanyPage.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
 };
@@ -89,4 +77,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { logoutUser }
-)(BessonCompanyPage);
+)(PTCompanyPage);

@@ -37,80 +37,84 @@ class MeinlWestonCompanyPage extends Component {
         <div >
         <div  style={{textAlign: "center"}}>
         <br></br>
-        <div class="topTableSection">
+        <div className="topTableSection">
         <h4 >Meinl Weston</h4>
         <hr></hr>
         <br></br>
-        <tr></tr>
         <table>
+          <tbody>
         <tr>
           <td><img 
            src={ MeinlWestonLogo} 
-           onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
+           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
           <td>Heyey</td>
         </tr>
+        </tbody>
         </table>
         </div>
         
-        <div class="tableSection">
+        <div className="tableSection">
         <h4 >BBb Tuba</h4>
         <hr></hr>
         <br></br>
-        <tr></tr>
-        <table class = "tubaTable">
+        <table className = "tubaTable">
+        <tbody>
         <tr>
-        <td><img src={PhotoBb195}  onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
-          <td><img src={PhotoBb196} onClick={() => this.goCompany("BaS")} class="tubaImage"/></td>
+        <td><img src={PhotoBb195}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+          <td><img src={PhotoBb196} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoBb197} onClick={() => this.goCompany("BaS")} class="tubaImage"/></td>
+        <td><img src={PhotoBb197} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         
-        <td><img src={PhotoBb2011} onClick={() => this.goCompany("BaS")} class="tubaImage"/></td>
+        <td><img src={PhotoBb2011} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         </tr>
+        </tbody>
         </table>
         </div>
 
 
-        <div class="tableSection">
+        <div className="tableSection">
         <h4 >CC Tuba</h4>
         <hr></hr>
         <br></br>
-        <tr></tr>
-        <table class = "tubaTable">
+        <table className = "tubaTable">
+        <tbody>
         <tr>
-        <td><img src={PhotoC3225} onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
-        <td><img src={PhotoC6450} onClick={() => this.goCompany("BaS")} class="tubaImage"/></td>
+        <td><img src={PhotoC3225} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+        <td><img src={PhotoC6450} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoC3450} onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
-        <td><img src={PhotoC5450P} onClick={() => this.goCompany("BaS")} class="tubaImage"/></td>
+        <td><img src={PhotoC3450} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+        <td><img src={PhotoC5450P} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoC5450R} onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
+        
+        <td><img src={PhotoC5450R} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
         <td></td>
         </tr>
-        
+        </tbody>
         </table>
         </div>
 
-        <div class="tableSection">
+        <div className="tableSection">
         <h4 >F Tuba</h4>
         <hr></hr>
         <br></br>
-        <tr></tr>
-        <table class = "tubaTable">
+        <table className = "tubaTable">
+        <tbody>
         <tr>
-        <td><img src={PhotoF4250} onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
-        <td><img src={PhotoF45} onClick={() => this.goCompany("BaS")} class="tubaImage"/></td>
+        <td><img src={PhotoF4250} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+        <td><img src={PhotoF45} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoF182} onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
-        <td><img src={PhotoF2250} onClick={() => this.goCompany("BaS")} class="tubaImage"/></td>
+        <td><img src={PhotoF182} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+        <td><img src={PhotoF2250} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoF6460} onClick={() => this.goCompany("Miraphone")} class="tubaImage"/></td>
+        <td><img src={PhotoF6460} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
         <td></td>
         </tr>
+        </tbody>
         </table>
         </div>
 

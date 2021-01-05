@@ -17,7 +17,8 @@ import BessonLogo from'../Images/Company/tuba/besson.jpg';
 const TubaLogos = [BaSLogo,MiraphoneLogo,MWLogo,YamahaLogo,BessonLogo];
 const MouthpeiceLogos = [PTLogo,DWLogo,BachLogo];
 
-const CompanyPagesString = ["BaScompanyPage","MiraphonePage","MeinlWestonPage","YamahaPage","BessonPage"];
+const TubaCompanyPagesString = ["BaSPage","MiraphonePage","MeinlWestonPage","YamahaPage","BessonPage"];
+const MouthpeiceCompanyPagesString = ["PerantucciPage","DenisWickPage","BachPage"];
 
 class HomePage extends Component {
     constructor() {
@@ -33,30 +34,41 @@ class HomePage extends Component {
           }
         }
       }
-    goCompany(name){
+    goTubaCompany(name){
       switch (name) {
         case 0:
-        this.props.history.push({pathname: CompanyPagesString[0], state: {companyName: name} });
+        this.props.history.push({pathname: TubaCompanyPagesString[0], state: {companyName: name} });
         break;
         case 1:
           console.log("YOYO");
-        this.props.history.push({pathname: CompanyPagesString[1], state: {companyName: name} });
+        this.props.history.push({pathname: TubaCompanyPagesString[1], state: {companyName: name} });
         break;
         case 2:
-        this.props.history.push({pathname: CompanyPagesString[2], state: {companyName: name} });
+        this.props.history.push({pathname: TubaCompanyPagesString[2], state: {companyName: name} });
         break;
         case 3:
-        this.props.history.push({pathname: CompanyPagesString[3], state: {companyName: name} });
+        this.props.history.push({pathname: TubaCompanyPagesString[3], state: {companyName: name} });
         break;
         case 4:
-        this.props.history.push({pathname:  CompanyPagesString[4], state: {companyName: name} });
+        this.props.history.push({pathname:  TubaCompanyPagesString[4], state: {companyName: name} });
         break;
 
       }
     }
-    componentWillMount() {
-      
-  }
+    goMouthpeiceCompany(name){
+      switch (name) {
+        case 0:
+        this.props.history.push({pathname: MouthpeiceCompanyPagesString[0], state: {companyName: name} });
+        break;
+        case 1:
+          console.log("YOYO");
+        this.props.history.push({pathname: MouthpeiceCompanyPagesString[1], state: {companyName: name} });
+        break;
+        case 2:
+        this.props.history.push({pathname: MouthpeiceCompanyPagesString[2], state: {companyName: name} });
+        break;
+      }
+    }
   render() {
       const { user } = this.props.auth;
       
@@ -67,37 +79,37 @@ class HomePage extends Component {
             <b>Welcome Back!</b> {user.name.split(" ")[0]}
         </h3>
         <br></br>
-        <div class="topTableSection">
+        <div className="topTableSection">
         <h4 >Tuba</h4>
         <hr></hr>
         <br></br>
-        <tr></tr>
         <table>
+        <tbody>
         <tr>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[0]]} onClick={() => this.goCompany(this.state.TubaCompaniesPhotosList[0])} class="logoImage"/></td>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[1]]} onClick={() => this.goCompany(this.state.TubaCompaniesPhotosList[1])} class="logoImage"/></td>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[2]]}onClick={() => this.goCompany(this.state.TubaCompaniesPhotosList[2])} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[0]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[0])} className="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[1]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[1])} className="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[2]]}onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[2])} className="logoImage"/></td>
         </tr>
         <tr>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[3]]} onClick={() => this.goCompany(this.state.TubaCompaniesPhotosList[3])} class="logoImage"/></td>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[4]]} onClick={() => this.goCompany(this.state.TubaCompaniesPhotosList[4])} class="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[3]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[3])} className="logoImage"/></td>
+          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[4]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[4])} className="logoImage"/></td>
         </tr>
-        
+        </tbody>
         </table>
         </div>
         
-        <div class="tableSection">
+        <div className="tableSection">
         <h4 >Mouthpeice</h4>
         <hr></hr>
         <br></br>
-        <tr></tr>
         <table>
+        <tbody>
         <tr>
-          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[0]]} onClick={() => this.goCompany("BaS")} class="logoImage"/></td>
-          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[1]]} onClick={() => this.goCompany("Miraphone")} class="logoImage"/></td>
-          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[2]]} onClick={() => this.goCompany("Meinl Weston")} class="logoImage"/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[0]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[0])} className="logoImage"/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[1]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[1])}className="logoImage"/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[2]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[2])} className="logoImage"/></td>
         </tr>
-        
+        </tbody>
         </table>
         </div>
 

@@ -5,6 +5,7 @@ class BottomBar extends Component {
   render() {
     return (
       <div className="bottombar" >
+        
           <p> @copyright Toto2020</p>
           <br></br>
         
