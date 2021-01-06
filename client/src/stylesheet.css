@@ -77,15 +77,15 @@ table{
   margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
   font-size: 34px;
 }
 tr{
   vertical-align:"bottom";
-  border : 1px solid black;
+  border-width: 0;
 }
 td{
-  text-align:center
+  text-align:center;
+  border-width: 0;
 }
 
 .logoImage{
@@ -123,9 +123,9 @@ td{
   margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
   font-size: 34px;
 }
+
 
 .tubaImage{
   

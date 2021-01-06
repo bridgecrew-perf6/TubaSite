@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
-import MiraphoneLogo from'../../Images/Company/tuba/miraphone.png';
+import MiraphoneLogo from'../../Images/Company/tuba/miraphone.jpeg';
 import Photo1291 from '../../Images/Tubas/Miraphone/BbTuba/1291.jpg';
 import Photo9000 from  '../../Images/Tubas/Miraphone/BbTuba/9000.jpg';
 import Photo88 from '../../Images/Tubas/Miraphone/CTuba/88.jpg';

@@ -64,9 +64,9 @@ class AppIndex extends Component {
             <div id="mySidebar" className="sidebar">
             <a className="closebtn" style={{padding: 10}} onClick={this.closeNav} ><p style={{color: "white"}}>x</p></a>
             <br></br><br></br><br></br><br></br>
-            <a href="/dashboard">Home Page</a>
-            <a href="#">Ranking</a>
             <a href="#">About</a>
+            <a href="#">Ranking</a>
+            <a href="/dashboard">Home Page</a>
             <a href="#">Company Pages</a>
             <a href="#"onClick={this.onLogoutClick}>Logout</a>
             </div>
