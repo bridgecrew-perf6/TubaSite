@@ -92,6 +92,10 @@ td{
 
   width: 60%;
 }
+.mouthpeiceLogoImage{
+
+  width: 45%;
+}
 .mwLogoImage{
 
   width: 40%;
@@ -135,6 +139,7 @@ td{
 .bottombar{
   margin-top:10%;
   padding: 1rem;
+  height: 15%;
   background-color: rgb(235, 195, 64);
   position: fixed;
   bottom: 0;

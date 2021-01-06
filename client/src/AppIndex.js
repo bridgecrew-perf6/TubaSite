@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { setCurrentUser, logoutUser } from "./redux/actions/authActions";
-import { Provider } from "react-redux";
-import store from "./redux/store";
 import Navbar from "./components/layout/Navbar";
 import Bottombar from "./components/layout/Bottombar";
 import Landing from "./components/layout/Landing";
@@ -19,6 +17,8 @@ import BessonCompanyPage from  "./components/screens/CompanyPages/BessonCompanyP
 import PerantucciCompanyPage from  "./components/screens/CompanyPages/PTCompanyPage";
 import BachCompanyPage from  "./components/screens/CompanyPages/BachCompanyPage";
 import DenisWickCompanyPage from  "./components/screens/CompanyPages/DenisWickCompanyPage";
+import Sidebar from "./components/layout/Sidebar";
+
 
 
 import HomePage from  "./components/screens/homepage";
@@ -59,20 +59,23 @@ class AppIndex extends Component {
 
             { this.props.auth.isAuthenticated?
             <div>
-            <button className="openbtn" onClick={this.openNav}>☰</button>  
+            <button className="openbtn" onClick={this.openNav}>☰</button> 
+            <Sidebar>
             <div id="mySidebar" className="sidebar">
             <a className="closebtn" style={{padding: 10}} onClick={this.closeNav} ><p style={{color: "white"}}>x</p></a>
             <br></br><br></br><br></br><br></br>
-            <a href="/dashboard">HomePage</a>
-            <a href="#">Your Profile</a>
+            <a href="/dashboard">Home Page</a>
+            <a href="#">Ranking</a>
+            <a href="#">About</a>
+            <a href="#">Company Pages</a>
             <a href="#"onClick={this.onLogoutClick}>Logout</a>
             </div>
-            </div>: null }
+            </Sidebar></div>: null }
 
 
 
             <Navbar />
-            <div style={{marginBottom:"5%"}} >
+            <div style={{marginBottom:"10%"}} >
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />

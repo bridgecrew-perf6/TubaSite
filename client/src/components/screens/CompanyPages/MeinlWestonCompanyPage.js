@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
-import MeinlWestonLogo from'../../Images/Company/tuba/mw.gif';
+import MeinlWestonLogo from'../../Images/Company/tuba/mw.png';
 import PhotoBb195 from '../../Images/Tubas/MW/BbTuba/195p_full.jpg';
 import PhotoBb196 from '../../Images/Tubas/MW/BbTuba/mw196_full.png';
 import PhotoBb197 from '../../Images/Tubas/MW/BbTuba/mw197-1_full-1592x945.png';

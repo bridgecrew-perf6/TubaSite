@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../../stylesheet.css";
 import BaSLogo from'../Images/Company/tuba/bas.png';
 import MiraphoneLogo from'../Images/Company/tuba/miraphone.png';
-import MWLogo from'../Images/Company/tuba/mw.gif';
+import MWLogo from'../Images/Company/tuba/mw.png';
 import DWLogo from'../Images/Company/mouthpeice/dw.png';
 import BachLogo from'../Images/Company/mouthpeice/bach.png';
 import PTLogo from'../Images/Company/mouthpeice/pt.jpg';
@@ -105,9 +105,9 @@ class HomePage extends Component {
         <table>
         <tbody>
         <tr>
-          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[0]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[0])} className="logoImage"/></td>
-          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[1]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[1])}className="logoImage"/></td>
-          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[2]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[2])} className="logoImage"/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[0]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[0])} className="mouthpeiceLogoImage"/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[1]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[1])}className="mouthpeiceLogoImage"/></td>
+          <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[2]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[2])} className="mouthpeiceLogoImage"/></td>
         </tr>
         </tbody>
         </table>
