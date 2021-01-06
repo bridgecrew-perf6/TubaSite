@@ -79,11 +79,11 @@ class HomePage extends Component {
             <b>Welcome Back!</b> {user.name.split(" ")[0]}
         </h3>
         <br></br>
-        <div className="topTableSection">
+        <div className="firstPageSection" style={{marginBottom:"4%"}}>
         <h4 >Tuba</h4>
         <hr></hr>
         <br></br>
-        <table>
+        <table className="tubaTable">
         <tbody>
         <tr>
           <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[0]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[0])} className="logoImage"/></td>
@@ -98,11 +98,11 @@ class HomePage extends Component {
         </table>
         </div>
         
-        <div className="tableSection">
+        <div className="firstPageSection">
         <h4 >Mouthpeice</h4>
         <hr></hr>
         <br></br>
-        <table>
+        <table className="tubaTable">
         <tbody>
         <tr>
           <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[0]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[0])} className="mouthpeiceLogoImage"/></td>

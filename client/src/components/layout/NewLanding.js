@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../redux/actions/authActions";
+import "../../stylesheet.css"
 
-class Landing extends Component {
+class NewLanding extends Component {
   componentDidMount() {
     // If logged in and user navigates to Login page, should redirect them to dashboard
     if (this.props.auth.isAuthenticated) {
@@ -13,8 +14,13 @@ class Landing extends Component {
   }
   render() {
     return (
+        <body class="welcome">
+        <span id="splash-overlay" class="splash"></span>
+        <span id="welcome" class="z-depth-4"></span>
+       
       
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
+
+        <div style={{ height: "75vh" }} className="container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
             <h4>
@@ -54,10 +60,13 @@ class Landing extends Component {
           </div>
         </div>
       </div>
+
+
+      </body>
     );
   }
 }
-Landing.propTypes = {
+NewLanding.propTypes = {
   loginUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
@@ -69,4 +78,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { loginUser }
-)(Landing);
+)(NewLanding);

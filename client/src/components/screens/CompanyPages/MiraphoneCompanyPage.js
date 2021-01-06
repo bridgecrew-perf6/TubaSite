@@ -75,7 +75,6 @@ class MiraphoneCompanyPage extends Component {
         </tr>
         <tr>
         <td><img src={Photo1293} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
-        <td></td>
         </tr></tbody>
         </table>
         </div>
@@ -90,7 +89,7 @@ class MiraphoneCompanyPage extends Component {
         <td><img src={Photo181} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
         <td><img src={Photo281} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         </tr>
-        <tr><td></td></tr>
+        
         <tr>
         <td><img src={Photo481} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         <td><img src={Photo1281} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
@@ -107,7 +106,7 @@ class MiraphoneCompanyPage extends Component {
         <tbody>
         <tr>
         <td><img src={Photo7050}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-          <td></td>
+        <td class="NullTdClass"></td>
         </tr></tbody>
         </table>
         </div>

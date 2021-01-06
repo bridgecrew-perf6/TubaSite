@@ -27,7 +27,7 @@ class BachCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >BaS</h4>
+        <h4 >Bach</h4>
         <hr></hr>
         <br></br>
         <table>
@@ -43,7 +43,6 @@ class BachCompanyPage extends Component {
         </div>
 
         <div className="tableSection">
-        <h4 >Perantucci</h4>
         <hr></hr>
         <br></br>
         <table>

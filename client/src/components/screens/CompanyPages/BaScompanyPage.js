@@ -79,7 +79,6 @@ class BaSCompanyPage extends Component {
         </tr>
         <tr>
         <td><img src={MRPCPhoto} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
-        <td></td>
         </tr>
         </tbody>
         </table>
@@ -95,7 +94,6 @@ class BaSCompanyPage extends Component {
         <td><img src={BS3099Photo} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
         <td><img src={BS3100Photo} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         </tr>
-        <tr><td></td></tr>
         <tr>
         <td><img src={BS5100Photo} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         <td><img src={MRPFPhoto} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>

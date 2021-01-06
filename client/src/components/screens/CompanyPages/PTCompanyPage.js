@@ -27,14 +27,14 @@ class PTCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >BaS</h4>
+        <h4 >Perantucci</h4>
         <hr></hr>
         <br></br>
         <table>
           <tbody>
         <tr>
           <td><img 
-           src={ PTLogo} 
+           src={ PTLogo} style={{width:"40%"}}
            onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
           <td>Heyey</td>
         </tr>
@@ -43,7 +43,6 @@ class PTCompanyPage extends Component {
         </div>
 
         <div className="tableSection">
-        <h4 >Perantucci</h4>
         <hr></hr>
         <br></br>
         <table>

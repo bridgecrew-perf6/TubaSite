@@ -90,7 +90,7 @@ class MeinlWestonCompanyPage extends Component {
         <tr>
         
         <td><img src={PhotoC5450R} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td></td>
+        
         </tr>
         </tbody>
         </table>
@@ -112,7 +112,7 @@ class MeinlWestonCompanyPage extends Component {
         </tr>
         <tr>
         <td><img src={PhotoF6460} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td></td>
+        
         </tr>
         </tbody>
         </table>

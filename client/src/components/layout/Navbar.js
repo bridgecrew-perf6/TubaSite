@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
 class Navbar extends Component {
   render() {
     return (
@@ -8,13 +9,14 @@ class Navbar extends Component {
           <div className="nav-wrapper white"  >
             <Link
               to="/"
+              className="col s5 brand-logo center black-text"
               style={{
                 fontFamily: "monospace",
-                fontSize: 40
+                fontSize: 40,
+                color: "red"
               }}
-              className="col s5 brand-logo center black-text"
             >
-              <i className="material-icons">code</i>
+              <i className="material-icons">music_note</i>
               TubaSite
             </Link>
           </div>

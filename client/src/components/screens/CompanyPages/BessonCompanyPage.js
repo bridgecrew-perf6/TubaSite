@@ -48,7 +48,7 @@ class BessonCompanyPage extends Component {
         <table className = "tubaTable"><tbody>
         <tr>
         <td><img src={PhotoBb994}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-          <td></td>
+          <td className="NullTdClass"></td>
         </tr></tbody>
         
         </table>

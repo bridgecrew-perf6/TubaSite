@@ -18,6 +18,10 @@ import PerantucciCompanyPage from  "./components/screens/CompanyPages/PTCompanyP
 import BachCompanyPage from  "./components/screens/CompanyPages/BachCompanyPage";
 import DenisWickCompanyPage from  "./components/screens/CompanyPages/DenisWickCompanyPage";
 import Sidebar from "./components/layout/Sidebar";
+import NewLanding from "./components/layout/NewLanding";
+import NotLoggedInBottomBar from "./components/layout/NotLoggedInBottomBar";
+
+
 
 
 
@@ -62,12 +66,10 @@ class AppIndex extends Component {
             <button className="openbtn" onClick={this.openNav}>☰</button> 
             <Sidebar>
             <div id="mySidebar" className="sidebar">
-            <a className="closebtn" style={{padding: 10}} onClick={this.closeNav} ><p style={{color: "white"}}>x</p></a>
-            <br></br><br></br><br></br><br></br>
+            <br></br><br></br>
             <a href="#">About</a>
             <a href="#">Ranking</a>
-            <a href="/dashboard">Home Page</a>
-            <a href="#">Company Pages</a>
+            <a href="/dashboard">HomePage</a>
             <a href="#"onClick={this.onLogoutClick}>Logout</a>
             </div>
             </Sidebar></div>: null }
@@ -75,8 +77,8 @@ class AppIndex extends Component {
 
 
             <Navbar />
-            <div style={{marginBottom:"10%"}} >
-            <Route exact path="/" component={Landing} />
+            <div  >
+            <Route exact path="/" component={NewLanding} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Switch>
@@ -91,10 +93,7 @@ class AppIndex extends Component {
             <PrivateRoute exact path="/DenisWickPage" component={DenisWickCompanyPage} />
             </Switch>
             </div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <Bottombar />
+            { this.props.auth.isAuthenticated? <Bottombar />:<NotLoggedInBottomBar/>}
           </div>
         
         </Router>

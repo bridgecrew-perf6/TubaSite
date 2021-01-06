@@ -45,6 +45,7 @@ this.props.loginUser(userData); // since we handle the redirect within our compo
 render() {
     const { errors } = this.state;
 return (
+  <div>
       <div className="container">
         <div style={{ marginTop: "4rem" }} className="row">
           <div className="col s8 offset-s2">
@@ -112,6 +113,7 @@ return (
             </form>
           </div>
         </div>
+      </div>
       </div>
     );
   }

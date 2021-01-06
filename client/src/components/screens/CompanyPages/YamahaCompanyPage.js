@@ -40,7 +40,7 @@ class YamahaCompanyPage extends Component {
         <tbody>
         <tr>
           <td><img 
-           src={ YamahaLogo} 
+           src={ YamahaLogo}  style={{width:"40%"}}
            onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
           <td>Heyey</td>
         </tr>
