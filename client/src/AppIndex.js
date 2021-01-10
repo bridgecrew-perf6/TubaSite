@@ -93,7 +93,7 @@ class AppIndex extends Component {
             <PrivateRoute exact path="/DenisWickPage" component={DenisWickCompanyPage} />
             </Switch>
             </div>
-            { this.props.auth.isAuthenticated? <Bottombar />:<NotLoggedInBottomBar/>}
+            { this.props.auth.isAuthenticated? <Bottombar />:null}
           </div>
         
         </Router>
