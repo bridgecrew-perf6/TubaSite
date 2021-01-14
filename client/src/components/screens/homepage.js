@@ -111,8 +111,8 @@ class HomePage extends Component {
         
         :
         
-        <table className="tubaTable">
-        <tbody>
+        <table className="tubaTable" style={{marginBottom:"11%"}}>
+        <tbody >
         <tr>
           <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[0]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[0])} className="mouthpeiceLogoImage"/></td>
           <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[1]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[1])}className="mouthpeiceLogoImage"/></td>
