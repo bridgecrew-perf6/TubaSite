@@ -5,7 +5,7 @@
     z-index: 1;
     top: 0;
     text-align: center;
-    right: 0;
+    right: 20px;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -13,7 +13,7 @@
   }
   
   .sidebar a {
-    padding: 8px 8px 8px 25px;
+    padding: 28px 38px 8px 25px;
     text-decoration: none;
     font-size: 25px;
     
@@ -23,7 +23,7 @@
     margin-top: 10px;
   }
   .sidebar button {
-    padding: 8px 8px 8px 40px;
+    padding:8px 8px 8px 30px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -48,7 +48,7 @@
   .openbtn {
     position:fixed;
     top: 80px;
-    right: 25px;
+    right: 8%;
     font-size: 20px;
     background-color: #111;
     color: white;
@@ -65,6 +65,13 @@
   letterSpacing: 1.5px;
   marginTop:1rem;
 
+}
+
+a { 
+  color: black; 
+}
+a:active {
+  color: gold; 
 }
 hr {
   width: 80%;
@@ -150,7 +157,7 @@ td:focus-within {
 .bottombar{
   margin-top:5%;
   padding: 1rem;
-  height: 20rem;
+  height: 10rem;
   background-color: rgb(235, 195, 64);
   bottom: 0;
   left: 0;
@@ -309,3 +316,37 @@ body.welcome {
     opacity: 0;
   }
 } 
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

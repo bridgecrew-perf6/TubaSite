@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../redux/actions/authActions";
+import "../../stylesheet.css";
+import backgroundImage1 from "../Images/HomeBackgroundImages/brian-matangelo-KV8BNwpj6B8-unsplash.jpg";
+import backgroundImage2 from "../Images/HomeBackgroundImages/jessica-pamp-uuKE4DnGcfY-unsplash.jpg";
+import backgroundImage3 from "../Images/HomeBackgroundImages/samuel-ramos-Md8c-amE5ms-unsplash.jpg";
+import BackgroundSlideshow from 'react-background-slideshow';
+
 
 class Landing extends Component {
   componentDidMount() {
@@ -11,10 +17,18 @@ class Landing extends Component {
       this.props.history.push("/dashboard");
     }
   }
+  
+  
   render() {
     return (
       
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
+      <div>
+       <div>
+        <BackgroundSlideshow images={[ backgroundImage1, backgroundImage2, backgroundImage3 ]} />
+        </div> 
+        <br></br>
+      <div style={{ height: "75vh" }}>
+        
         <div className="row">
           <div className="col s12 center-align">
             <h4>
@@ -53,6 +67,7 @@ class Landing extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

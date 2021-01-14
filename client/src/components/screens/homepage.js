@@ -24,7 +24,7 @@ class HomePage extends Component {
     constructor() {
         super();
         
-        this.state = {TubaCompaniesPhotosList: [],MouthpeiceCompaniesPhotosList: [] };
+        this.state = {TubaCompaniesPhotosList: [],MouthpeiceCompaniesPhotosList: [], isTuba:true};
         let TubaPosition = Math.floor(Math.random()* TubaLogos.length);
         let MouthpeicePosition = Math.floor(Math.random()* MouthpeiceLogos.length);
         for(var i =0; i< TubaLogos.length;i++){
@@ -69,6 +69,13 @@ class HomePage extends Component {
         break;
       }
     }
+    tubaDisplay= () => {
+      this.setState({isTuba:true});
+    }
+    mouthpeiceDisplay= () => {
+      this.setState({isTuba:false});
+    }
+
   render() {
       const { user } = this.props.auth;
       
@@ -80,9 +87,14 @@ class HomePage extends Component {
         </h3>
         <br></br>
         <div className="firstPageSection" style={{marginBottom:"4%"}}>
-        <h4 >Tuba</h4>
+        <h4> <a style={{display: "inline"}} onClick={this.tubaDisplay}> Tuba | </a>
+        <a style={{display: "inline"}} onClick={this.mouthpeiceDisplay}> Mouthpeice</a>
+        </h4>
         <hr></hr>
         <br></br>
+
+
+        {this.state.isTuba?
         <table className="tubaTable">
         <tbody>
         <tr>
@@ -96,12 +108,9 @@ class HomePage extends Component {
         </tr>
         </tbody>
         </table>
-        </div>
         
-        <div className="firstPageSection">
-        <h4 >Mouthpeice</h4>
-        <hr></hr>
-        <br></br>
+        :
+        
         <table className="tubaTable">
         <tbody>
         <tr>
@@ -111,6 +120,8 @@ class HomePage extends Component {
         </tr>
         </tbody>
         </table>
+        
+        }
         </div>
 
         </div>
