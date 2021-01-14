@@ -29,14 +29,16 @@ class BachCompanyPage extends Component {
         <div className="topTableSection">
         <h4 >Bach</h4>
         <hr></hr>
-        <br></br>
         <table>
           <tbody>
         <tr>
           <td><img 
-           src={ BachLogo} 
+           src={ BachLogo} style={{width:"55%"}}
            onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-          <td>Heyey</td>
+          <td><p  className="pCompanyDescription">
+          Born Vincent Shrotenbach in Vienna in 1890, he initially received training on violin, but subsequently switched to trumpet when he heard its majestic sound. Although Vincent also displayed a strong aptitude for science and graduated with an engineering degree, he gave up a promising career to pursue his first love and an uncertain future as a musician. Performing under the stage name, Vincent Bach, he established musical success as he toured throughout Europe
+            
+          </p></td>
         </tr>
         </tbody>
         </table>

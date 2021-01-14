@@ -40,14 +40,16 @@ class MeinlWestonCompanyPage extends Component {
         <div className="topTableSection">
         <h4 >Meinl Weston</h4>
         <hr></hr>
-        <br></br>
         <table>
           <tbody>
         <tr>
           <td><img 
            src={ MeinlWestonLogo} 
            onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-          <td>Heyey</td>
+          <td><p className="pCompanyDescription">
+          Meinl-Weston Tubas have been the benchmark of German craftsmanship for decades.
+          For 7 generations, the Meinl-Langhammer family devoted their work to gain the best manufacturing experience, meticulous workmanship, continuous research and development as well as personal dedication to quality.
+          </p></td>
         </tr>
         </tbody>
         </table>

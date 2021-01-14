@@ -35,14 +35,17 @@ class BaSCompanyPage extends Component {
         <div className="topTableSection">
         <h4 >BaS</h4>
         <hr></hr>
-        <br></br>
         <table>
           <tbody>
         <tr>
           <td><img 
            src={ BaSLogo} 
            onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-          <td>Heyey</td>
+          <td> <p className="pCompanyDescription">
+          Today the company trades as Buffet Crampon Deutschland GmbH and is a world leader in multi-instrument groups. Especially in the two home markets of Germany and France, we are the leader for step-up and professional brass instruments. By fulfilling the highest artistic demands, our instruments have found their way into the famous orchestras in the world. 
+            
+            
+            </p></td>
         </tr>
         </tbody>
         </table>

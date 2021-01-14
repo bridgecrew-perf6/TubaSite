@@ -29,14 +29,15 @@ class PTCompanyPage extends Component {
         <div className="topTableSection">
         <h4 >Perantucci</h4>
         <hr></hr>
-        <br></br>
         <table>
           <tbody>
         <tr>
           <td><img 
            src={ PTLogo} style={{width:"40%"}}
            onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-          <td>Heyey</td>
+          <td><p  className="pCompanyDescription">
+          Mr. Perantoni, Mr. Tucci and their manufacturing staff have spared no effort to provide modern and progressive Euphonium and tuba players suitable tools with which their musical objectives can be readily attained. Perantucci tuba mouthpieces offer the greatest selection of mature, proven designs ever provided.            
+          </p></td>
         </tr>
         </tbody>
         </table>

@@ -5,7 +5,7 @@
     z-index: 1;
     top: 0;
     text-align: center;
-    right: 30px;
+    right: 0px;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -13,7 +13,7 @@
   }
   
   .sidebar a {
-    padding: 18px 38px 8px 25px;
+    padding: 18px 38px 8px 45px;
     text-decoration: none;
     font-size: 25px;
     
@@ -23,7 +23,7 @@
     margin-top: 10px;
   }
   .sidebar button {
-    padding:8px 8px 8px 30px;
+    padding:8px 0px 0px 30px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -48,7 +48,7 @@
   .openbtn {
     position:fixed;
     top: 80px;
-    right: 3%;
+    right:2%;
     font-size: 20px;
     background-color: #111;
     color: white;
@@ -103,11 +103,11 @@ td{
 
 .logoImage{
 
-  width: 60%;
+  width: 70%;
 }
 .mouthpeiceLogoImage{
 
-  width: 45%;
+  width: 55%;
 }
 .mwLogoImage{
 
@@ -147,7 +147,7 @@ td:focus-within {
 
 .tubaImage{
   
-  width: 50%;
+  width: 45%;
 }
 
 .main{
@@ -352,3 +352,10 @@ body.welcome {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+
+.pCompanyDescription{
+  font-size: 24px;
+  text-align: left;
+}
+

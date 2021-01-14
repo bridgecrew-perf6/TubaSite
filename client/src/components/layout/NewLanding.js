@@ -38,7 +38,7 @@ class NewLanding extends Component {
           <span id="welcome"style={{  zIndex: 4}} ></span>
          
         
-        <div className="row" style={{  zIndex: 5,position:"absolute",right:"10rem",top:"25rem",padding:"20px",borderRadius: "5px",textAlign:"center",backgroundColor:"silver",opacity: 0.9, visibility: this.state.visibility}}>
+        <div className="row" style={{  zIndex: 5,position:"absolute",right:"10rem",top:"25rem",padding:"20px",borderRadius: "10px",textAlign:"center",backgroundColor:"silver",opacity: 0.9, visibility: this.state.visibility}}>
             <h4>
               <b>Review</b> your  {" "}
               <span style={{ fontFamily: "monospace" }}>Tuba</span> 

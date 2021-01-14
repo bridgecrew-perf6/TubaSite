@@ -29,14 +29,16 @@ class DenisWickCompanyPage extends Component {
         <div className="topTableSection">
         <h4 >Denis Wick</h4>
         <hr></hr>
-        <br></br>
         <table>
           <tbody>
         <tr>
           <td><img 
            src={ DenisWickLogo} 
            onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-          <td>Heyey</td>
+          <td><p  className="pCompanyDescription">
+          Denis Wick Products is a British success story and continues to export and innovate, flourishing in the highly competitive world of the music trade.
+          The Denis Wick factory in Hamworthy, Dorset employs skilled technicians and craftsmen to create these carefully designed accessories.
+          </p></td>
         </tr>
         </tbody>
         </table>

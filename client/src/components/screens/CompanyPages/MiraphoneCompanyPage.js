@@ -35,14 +35,15 @@ class MiraphoneCompanyPage extends Component {
         <div className="topTableSection">
         <h4 >Miraphone</h4>
         <hr></hr>
-        <br></br>
         <table>
           <tbody>
         <tr>
           <td><img 
            src={ MiraphoneLogo} 
            onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-          <td>Heyey</td>
+          <td ><p className="pCompanyDescription">Today Miraphone is one of the biggest instrument manufacturer worldwide. All important decisions are made from within the Cooperative which creates strong identification with the company and highest motivation towards success. 
+          In 2016, Miraphone is proud to celebrate its 70th anniversary.
+          </p></td>
         </tr>
         </tbody>
         </table>

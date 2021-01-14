@@ -6,9 +6,9 @@ class BottomBar extends Component {
   render() {
     return (
       <div className="bottombar" >
-         <img src={logo} alt="Logo" style={{width:"60px"}} />
-        <hr style={{border:"1px solid black",width:"10%"}}></hr>
-          <p> @copyright Toto2020</p>
+         <img src={logo} alt="Logo" style={{width:"60px",marginTop:"5px"}} />
+        <hr style={{border:"1px solid black",width:"10%",marginTop:"5px",marginBottom:"3px"}}></hr>
+          <p style={{color:"black", fontSize: "12px",fontWeight: "bold",marginTop:"3px"}}> @Copyright TOTO2021</p>
         
       </div>
     );

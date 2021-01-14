@@ -45,7 +45,7 @@ class AppIndex extends Component {
   };
   openNav() {
     console.log("HERE");
-    document.getElementById("mySidebar").style.width = "15%";
+    document.getElementById("mySidebar").style.width = "13%";
    
   }
   

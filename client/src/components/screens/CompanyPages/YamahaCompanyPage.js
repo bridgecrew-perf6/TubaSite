@@ -35,14 +35,17 @@ class YamahaCompanyPage extends Component {
         <div className="topTableSection">
         <h4 >Yamaha</h4>
         <hr></hr>
-        <br></br>
         <table>
         <tbody>
         <tr>
           <td><img 
            src={ YamahaLogo}  style={{width:"40%"}}
            onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-          <td>Heyey</td>
+          <td> <p className="pCompanyDescription">
+          Yamaha's history began when its founder, Torakusu Yamaha, repaired a broken reed organ in 1887. Shortly thereafter, he successfully completed the first reed organ to be built in Japan.
+          Since then, Yamaha has continued to produce high-quality products by blending traditional craftsmanship with advanced digital technology. 
+          </p>
+          </td>
         </tr>
         </tbody>
         </table>
