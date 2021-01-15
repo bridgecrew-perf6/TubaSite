@@ -20,6 +20,10 @@ import DenisWickCompanyPage from  "./components/screens/CompanyPages/DenisWickCo
 import Sidebar from "./components/layout/Sidebar";
 import NewLanding from "./components/layout/NewLanding";
 import NotLoggedInBottomBar from "./components/layout/NotLoggedInBottomBar";
+import aboutLogo from "./components/Images/Logos/about.svg";
+import rankLogo from "./components/Images/Logos/rank.svg";
+import homeLogo from "./components/Images/Logos/home.svg";
+import logoutLogo from "./components/Images/Logos/logout.svg";
 
 
 
@@ -62,15 +66,23 @@ class AppIndex extends Component {
           <div   >
 
             { this.props.auth.isAuthenticated?
-            <div>
+            <div style={{alignContent:"center",alignItems:"center"}}>
             <button className="openbtn" onClick={this.openNav}>☰</button> 
             <Sidebar>
             <div id="mySidebar" className="sidebar">
-            <br></br><br></br>
-            <a href="#">About</a>
-            <a href="#">Ranking</a>
-            <a href="/dashboard">HomePage</a>
-            <a href="#"onClick={this.onLogoutClick}>Logout</a>
+            <br></br>
+            <a href="#">
+            <div><img  src={aboutLogo} className="NavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
+            <div>About</div></a>
+            <a href="#">
+            <div><img  src={rankLogo} className="NavDescriptionLogo"/></div>
+            <div>Ranking</div></a>
+            <a href="/dashboard">
+            <div><img  src={homeLogo} className="NavDescriptionLogo"/></div>
+            <div>HomePage</div></a>
+            <a href="#"onClick={this.onLogoutClick}>
+            <div><img  src={logoutLogo} className="NavDescriptionLogo"/></div>
+            <div>Logout</div></a>
             </div>
             </Sidebar></div>: null }
 

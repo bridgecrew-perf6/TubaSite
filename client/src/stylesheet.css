@@ -20,7 +20,7 @@
     color: #818181;
     display: block;
     transition: 0.3s;
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .sidebar button {
     padding:8px 0px 0px 30px;
@@ -357,5 +357,11 @@ body.welcome {
 .pCompanyDescription{
   font-size: 24px;
   text-align: left;
+}
+
+.NavDescriptionLogo{
+  width:60%;
+  border-radius: 50%;
+  background-color: gold;
 }
 
