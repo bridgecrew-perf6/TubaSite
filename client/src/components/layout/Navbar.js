@@ -17,7 +17,7 @@ class Navbar extends Component {
                 color: "red"
               }}
             >
-              <i className="material-icons">rate_review</i>
+              <i className="material-icons" style={{color:"goldenrod"}}>rate_review</i>
               TubaSite
             </Link>
           </div>

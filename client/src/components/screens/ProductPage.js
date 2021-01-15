@@ -30,17 +30,58 @@ class ProductPage extends Component {
         </p>
         <div class="split left">
         <h2 >{this.state.params.name}</h2>
-          <div class="centered">
+          <div style={{alignItems:"center"}}>
             <img src ={mapping.get(this.state.params.name)} className="tubaDisplayImage"></img>
-            <p>Some text.</p>
           </div>
+          <div style={{alignItems:"center",textAlign:"center"}}>
+          </div>
+          <div style={{alignItems:"center"}}>
+          <table>
+          <td>
+          <tr>Rating:</tr>
+          <tr>Bell Size:</tr>
+          </td>
+          <td>
+          <tr>Company:</tr>
+          <tr>Key:</tr>
+          </td>
+
+          </table>
+          <p>Company:</p>
+          <p>Bell Size:</p>
+          </div>
+          
+          
+
         </div>
 
         <div class="split right">
         <h2 >Review</h2>
-          <div class="centered">
+          <div style={{position:"relative"}}>
             
             <p>Some text here too.</p>
+            <p>Some text here too.</p>
+
+             <p>Some text here too.</p>
+             useDebugValue( <p>Some text here too.</p>
+             v
+             <p>Some text here too.</p>
+             <p>Some text here too.</p>
+             <p>Some text here too.</p>
+             <p>Some text here too.</p>
+             <p>Some text here too.</p>)
+             <p>Some text here too.</p>
+              <p>Some text here too.</p> <p>Some text here too.</p>
+              <p>Some text here too.</p>
+
+               <p>Some text here too.</p>v
+               v
+               <p>Some text here too.</p>
+               v
+               v
+               <p>Some text here too.</p>
+
+             <p>Some text here too.</p>
           </div>
         </div>
         </div>
