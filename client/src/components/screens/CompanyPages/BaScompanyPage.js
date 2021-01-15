@@ -23,9 +23,13 @@ class BaSCompanyPage extends Component {
       this.state = {isGR55: true};
     }
     goCompany(name){
-      this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
-  }
+      this.props.history.push({pathname: "BaScompanyPage"});
+    }
     
+    goCompany(type,name){
+      this.props.history.push({pathname: "product/"+type+"/"+name });
+    }
+
   render() {
       const { user } = this.props.auth;
        return (
@@ -40,7 +44,7 @@ class BaSCompanyPage extends Component {
         <tr>
           <td><img 
            src={ BaSLogo} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+           onClick={() => this.goCompany("tuba")} className="logoImage"/></td>
           <td> <p className="pCompanyDescription">
           Today the company trades as Buffet Crampon Deutschland GmbH and is a world leader in multi-instrument groups. Especially in the two home markets of Germany and France, we are the leader for step-up and professional brass instruments. By fulfilling the highest artistic demands, our instruments have found their way into the famous orchestras in the world. 
             
@@ -58,11 +62,11 @@ class BaSCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img onMouseEnter={(e) =>this.setState({isGR55:false})}  onMouseOut={(e) =>this.setState({isGR55:true})} 
-           src={this.state.isGR55? GR55Photo: null} 
+        <td><img onMouseEnter={(e) =>this.setState({isGR55:false})} 
+           src={GR55Photo} 
 
            
-           onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+           onClick={() => this.goCompany("tuba","B&SGR55")} className="tubaImage"/></td>
           <td><img src={GR51Photo} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
         </tr>
         </tbody>

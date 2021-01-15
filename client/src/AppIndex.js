@@ -24,6 +24,7 @@ import aboutLogo from "./components/Images/Logos/about.svg";
 import rankLogo from "./components/Images/Logos/rank.svg";
 import homeLogo from "./components/Images/Logos/home.svg";
 import logoutLogo from "./components/Images/Logos/logout.svg";
+import ProductPage from  "./components/screens/ProductPage";
 
 
 
@@ -103,6 +104,7 @@ class AppIndex extends Component {
             <PrivateRoute exact path="/PerantucciPage" component={PerantucciCompanyPage} />
             <PrivateRoute exact path="/BachPage" component={BachCompanyPage} />
             <PrivateRoute exact path="/DenisWickPage" component={DenisWickCompanyPage} />
+            <Route path="/product/:type/:name" component={ProductPage} />
             </Switch>
             </div>
             { this.props.auth.isAuthenticated? <Bottombar />:null}

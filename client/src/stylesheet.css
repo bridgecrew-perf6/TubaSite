@@ -46,6 +46,7 @@
 
 
   .openbtn {
+    z-index: 1;
     position:fixed;
     top: 80px;
     right:2%;
@@ -71,7 +72,7 @@ a {
   color: black; 
 }
 a:active {
-  color: gold; 
+  color: darkgoldenrod; 
 }
 hr {
   width: 80%;
@@ -141,7 +142,7 @@ td{
 }
 table.tubaTable td:hover,
 td:focus-within {
-  border: 5px solid gold;
+  border: 5px solid darkgoldenrod;
 }
 
 
@@ -158,7 +159,7 @@ td:focus-within {
   margin-top:5%;
   padding: 20px;
   height: 10rem;
-  background-color: rgb(235, 195, 64);
+  background-color:darkgoldenrod;
   bottom: 0;
   align-items: center;
   text-align: center;
@@ -170,7 +171,7 @@ td:focus-within {
   position:fixed;
   padding: 1rem;
   height: 10rem;
-  background-color: rgb(235, 195, 64);
+  background-color: darkgoldenrod;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -203,7 +204,7 @@ body.welcome {
 }
 
 .welcome #welcome {
-  background:silver ;
+  background:darkgoldenrod ;
   width: 56px;
   height: 56px;
   position: absolute;
@@ -272,7 +273,7 @@ body.welcome {
 
 @keyframes moveUp {
   0% {
-    background:silver;
+    background:darkgoldenrod;
     top: 100%;
   }
   50% {
@@ -280,7 +281,7 @@ body.welcome {
   }
   100% {
     top: 50%;
-    background:white;
+    background:darkgoldenrod;
   }
 }
 
@@ -362,6 +363,40 @@ body.welcome {
 .NavDescriptionLogo{
   width:60%;
   border-radius: 50%;
-  background-color: gold;
+  background-color: darkgoldenrod;
+}
+
+.tubaDisplayImage{
+
+  width: 80%;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.left {
+  left: 0;
+  background-color:white;
+  margin-top: 2%;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: darkgoldenrod;
+  margin-top: 2%;
+}
+.centered {
+  margin-top: 2%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
