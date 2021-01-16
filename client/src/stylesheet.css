@@ -91,6 +91,7 @@ table{
   margin-right: auto;
   font-size: 34px;
 }
+
 tr{
   vertical-align:"bottom";
   border-width: 0;
@@ -399,4 +400,49 @@ body.welcome {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+.newTable{
+  font-size: 34px;
+}
+
+
+.tubaSidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  left: 0px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.tubaSidebar a {
+  padding: 18px 38px 8px 45px;
+  text-decoration: none;
+  font-size: 25px;
+  
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+.tubaSidebar button {
+  padding:8px 0px 0px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.tubaSidebar a:hover {
+  color: #f1f1f1;
+}
+
 

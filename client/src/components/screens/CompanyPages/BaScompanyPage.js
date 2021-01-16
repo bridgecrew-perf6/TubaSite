@@ -67,7 +67,7 @@ class BaSCompanyPage extends Component {
 
            
            onClick={() => this.goCompany("tuba","B&SGR55")} className="tubaImage"/></td>
-          <td><img src={GR51Photo} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+          <td><img src={GR51Photo} onClick={() => this.goCompany("tuba","B&SGR51")} className="tubaImage"/></td>
         </tr>
         </tbody>
         </table>
@@ -81,11 +81,11 @@ class BaSCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={BS3198Photo} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td><img src={GR41Photo} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={BS3198Photo} onClick={() => this.goCompany("tuba","B&S3198")} className="tubaImage"/></td>
+        <td><img src={GR41Photo} onClick={() => this.goCompany("tuba","B&SGR41")} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={MRPCPhoto} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={MRPCPhoto} onClick={() => this.goCompany("tuba","B&SMRPC")} className="tubaImage"/></td>
         </tr>
         </tbody>
         </table>
@@ -98,12 +98,12 @@ class BaSCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={BS3099Photo} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td><img src={BS3100Photo} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={BS3099Photo} onClick={() =>  this.goCompany("tuba","B&S3099")} className="tubaImage"/></td>
+        <td><img src={BS3100Photo} onClick={() =>  this.goCompany("tuba","B&S3100")} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={BS5100Photo} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
-        <td><img src={MRPFPhoto} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={BS5100Photo} onClick={() => this.goCompany("tuba","B&S5100")} className="tubaImage"/></td>
+        <td><img src={MRPFPhoto} onClick={() =>  this.goCompany("tuba","B&SMRPF")} className="tubaImage"/></td>
         </tr>
         </tbody>
         </table>

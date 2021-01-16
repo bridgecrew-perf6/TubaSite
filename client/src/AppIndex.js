@@ -104,7 +104,7 @@ class AppIndex extends Component {
             <PrivateRoute exact path="/PerantucciPage" component={PerantucciCompanyPage} />
             <PrivateRoute exact path="/BachPage" component={BachCompanyPage} />
             <PrivateRoute exact path="/DenisWickPage" component={DenisWickCompanyPage} />
-            <Route path="/product/:type/:name" component={ProductPage} />
+            <PrivateRoute path="/product/:type/:name" component={ProductPage} />
             </Switch>
             </div>
             { this.props.auth.isAuthenticated? <Bottombar />:null}
