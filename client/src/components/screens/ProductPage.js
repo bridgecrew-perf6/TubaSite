@@ -10,8 +10,15 @@ import x from '../Images/Tubas/BaS/BbTuba/bsgr55_full.png';
 class ProductPage extends Component {
     constructor(props) {
       super(props);
-      console.log(props);
-      this.state = { params: props.match.params};
+      console.log(props.match.params.name);
+      const x =  mapping.get(props.match.params.name);
+      this.state = { 
+        params: props.match.params, 
+        details: x,
+        isPreviousReview:false
+
+      };
+      
     }
     
     
@@ -19,36 +26,28 @@ class ProductPage extends Component {
       const { user } = this.props.auth;
        return (
         <div  style={{textAlign: "center"}}>
-        <br></br>
-        <div className="topTableSection">
-        <h4 >BaS</h4>
-        <hr></hr>
-        </div>
-        <p>
-           {this.state.params.name}
-           {this.state.params.type} 
-        </p>
         <div class="split left">
-        <h2 >{this.state.params.name}</h2>
+        <h2 style={{  textDecoration: "underline"}}>{ this.state.details[0]}</h2>
           <div style={{alignItems:"center"}}>
-            <img src ={mapping.get(this.state.params.name)} className="tubaDisplayImage"></img>
+         
           </div>
           <div style={{alignItems:"center",textAlign:"center"}}>
+          <img src ={this.state.details[1]} className="tubaDisplayImage"></img>
           </div>
           <div style={{alignItems:"center"}}>
-          <table>
-          <td>
-          <tr>Rating:</tr>
-          <tr>Bell Size:</tr>
+          <table >
+          <tbody>
+          <td style={{textAlign:"left"}}>
+          <tr>Rating: 0</tr>
+          <tr>Key: {this.state.details[4]}</tr>
           </td>
-          <td>
-          <tr>Company:</tr>
-          <tr>Key:</tr>
+          <td style={{textAlign:"left"}}>
+          <tr>Company: {this.state.details[2]}</tr>
+          <tr>Bell Size: {this.state.details[3]} </tr>
+          
           </td>
-
+          </tbody>
           </table>
-          <p>Company:</p>
-          <p>Bell Size:</p>
           </div>
           
           
@@ -57,32 +56,13 @@ class ProductPage extends Component {
 
         <div class="split right">
         <h2 >Review</h2>
-          <div style={{position:"relative"}}>
+        {this.state.isPreviousReview? null:
+          <div className="centered">
             
-            <p>Some text here too.</p>
-            <p>Some text here too.</p>
-
-             <p>Some text here too.</p>
-             useDebugValue( <p>Some text here too.</p>
-             v
-             <p>Some text here too.</p>
-             <p>Some text here too.</p>
-             <p>Some text here too.</p>
-             <p>Some text here too.</p>
-             <p>Some text here too.</p>)
-             <p>Some text here too.</p>
-              <p>Some text here too.</p> <p>Some text here too.</p>
-              <p>Some text here too.</p>
-
-               <p>Some text here too.</p>v
-               v
-               <p>Some text here too.</p>
-               v
-               v
-               <p>Some text here too.</p>
-
-             <p>Some text here too.</p>
+            <h3>No Previous Review</h3>
+            
           </div>
+    }
         </div>
         </div>
       );
