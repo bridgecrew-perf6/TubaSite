@@ -6,9 +6,14 @@ import "../../stylesheet.css";
 import mapping from "../layout/HashmapItem";
 import {postReview,getAllReviews} from "../../redux/actions/reviewActions";
 import TubaSidebar from "../layout/TubaDescriptionSidebar";
+import ratingLogo from "../Images/Logos/rating.svg";
+import keyLogo from "../Images/Logos/musical-note.svg";
+import companyLogo from "../Images/Logos/building.svg";
+import bellLogo from "../Images/Logos/size.svg";
 
 var bigData ="";
 var comment=[];
+var fetchedData =false;
 class ProductPage extends Component {
     constructor(props) {
       super(props);
@@ -22,32 +27,40 @@ class ProductPage extends Component {
         x:''
 
       };
-      this.getSomething();
+     
 
     }
     async getSomething(){
       getAllReviews(this.state.params.name).then(data => { 
-        this.realSetState(data); return}).catch(err => {console.log("Halloworld");console.log(err); return err})
+        this.realSetState(data); fetchedData=true ;return;}).catch(err => {console.log("Halloworld");console.log(err); return err})
       
     };
      realSetState(data){
-      console.log("afenb");
-       console.log(data);
-      bigData =data;
-      console.log(bigData);
-      if(bigData!=null){
-        for(var i =0;i<bigData.length/2;i++){
-          console.log("Here");
-          console.log(bigData.length);
-          var x=bigData[i];
-          console.log(x);
-          comment.push([x.author,x.comment,x.createdAt]);
-        }
-        console.log("hihi");
-        console.log(comment);
-        console.log(comment.length);
+       if(fetchedData==false){
+        console.log("afenb");
+        console.log(data);
+       bigData =data;
+       console.log(bigData);
+       if(bigData!=null){
+         for(var i =0;i<bigData.length;i++){
+           console.log("Here");
+           console.log(bigData.length);
+           var x=bigData[i];
+           console.log(x);
+           comment.push([x.author,x.comment,x.createdAt]);
+         }
+         console.log("hihi");
+         console.log(comment);
+         console.log(comment.length);
+         this.setState({reviewData: comment.length})
+
+       }
+      
       }
       //this.setState({reviewData:"afd"})
+    }
+    componentDidMount() {
+      this.getSomething();
     }
     openNav() {
       console.log("HERE");
@@ -96,12 +109,17 @@ class ProductPage extends Component {
         <div id="myTubaSidebar" className="tubaSidebar">
         <br></br>
         <a href="#">
+        <div><img  src={ratingLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
         <div>Rating: 0</div></a>
         <a href="#">
+        <div><img  src={keyLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
         <div>Key: {this.state.details[4]}</div></a>
-        <a href="/dashboard">
+        <a href="#">
+        <div><img  src={companyLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>  
         <div>Company: {this.state.details[2]}</div></a>
         <a href="#"onClick={this.onLogoutClick}>
+        <div><img  src={bellLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>  
+
         <div>Bell Size: {this.state.details[3]}</div></a>
         </div>
         </TubaSidebar></div>
@@ -111,7 +129,6 @@ class ProductPage extends Component {
           <div style={{alignItems:"center",marginTop:"8%"}}>
           <img src ={this.state.details[1]} className="tubaDisplayImage"></img>
             
-        
           </div>
           
           

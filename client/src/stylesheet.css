@@ -367,6 +367,12 @@ body.welcome {
   background-color: darkgoldenrod;
 }
 
+.NewNavDescriptionLogo{
+  width:60%;
+  border-radius: 40%;
+  background-color: lightgray;
+}
+
 .tubaDisplayImage{
 
   width: 40%;

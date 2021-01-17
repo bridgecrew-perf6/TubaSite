@@ -26,6 +26,9 @@ class MiraphoneCompanyPage extends Component {
       this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
   }
     
+  goIndividualPage(type,name){
+    this.props.history.push({pathname: "product/"+type+"/"+name });
+  }
   render() {
       const { user } = this.props.auth;
        return (
@@ -56,8 +59,8 @@ class MiraphoneCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={Photo1291}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-          <td><img src={Photo9000} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={Photo1291}  onClick={() => this.goIndividualPage("tuba","M1291")} className="tubaImage"/></td>
+          <td><img src={Photo9000} onClick={() => this.goIndividualPage("tuba","M9000")}className="tubaImage"/></td>
         </tr>
         </tbody>
         </table>
@@ -71,11 +74,11 @@ class MiraphoneCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={Photo88} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td><img src={Photo291} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={Photo88} onClick={() => this.goIndividualPage("tuba","M88")} className="tubaImage"/></td>
+        <td><img src={Photo291} onClick={() => this.goIndividualPage("tuba","M291")}className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={Photo1293} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={Photo1293} onClick={() => this.goIndividualPage("tuba","M1293")} className="tubaImage"/></td>
         </tr></tbody>
         </table>
         </div>
@@ -87,13 +90,13 @@ class MiraphoneCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={Photo181} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td><img src={Photo281} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={Photo181} onClick={() => this.goIndividualPage("tuba","M181")}className="tubaImage"/></td>
+        <td><img src={Photo281} onClick={() => this.goIndividualPage("tuba","M281")} className="tubaImage"/></td>
         </tr>
         
         <tr>
-        <td><img src={Photo481} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
-        <td><img src={Photo1281} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={Photo481} onClick={() => this.goIndividualPage("tuba","M481")} className="tubaImage"/></td>
+        <td><img src={Photo1281} onClick={() => this.goIndividualPage("tuba","M1281")}className="tubaImage"/></td>
         </tr></tbody>
         </table>
         </div>
@@ -106,7 +109,7 @@ class MiraphoneCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={Photo7050}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+        <td><img src={Photo7050}  onClick={() => this.goIndividualPage("tuba","M7050")} className="tubaImage"/></td>
         <td class="NullTdClass"></td>
         </tr></tbody>
         </table>

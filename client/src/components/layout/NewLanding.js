@@ -10,12 +10,7 @@ import backgroundImage3 from "../Images/HomeBackgroundImages/samuel-ramos-Md8c-a
 import BackgroundSlideshow from 'react-background-slideshow';
 
 class NewLanding extends Component {
-  componentDidMount() {
-    // If logged in and user navigates to Login page, should redirect them to dashboard
-    if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
-    }
-  }
+  
   constructor(props) {
     super(props);
     this.state = {

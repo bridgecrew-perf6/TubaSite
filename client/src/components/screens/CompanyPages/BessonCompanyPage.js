@@ -20,6 +20,9 @@ class BessonCompanyPage extends Component {
     goCompany(name){
       this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
   }
+  goIndividualPage(type,name){
+    this.props.history.push({pathname: "product/"+type+"/"+name });
+  }
     
   render() {
       const { user } = this.props.auth;
@@ -49,7 +52,7 @@ class BessonCompanyPage extends Component {
         <br></br>
         <table className = "tubaTable"><tbody>
         <tr>
-        <td><img src={PhotoBb994}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+        <td><img src={PhotoBb994}  onClick={() => this.goIndividualPage("tuba","B994")} className="tubaImage"/></td>
           <td className="NullTdClass"></td>
         </tr></tbody>
         
@@ -69,8 +72,8 @@ class BessonCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoEb980}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td><img src={PhotoEb983}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+        <td><img src={PhotoEb980}  onClick={() =>  this.goIndividualPage("tuba","B980")} className="tubaImage"/></td>
+        <td><img src={PhotoEb983}  onClick={() => this.goIndividualPage("tuba","B983")} className="tubaImage"/></td>
 
         </tr></tbody>
         </table>

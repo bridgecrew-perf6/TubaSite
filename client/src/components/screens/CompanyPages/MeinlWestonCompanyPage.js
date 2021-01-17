@@ -30,6 +30,9 @@ class MeinlWestonCompanyPage extends Component {
     goCompany(name){
       this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
   }
+  goIndividualPage(type,name){
+    this.props.history.push({pathname: "product/"+type+"/"+name });
+  }
     
   render() {
       const { user } = this.props.auth;
@@ -62,13 +65,13 @@ class MeinlWestonCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoBb195}  onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-          <td><img src={PhotoBb196} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={PhotoBb195}  onClick={() => this.goIndividualPage("tuba","MW195")} className="tubaImage"/></td>
+          <td><img src={PhotoBb196} onClick={() => this.goIndividualPage("tuba","MW196")}  className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoBb197} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={PhotoBb197} onClick={() => this.goIndividualPage("tuba","MW197")} className="tubaImage"/></td>
         
-        <td><img src={PhotoBb2011} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={PhotoBb2011} onClick={() => this.goIndividualPage("tuba","MW2011")} className="tubaImage"/></td>
         </tr>
         </tbody>
         </table>
@@ -82,16 +85,16 @@ class MeinlWestonCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoC3225} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td><img src={PhotoC6450} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={PhotoC3225} onClick={() => this.goIndividualPage("tuba","MW3225")} className="tubaImage"/></td>
+        <td><img src={PhotoC6450} onClick={() => this.goIndividualPage("tuba","MW6450")} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoC3450} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td><img src={PhotoC5450P} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={PhotoC3450} onClick={() => this.goIndividualPage("tuba","MW3450")} className="tubaImage"/></td>
+        <td><img src={PhotoC5450P} onClick={() => this.goIndividualPage("tuba","MW5450P")} className="tubaImage"/></td>
         </tr>
         <tr>
         
-        <td><img src={PhotoC5450R} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+        <td><img src={PhotoC5450R} onClick={() => this.goIndividualPage("tuba","MW5450R")} className="tubaImage"/></td>
         
         </tr>
         </tbody>
@@ -105,15 +108,15 @@ class MeinlWestonCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoF4250} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td><img src={PhotoF45} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={PhotoF4250} onClick={() => this.goIndividualPage("tuba","MW4250")}  className="tubaImage"/></td>
+        <td><img src={PhotoF45} onClick={() => this.goIndividualPage("tuba","MW45")}  className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoF182} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
-        <td><img src={PhotoF2250} onClick={() => this.goCompany("BaS")} className="tubaImage"/></td>
+        <td><img src={PhotoF182} onClick={() => this.goIndividualPage("tuba","MW182")}  className="tubaImage"/></td>
+        <td><img src={PhotoF2250} onClick={() => this.goIndividualPage("tuba","MW2250")}  className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoF6460} onClick={() => this.goCompany("Miraphone")} className="tubaImage"/></td>
+        <td><img src={PhotoF6460} onClick={() => this.goIndividualPage("tuba","MW6460")}  className="tubaImage"/></td>
         
         </tr>
         </tbody>
