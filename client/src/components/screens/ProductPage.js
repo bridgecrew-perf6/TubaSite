@@ -10,6 +10,9 @@ import ratingLogo from "../Images/Logos/rating.svg";
 import keyLogo from "../Images/Logos/musical-note.svg";
 import companyLogo from "../Images/Logos/building.svg";
 import bellLogo from "../Images/Logos/size.svg";
+import  CommentSection from "../layout/commentSection";
+import CommentDisplaySection from "../layout/displayCommentSection";
+
 
 var bigData ="";
 var comment=[];
@@ -67,34 +70,6 @@ class ProductPage extends Component {
       document.getElementById("myTubaSidebar").style.width = "13%";
      
     }
-    /*
-     something = async ()=> {
-      //const x = await getAllReviews("B&SGR55");
-      var x = "";
-      x =  await getAllReviews("B&SGR55",this.state);
-      setTimeout(function() {
-        console.log('hello');
-        console.log(this.state.data);
-        
-      }, 1000);
-      this.setState({reveiewData:x})
-      
-
-      console.log(this.state.data);
-
-    }*/
-    
-    /*
-     fetch =  function (productReview){return new Promise((resolve, reject) => {
-      // ... make request
-      const x = await getAllReviews(productReview);
-      if(x!=null){
-        resolve(x);
-      }else{
-        reject("Error");
-      }
-    })};*/
-
     
     
     
@@ -123,30 +98,32 @@ class ProductPage extends Component {
         <div>Bell Size: {this.state.details[3]}</div></a>
         </div>
         </TubaSidebar></div>
-        <div  style={{textAlign: "center"}}>
-        <div className="split left">
-        <h2 style={{  textDecoration: "underline"}}>{ this.state.details[0]}</h2>
+
+
+        <div class="main-container">
+    <div class="left-container">
+    <h2 style={{  textDecoration: "underline"}}>{ this.state.details[0]}</h2>
           <div style={{alignItems:"center",marginTop:"8%"}}>
           <img src ={this.state.details[1]} className="tubaDisplayImage"></img>
             
           </div>
-          
-          
 
-        </div>
+      
+      </div>
+    <div class="right-container">
+        <div class="half-container1">
+        <h2 style={{marginBottom:"0.5%"}} >Review</h2><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
+          <CommentDisplaySection/>
+         </div>
+         <div class="half-container2">
+         <h3 style={{marginBottom:"0.5%"}}>Your Review</h3><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
 
-        <div className="split right">
-        <h2 >Review</h2>
-        {this.state.isPreviousReview? null:
-          <div className="centered">
-            
-            <h3>No Previous Review {this.state.reviewData}</h3>
-            <h2></h2>
-            
-          </div>
-    }
-        </div>
-        </div>
+        <CommentSection/>
+         </div>
+        
+    </div>
+</div>
+       
         </div>
       );
     }
@@ -176,4 +153,21 @@ export default connect(
           
           </tr>
           </tbody>
-          </table>*/
+          </table>
+          
+          
+          
+          
+          {this.state.isPreviousReview? null:
+          <div className="centered">
+            
+            <h3>No Previous Review {this.state.reviewData}</h3>
+            <h2></h2>
+            
+          </div>
+    }
+          
+          
+          
+          
+          */
