@@ -31,8 +31,10 @@ import ProductPage from  "./components/screens/ProductPage";
 
 
 
+
 import HomePage from  "./components/screens/homepage";
 import "./stylesheet.css";
+import history from "./history";
 
 class AppIndex extends Component {
   constructor(props) {
@@ -59,12 +61,13 @@ class AppIndex extends Component {
     console.log("Not quite");
     document.getElementById("mySidebar").style.width = "0";
   }
+  
 
 
   render() {
     return (
         <div>
-        <Router>
+        <Router history={history}>
           <div   >
 
             { this.props.auth.isAuthenticated?
@@ -106,7 +109,7 @@ class AppIndex extends Component {
             <PrivateRoute exact path="/PerantucciPage" component={PerantucciCompanyPage} />
             <PrivateRoute exact path="/BachPage" component={BachCompanyPage} />
             <PrivateRoute exact path="/DenisWickPage" component={DenisWickCompanyPage} />
-            <PrivateRoute path="/product/:type/:name" component={ProductPage} />
+            <PrivateRoute exact path="/product/:type/:name" component={ProductPage} />
             </Switch>
             </div>
             { this.props.auth.isAuthenticated? <Bottombar />:null}
@@ -128,3 +131,11 @@ AppIndex.propTypes = {
     mapStateToProps,
     { logoutUser }
   )(AppIndex);
+
+
+
+  //render={({ match }) => <ProductPage key={match.params.product || 'empty'} />}
+  /*<PrivateRoute exact path="/product/:type/:name" 
+            render={() =>{ return( <DenisWickCompanyPage/>)}}
+            <Route  path="/product/:type/:name"  render={( match ) => {return (<ProductPage {...match} />)}} />
+            />*/

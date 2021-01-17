@@ -12,7 +12,8 @@ import BS3099Photo from '../../Images/Tubas/BaS/FTuba/3099_full.jpeg';
 import BS3100Photo from '../../Images/Tubas/BaS/FTuba/3100wgj-l.jpg';
 import BS5100Photo from '../../Images/Tubas/BaS/FTuba/bs5100w_full-1.jpg';
 import MRPFPhoto from '../../Images/Tubas/BaS/FTuba/bsmrpf_full.png';
-import "../../../stylesheet.css"
+import "../../../stylesheet.css";
+import { Redirect } from 'react-router';
 
 
 
@@ -24,12 +25,22 @@ class BaSCompanyPage extends Component {
     }
     goCompany(name){
       this.props.history.push({pathname: "BaScompanyPage"});
+      this.props.history.go(0);
     }
-    
+    /*
+    return  <Redirect to={this.state.redirect} />;
+      //this.props.history.push({pathname: "BaScompanyPage"});
+      this.props.history.go(0);
+     */
     goCompany(type,name){
-      this.props.history.push({pathname: "product/"+type+"/"+name });
+      this.props.history.push({pathname: "product/"+type+"/"+name , state: { detail: name}});
+      this.props.history.go(0);
     }
-
+    /*
+    goCompany(type,name){
+      const path = "product/"+type+"/"+name ;
+      return <Redirect to={path}/>;
+    }*/
   render() {
       const { user } = this.props.auth;
        return (

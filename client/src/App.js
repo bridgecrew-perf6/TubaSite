@@ -7,6 +7,8 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 
 import AppIndex from "./AppIndex";
+
+
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth

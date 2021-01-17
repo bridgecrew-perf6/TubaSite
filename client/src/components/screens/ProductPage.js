@@ -29,13 +29,22 @@ class ProductPage extends Component {
         details: x,
         isPreviousReview:false,
         reviewData: "avs",
-        x:''
+        x:'',
+        commentStorage:[]
 
       };
-     
 
     }
-    async getSomething(){
+    componentDidMount() {
+      this.fetchData();
+    }
+    componentDidUpdate() {
+    console.log("WHYO")
+        this.fetchData();
+      
+        
+    }
+    async fetchData(){
       getAllReviews(this.state.params.name).then(data => { 
         this.realSetState(data); fetchedData=true ;return;}).catch(err => {console.log("Halloworld");console.log(err); return err})
       
@@ -45,28 +54,20 @@ class ProductPage extends Component {
         console.log("afenb");
         console.log(data);
        bigData =data;
-       console.log(bigData);
        if(bigData!=null){
          for(var i =0;i<bigData.length;i++){
-           console.log("Here");
-           console.log(bigData.length);
            var x=bigData[i];
-           console.log(x);
            comment.push([x.author,x.comment,x.createdAt]);
          }
-         console.log("hihi");
-         console.log(comment);
-         console.log(comment.length);
+         //console.log(comment);
+         //console.log(comment.length);
          this.setState({reviewData: comment.length})
 
        }
       
       }
-      //this.setState({reviewData:"afd"})
     }
-    componentDidMount() {
-      this.getSomething();
-    }
+    
     openNav() {
       console.log("HERE");
       document.getElementById("myTubaSidebar").style.width = "13%";
@@ -79,7 +80,7 @@ class ProductPage extends Component {
       const { user } = this.props.auth;
        return (
          
-         <div>
+        <div onLoad={() => this.fetchData()}>
         <div style={{alignContent:"center",alignItems:"center"}}>
         <button className="openbtn" style={{left:"1%"}} onClick={this.openNav}>></button> 
         <TubaSidebar>
@@ -116,7 +117,17 @@ class ProductPage extends Component {
               <div class="half-container1">
               <h2 style={{marginBottom:"0.5%"}} >Review</h2><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
                 <CommentDisplaySection>
-                  <CommentBox  author={"Liang"} rating = {1} comment={"Issac"}/>
+                  {
+                    
+                    console.log("ehere"),
+                    console.log(comment),
+                    //this.state.commentStorage
+
+                    (comment.length!=0)?
+                    comment.map((message) =>  <CommentBox  author={message[0]} rating = {1} comment={message[1]}/>)
+                    :null
+                  }
+                 
                 </CommentDisplaySection>
               </div>
               <div class="half-container2">

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../../stylesheet.css"
-import ReactStars from "react-rating-stars-component";
 
 class CommentSection extends Component {
     constructor(props) {
