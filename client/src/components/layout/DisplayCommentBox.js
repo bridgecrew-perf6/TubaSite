@@ -7,8 +7,9 @@ export default class DisplayCommentBox extends Component {
       return( 
           <div>
               <div className="boxed">
-                Author:{this.props.author} <br/>
-                Rating: <div style={{marginBottom:"2%"}}><ReactStars
+              
+               <div style={{marginBottom:"2px"}}>
+                <ReactStars
                 count={5}
                 edit={ false}
                 value=  {this.props.rating}
@@ -16,8 +17,10 @@ export default class DisplayCommentBox extends Component {
                 size={20}
                 activeColor="#ffd700"
                 
-            /></div><br/>
+                
+            /></div>
                 Comment: {this.props.comment}<br/>
+                Author:      {this.props.author} 
                 
               </div>
 
