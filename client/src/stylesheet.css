@@ -513,8 +513,8 @@ textarea{
   background-color:white;
   border-color: black;
   height: 10rem;
-  border-radius: 2px;
   font-size: 18px;
+  border-radius: 6px;
   
 }
 .center-col {
@@ -523,6 +523,19 @@ textarea{
   overflow-y: scroll;
   min-height: 45vh;
   max-height: 45vh;
+  padding:1%;
+  border-radius: 6px;
+  
+}
+
+.boxed {
+
+  border: 2px solid white ;
+  background-color: white ;
+  border-radius: 6px;
+  margin-top: 1.5%;
+  padding:0.5%;
+  text-align: left;
 }
 
 

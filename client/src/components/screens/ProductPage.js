@@ -12,6 +12,8 @@ import companyLogo from "../Images/Logos/building.svg";
 import bellLogo from "../Images/Logos/size.svg";
 import  CommentSection from "../layout/commentSection";
 import CommentDisplaySection from "../layout/displayCommentSection";
+import CommentBox from "../layout/DisplayCommentBox";
+
 
 
 var bigData ="";
@@ -101,24 +103,26 @@ class ProductPage extends Component {
 
 
         <div class="main-container">
-    <div class="left-container">
-    <h2 style={{  textDecoration: "underline"}}>{ this.state.details[0]}</h2>
-          <div style={{alignItems:"center",marginTop:"8%"}}>
-          <img src ={this.state.details[1]} className="tubaDisplayImage"></img>
+          <div class="left-container">
+          <h2 style={{  textDecoration: "underline"}}>{ this.state.details[0]}</h2>
+                <div style={{alignItems:"center",marginTop:"8%"}}>
+                <img src ={this.state.details[1]} className="tubaDisplayImage"></img>
+                  
+                </div>
+
             
-          </div>
+            </div>
+          <div class="right-container">
+              <div class="half-container1">
+              <h2 style={{marginBottom:"0.5%"}} >Review</h2><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
+                <CommentDisplaySection>
+                  <CommentBox  author={"Liang"} rating = {1} comment={"Issac"}/>
+                </CommentDisplaySection>
+              </div>
+              <div class="half-container2">
+              <h3 style={{marginBottom:"0.5%"}}>Your Review</h3><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
 
-      
-      </div>
-    <div class="right-container">
-        <div class="half-container1">
-        <h2 style={{marginBottom:"0.5%"}} >Review</h2><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
-          <CommentDisplaySection/>
-         </div>
-         <div class="half-container2">
-         <h3 style={{marginBottom:"0.5%"}}>Your Review</h3><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
-
-        <CommentSection/>
+              <CommentSection/>
          </div>
         
     </div>
