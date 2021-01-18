@@ -7,7 +7,9 @@ class CommentSection extends Component {
   constructor(props) {
     super(props);
     this.state={
-      showButton :false
+      showButton :false,
+      model: props.model,
+      user: props.user
     };
   }
   ratingChanged = (newRating) => {
@@ -16,17 +18,17 @@ class CommentSection extends Component {
   handleChange= (event) => {
     this.setState({comment :event.target.value});
   }
-  async postReview(model,data){
+  async postNewReview(model,data){
     postReview(model,data);
     
   };
   submit= (event) =>{
     if(this.state.rating && this.state.comment){
-      
-      this.postReview("B&SGR51",
+     
+      this.postNewReview(this.state.model,
       {
         "comment": this.state.comment,
-        "author":"ABC",
+        "author": this.state.user,
         "rating":this.state.rating
       }
       );
@@ -45,8 +47,11 @@ class CommentSection extends Component {
     render() {
       
       return (
+
+
           
         <div style={{backgroundColor:"#aaa",borderRadius:"6px",padding:"5px"}}>
+             { console.log('This will run after 1 second!',this.state.model,this.state.user)}
             <div style={{marginBottom:"2%",left:"50%"}}>
               <ReactStars
                 count={5}

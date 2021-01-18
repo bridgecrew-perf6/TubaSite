@@ -78,6 +78,7 @@ class ProductPage extends Component {
     
   render() {
       const { user } = this.props.auth;
+      {console.log("bafeibibf",this.state.params.name," faef ",user.name)}
        return (
          
         <div>
@@ -103,8 +104,8 @@ class ProductPage extends Component {
         </TubaSidebar></div>
 
 
-        <div class="main-container">
-          <div class="left-container">
+        <div className="main-container">
+          <div className="left-container">
           <h2 style={{  textDecoration: "underline"}}>{ this.state.details[0]}</h2>
                 <div style={{alignItems:"center",marginTop:"8%"}}>
                 <img src ={this.state.details[1]} className="tubaDisplayImage"></img>
@@ -113,10 +114,10 @@ class ProductPage extends Component {
 
             
             </div>
-          <div class="right-container">
-              <div class="half-container1">
+          <div className="right-container">
+              <div className="half-container1">
               <h2 style={{marginBottom:"0.5%"}} >Review</h2><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
-                <CommentDisplaySection>
+                <CommentDisplaySection >
                   {
                     
                     console.log("ehere"),
@@ -130,10 +131,10 @@ class ProductPage extends Component {
                  
                 </CommentDisplaySection>
               </div>
-              <div class="half-container2">
+              <div className="half-container2">
               <h3 style={{marginBottom:"0.5%"}}>Your Review</h3><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
 
-              <CommentSection/>
+              <CommentSection user = {user.name} model={this.state.params.name}/>
          </div>
         
     </div>
