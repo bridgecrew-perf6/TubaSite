@@ -522,8 +522,10 @@ textarea{
   overflow: auto;
   min-height: 45vh;
   max-height: 45vh;
-  padding-bottom:12%;
+  
   border-radius: 6px;
+  padding:10px;
+  padding-bottom:12%;
   
 }
 .containerForComments {
@@ -545,6 +547,7 @@ textarea{
   padding:0.5%;
   text-align: left;
   font-size: 18px;
+  
 }
 
 

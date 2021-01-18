@@ -55,7 +55,7 @@ class ProductPage extends Component {
         console.log(data);
        bigData =data;
        if(bigData!=null){
-         for(var i =0;i<bigData.length;i++){
+         for(var i =bigData.length-1;i>-1;i--){
            var x=bigData[i];
            comment.push([x.author,x.comment,x.createdAt]);
          }
@@ -124,7 +124,7 @@ class ProductPage extends Component {
                     //this.state.commentStorage
 
                     (comment.length!=0)?
-                    comment.map((message) =>  <CommentBox  author={message[0]} rating = {1} comment={message[1]}/>)
+                    comment.map((message) =>  <CommentBox  author={message[0]} rating = {1} comment={message[1]} time={message[2]}/>)
                     :<CommentBox/>
                   }
                  

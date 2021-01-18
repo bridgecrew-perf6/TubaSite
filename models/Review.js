@@ -6,7 +6,7 @@ var commentSchema = new Schema({
       type: Number,
       min: 1,
       max: 5,
-      required: false
+      required: true
   },
   comment:  {
       type: String,
