@@ -14,6 +14,7 @@ import BS5100Photo from '../../Images/Tubas/BaS/FTuba/bs5100w_full-1.jpg';
 import MRPFPhoto from '../../Images/Tubas/BaS/FTuba/bsmrpf_full.png';
 import "../../../stylesheet.css";
 import navigator from "../../layout/navigateProduct";
+import navigateCompany from "../../layout/navigateCompany";
 
 
 class BaSCompanyPage extends Component {
@@ -21,10 +22,6 @@ class BaSCompanyPage extends Component {
       super(props);
       console.log(props);
       this.state = {isGR55: true};
-    }
-    goCompany(name){
-      this.props.history.push({pathname: "BaScompanyPage"});
-      this.props.history.go(0);
     }
     
   render() {
@@ -34,14 +31,14 @@ class BaSCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >BaS</h4>
+        <h4 >B&S</h4>
         <hr></hr>
         <table>
           <tbody>
         <tr>
           <td><img 
            src={ BaSLogo} 
-           onClick={() => this.goCompany("tuba")} className="logoImage"/></td>
+           onClick={() =>navigateCompany("B&S")} className="logoImage"/></td>
           <td> <p className="pCompanyDescription">
           Today the company trades as Buffet Crampon Deutschland GmbH and is a world leader in multi-instrument groups. Especially in the two home markets of Germany and France, we are the leader for step-up and professional brass instruments. By fulfilling the highest artistic demands, our instruments have found their way into the famous orchestras in the world. 
             

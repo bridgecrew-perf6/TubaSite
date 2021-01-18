@@ -7,6 +7,7 @@ import PhotoBb994 from '../../Images/Tubas/Besson/BbTuba/be994.jpg';
 import PhotoEb980 from '../../Images/Tubas/Besson/EbTuba/be980.jpg';
 import PhotoEb983 from '../../Images/Tubas/Besson/EbTuba/be983.jpg';
 import navigator from "../../layout/navigateProduct";
+import navigateCompany from "../../layout/navigateCompany";
 
 
 
@@ -19,12 +20,6 @@ class BessonCompanyPage extends Component {
       super(props);
       console.log(props);
     }
-    goCompany(name){
-      this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
-  }
-  goIndividualPage(type,name){
-    this.props.history.push({pathname: "product/"+type+"/"+name });
-  }
     
   render() {
       const { user } = this.props.auth;
@@ -39,7 +34,7 @@ class BessonCompanyPage extends Component {
         <tr>
           <td><img 
            src={ BessonLogo} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+           onClick={() => navigateCompany("Besson")} className="logoImage"/></td>
           <td><p  className="pCompanyDescription">
           In recent years the quality of Besson brass instruments has continued to rise with rigorous testing and quality control. From the raw materials, the skilled techniques of master craftsmen, to the build and finish, each instrument is played and tested by the greatest brass players you will ever hear.
           We do this to provide you with the best instruments money can buy, a quality that endures and retains its value, making it a ‘sound’ investment to help you on your journey as a musician.

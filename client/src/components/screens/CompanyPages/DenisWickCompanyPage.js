@@ -6,6 +6,7 @@ import DenisWickLogo from'../../Images/Company/mouthpeice/dw.png';
 import mouthpeice from'../../Images/Mouthpeice/dw.jpg';
 import navigator from "../../layout/navigateProduct";
 
+import navigateCompany from "../../layout/navigateCompany";
 
 
 import "../../../stylesheet.css"
@@ -17,10 +18,6 @@ class DenisWickCompanyPage extends Component {
       super(props);
       console.log(props);
     }
-    goCompany(name){
-      this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
-  }
-    
   render() {
       const { user } = this.props.auth;
        return (
@@ -35,7 +32,7 @@ class DenisWickCompanyPage extends Component {
         <tr>
           <td><img 
            src={ DenisWickLogo} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+           onClick={() => navigateCompany("DenisWick")} className="logoImage"/></td>
           <td><p  className="pCompanyDescription">
           Denis Wick Products is a British success story and continues to export and innovate, flourishing in the highly competitive world of the music trade.
           The Denis Wick factory in Hamworthy, Dorset employs skilled technicians and craftsmen to create these carefully designed accessories.

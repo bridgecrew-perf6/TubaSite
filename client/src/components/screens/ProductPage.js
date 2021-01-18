@@ -80,9 +80,10 @@ class ProductPage extends Component {
        return (
          
         <div>
+          <button className="openbtn" style={{left:"1%"}} onClick={this.openNav}>></button> 
         {this.state.type=="tuba"?
         <div>
-        <button className="openbtn" style={{left:"1%"}} onClick={this.openNav}>></button> 
+        
         <TubaSidebar>
         <div id="myTubaSidebar" className="tubaSidebar">
         <br></br>
@@ -100,7 +101,22 @@ class ProductPage extends Component {
 
         <div>Bell Size: {this.state.details[3]}</div></a>
         </div>
-        </TubaSidebar></div>:null}
+
+        </TubaSidebar></div>:
+        <div>
+         <TubaSidebar>
+         <div id="myTubaSidebar" className="tubaSidebar">
+         <br></br>
+         <a href="#">
+        <div><img  src={companyLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>  
+        <div>Company: {this.state.details[2]}</div></a>
+
+
+         </div>
+         </TubaSidebar>
+         </div>
+        
+        }
 
 
         <div className="main-container">

@@ -15,6 +15,7 @@ import Photo481 from '../../Images/Tubas/Miraphone/FTuba/481.jpg';
 import Photo1281 from '../../Images/Tubas/Miraphone/FTuba/1281.jpg';
 import "../../../stylesheet.css";
 import navigator from "../../layout/navigateProduct";
+import navigateCompany from "../../layout/navigateCompany";
 
 
 
@@ -24,9 +25,6 @@ class MiraphoneCompanyPage extends Component {
       super(props);
       console.log(props);
     }
-    goCompany(name){
-      this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
-  }
     
   render() {
       const { user } = this.props.auth;
@@ -42,7 +40,7 @@ class MiraphoneCompanyPage extends Component {
         <tr>
           <td><img 
            src={ MiraphoneLogo} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+           onClick={() => navigateCompany("Miraphone")} className="logoImage"/></td>
           <td ><p className="pCompanyDescription">Today Miraphone is one of the biggest instrument manufacturer worldwide. All important decisions are made from within the Cooperative which creates strong identification with the company and highest motivation towards success. 
           In 2016, Miraphone is proud to celebrate its 70th anniversary.
           </p></td>

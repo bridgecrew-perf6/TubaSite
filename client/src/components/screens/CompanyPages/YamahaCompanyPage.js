@@ -15,6 +15,7 @@ import PhotoF822 from '../../Images/Tubas/Yamaha/FTuba/yfb822.jpg';
 
 import "../../../stylesheet.css";
 import navigator from "../../layout/navigateProduct";
+import navigateCompany from "../../layout/navigateCompany";
 
 
 
@@ -42,7 +43,7 @@ class YamahaCompanyPage extends Component {
         <tr>
           <td><img 
            src={ YamahaLogo}  style={{width:"40%"}}
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+           onClick={() => navigateCompany("Yamaha")} className="logoImage"/></td>
           <td> <p className="pCompanyDescription">
           Yamaha's history began when its founder, Torakusu Yamaha, repaired a broken reed organ in 1887. Shortly thereafter, he successfully completed the first reed organ to be built in Japan.
           Since then, Yamaha has continued to produce high-quality products by blending traditional craftsmanship with advanced digital technology. 

@@ -6,6 +6,7 @@ import BachLogo from'../../Images/Company/mouthpeice/bach.png';
 import mouthpeice from'../../Images/Mouthpeice/bach.jpg';
 import navigator from "../../layout/navigateProduct";
 
+import navigateCompany from "../../layout/navigateCompany";
 
 
 
@@ -18,9 +19,6 @@ class BachCompanyPage extends Component {
       super(props);
       console.log(props);
     }
-    goCompany(name){
-      this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
-  }
     
   render() {
       const { user } = this.props.auth;
@@ -36,7 +34,7 @@ class BachCompanyPage extends Component {
         <tr>
           <td><img 
            src={ BachLogo} style={{width:"55%"}}
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+           onClick={() => navigateCompany("Bach")} className="logoImage"/></td>
           <td><p  className="pCompanyDescription">
           Born Vincent Shrotenbach in Vienna in 1890, he initially received training on violin, but subsequently switched to trumpet when he heard its majestic sound. Although Vincent also displayed a strong aptitude for science and graduated with an engineering degree, he gave up a promising career to pursue his first love and an uncertain future as a musician. Performing under the stage name, Vincent Bach, he established musical success as he toured throughout Europe
             

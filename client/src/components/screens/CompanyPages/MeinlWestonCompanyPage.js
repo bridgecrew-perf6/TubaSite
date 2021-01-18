@@ -18,6 +18,7 @@ import PhotoF182 from '../../Images/Tubas/MW/FTuba/mw182_full.png';
 import PhotoF2250 from '../../Images/Tubas/MW/FTuba/mw2250_full.png';
 import PhotoF6460 from '../../Images/Tubas/MW/FTuba/mw6460_full.png';
 import navigator from "../../layout/navigateProduct";
+import navigateCompany from "../../layout/navigateCompany";
 
 
 import "../../../stylesheet.css"
@@ -29,9 +30,6 @@ class MeinlWestonCompanyPage extends Component {
       super(props);
       console.log(props);
     }
-    goCompany(name){
-      this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
-  }
     
   render() {
       const { user } = this.props.auth;
@@ -47,7 +45,7 @@ class MeinlWestonCompanyPage extends Component {
         <tr>
           <td><img 
            src={ MeinlWestonLogo} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+           onClick={() => navigateCompany("MeinlWeston")} className="logoImage"/></td>
           <td><p className="pCompanyDescription">
           Meinl-Weston Tubas have been the benchmark of German craftsmanship for decades.
           For 7 generations, the Meinl-Langhammer family devoted their work to gain the best manufacturing experience, meticulous workmanship, continuous research and development as well as personal dedication to quality.
