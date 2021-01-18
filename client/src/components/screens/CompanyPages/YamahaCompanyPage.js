@@ -66,7 +66,6 @@ class YamahaCompanyPage extends Component {
         </tr>
         <tr>
         <td><img src={PhotoBb841} onClick={() => navigator("tuba","Y841",this.props.history)} className="tubaImageYamaha"/></td>
-        <td></td>
         </tr>
         </tbody>
         </table>

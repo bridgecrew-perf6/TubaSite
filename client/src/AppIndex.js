@@ -18,12 +18,13 @@ import BachCompanyPage from  "./components/screens/CompanyPages/BachCompanyPage"
 import DenisWickCompanyPage from  "./components/screens/CompanyPages/DenisWickCompanyPage";
 import Sidebar from "./components/layout/Sidebar";
 import NewLanding from "./components/layout/NewLanding";
-import NotLoggedInBottomBar from "./components/layout/NotLoggedInBottomBar";
 import aboutLogo from "./components/Images/Logos/about.svg";
 import rankLogo from "./components/Images/Logos/rank.svg";
 import homeLogo from "./components/Images/Logos/home.svg";
 import logoutLogo from "./components/Images/Logos/logout.svg";
 import ProductPage from  "./components/screens/ProductPage";
+import AboutPage from "./components/screens/AboutPage";
+
 
 
 
@@ -43,9 +44,7 @@ class AppIndex extends Component {
   }
   
 
-  componentWillMount(){
-    this.setState({height: window.innerHeight + 'px'});
-  }
+  
   onLogoutClick = e => {
     e.preventDefault();
     this.props.logoutUser();
@@ -82,7 +81,7 @@ class AppIndex extends Component {
             <a href="#">
             <div><img  src={rankLogo} className="NavDescriptionLogo"/></div>
             <div>Ranking</div></a>
-            <a href="#">
+            <a href="/about" >
             <div><img  src={aboutLogo} className="NavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
             <div>About</div></a>
             <a href="#"onClick={this.onLogoutClick}>
@@ -99,6 +98,7 @@ class AppIndex extends Component {
             <Route exact path="/" component={NewLanding} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/about" component={AboutPage} />
             <Switch>
             <PrivateRoute exact path="/dashboard" component={HomePage} />
             <PrivateRoute exact path="/BaSPage" component={BaSCompanyPage} />

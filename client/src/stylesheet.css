@@ -76,6 +76,7 @@ a:active {
 }
 hr {
   width: 80%;
+  border-color:darkgoldenrod;
 }
 h4{
   margin-top: 1%;
@@ -90,6 +91,12 @@ table{
   margin-left: auto;
   margin-right: auto;
   font-size: 34px;
+}
+.hrForAbout{
+  width: 75%;
+  height:3px;
+  border: 0 none;
+  background-color:darkgoldenrod;
 }
 
 tr{
@@ -152,7 +159,7 @@ td:focus-within {
   width: 45%;
 }
 .tubaImageYamaha{
-  width: 65%;
+  width: 70%;
 
 }
 
@@ -482,9 +489,9 @@ body.welcome {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-left: 5px solid silver;
-  border-top: 5px solid silver;
-  border-bottom:  5px solid silver;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom:  5px solid black;
 }
 .right-container {
   flex: 0 1 50%;
@@ -496,9 +503,9 @@ body.welcome {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-right: 5px solid silver;
-  border-top: 5px solid silver;
-  border-bottom:  5px solid silver;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom:  5px solid black;
   
 }
 .half-container1 {
@@ -531,16 +538,17 @@ textarea{
 .center-col {
   flex: 1;
   background: #aaa;
-  overflow: auto;
+  overflow: scroll;
   min-height: 45vh;
   max-height: 45vh;
-  
   border-radius: 6px;
   padding:10px;
   padding-bottom:12%;
+  border:3px solid black;
   
 }
 .containerForComments {
+  
   box-sizing: padding-box;
   -moz-box-sizing: padding-box;
   -webkit-box-sizing: padding-box;
@@ -570,4 +578,13 @@ textarea{
   justify-content: center;
 }
 
+.split {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
