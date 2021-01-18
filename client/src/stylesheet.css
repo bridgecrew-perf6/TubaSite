@@ -550,4 +550,12 @@ textarea{
   
 }
 
+.NullTdClass{
+  border : white;
+}
+.alignMouthpeiceNameAndImage{
+  text-align: center;
+  justify-content: center;
+}
+
 

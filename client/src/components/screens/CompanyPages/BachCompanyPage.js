@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
 import BachLogo from'../../Images/Company/mouthpeice/bach.png';
 import mouthpeice from'../../Images/Mouthpeice/bach.jpg';
+import navigator from "../../layout/navigateProduct";
+
 
 
 
@@ -49,12 +51,23 @@ class BachCompanyPage extends Component {
         <br></br>
         <table>
         <tr>
-          <td><img 
+        <td>
+          <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","BCBBb",this.props.history)} >
+          <div><img 
            src={ mouthpeice} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-          <td><img 
+            className="logoImage"/></div>
+           C / BBb 
+           </div>
+           </td>
+        <td>
+          <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","BFEEb",this.props.history)} >
+          <div><img 
            src={ mouthpeice} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+            className="logoImage"/></div>
+           F / EEb 
+           </div>
+           </td>
+
         </tr>
         </table>
         </div>

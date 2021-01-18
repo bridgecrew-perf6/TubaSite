@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
 import DenisWickLogo from'../../Images/Company/mouthpeice/dw.png';
 import mouthpeice from'../../Images/Mouthpeice/dw.jpg';
+import navigator from "../../layout/navigateProduct";
 
 
 
@@ -49,20 +50,27 @@ class DenisWickCompanyPage extends Component {
         <br></br>
         <table>
         <tr>
-          <td><img 
+          <td>
+          <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","DWCBBb",this.props.history)}>
+          <div><img 
            src={ mouthpeice} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-          <td><img 
+            className="logoImage"/></div>
+           C / BBb 
+           </div>
+           </td>
+           <td>
+          <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","DWFEEb",this.props.history)}>
+          <div><img 
            src={ mouthpeice} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+            className="logoImage"/></div>
+           F / EEb 
+           </div>
+           </td>
+
+
         </tr>
         </table>
         </div>
-        
-        
-
-
-
         </div>
         </div>
       );

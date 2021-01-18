@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
 import PTLogo from'../../Images/Company/mouthpeice/pt.jpg';
 import mouthpeice from'../../Images/Mouthpeice/pt.jpg';
+import navigator from "../../layout/navigateProduct";
 
 
 
@@ -47,14 +48,23 @@ class PTCompanyPage extends Component {
         <hr></hr>
         <br></br>
         <table>
-        <tr>
-          <td><img 
+          <td>
+          <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","PTCBBb",this.props.history)} >
+          <div><img 
            src={ mouthpeice} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-          <td><img 
+            className="logoImage"/></div>
+           C / BBb 
+           </div>
+           </td>
+        <td>
+          <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","PTFEEb",this.props.history)} >
+          <div><img 
            src={ mouthpeice} 
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
-        </tr>
+            className="logoImage"/></div>
+           F / EEb 
+           </div>
+           </td>
+        
         </table>
         </div>
         

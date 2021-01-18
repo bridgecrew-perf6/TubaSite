@@ -43,6 +43,10 @@ import PhotoEb321 from '../Images/Tubas/Yamaha/EbTuba/yeb321.jpg';
 import PhotoEb632 from '../Images/Tubas/Yamaha/EbTuba/yeb632.jpg';
 import PhotoF621 from '../Images/Tubas/Yamaha/FTuba/yfb621.jpg';
 import PhotoF822 from '../Images/Tubas/Yamaha/FTuba/yfb822.jpg';
+import dwMouthpeice from'../Images/Mouthpeice/dw.jpg';
+import bachMouthpeice from'../Images/Mouthpeice/bach.jpg';
+import ptMouthpeice from'../Images/Mouthpeice/pt.jpg';
+
 
 //Name,Photo, Company,BellSize,Key
 const mapping = new Map([
@@ -104,6 +108,20 @@ const mapping = new Map([
     ["Y632E",["632",PhotoEb632,"Yamaha",18.898,"EEb"]],
     ["Y621",["621",PhotoF621,"Yamaha",18.898,"F"]],
     ["Y822F",["822",PhotoF822,"Yamaha",18.898,"F"]],
+
+
+    //Denis Wick
+    
+    ["DWCBBb",["C / BBb Mouthepeice",dwMouthpeice,"Denis Wick",0,"0"]],
+    ["DWFEEb",["F / EEb",dwMouthpeice,"Denis Wick",0,"0"]],
+
+    //Bach
+    ["BCBBb",["C / BBb Mouthepeice",bachMouthpeice,"Bach",0,"0"]],
+    ["BFEEb",["F / EEb",bachMouthpeice,"Bach",0,"0"]],
+
+    //PT
+    ["PTCBBb",["C / BBb Mouthepeice",ptMouthpeice,"Perantucci",0,"0"]],
+    ["PTFEEb",["F / EEb",ptMouthpeice,"Perantucci",0,"0"]],
 
 
 

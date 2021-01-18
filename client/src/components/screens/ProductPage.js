@@ -22,9 +22,9 @@ var fetchedData =false;
 class ProductPage extends Component {
     constructor(props) {
       super(props);
-      console.log(props.match.params.type);
       const x =  mapping.get(props.match.params.name);
       this.state = { 
+        type:props.match.params.type,
         params: props.match.params, 
         details: x,
         isPreviousReview:false,
@@ -59,8 +59,6 @@ class ProductPage extends Component {
            var x=bigData[i];
            comment.push([x.author,x.comment,x.createdAt]);
          }
-         //console.log(comment);
-         //console.log(comment.length);
          this.setState({reviewData: comment.length})
 
        }
@@ -82,7 +80,8 @@ class ProductPage extends Component {
        return (
          
         <div>
-        <div style={{alignContent:"center",alignItems:"center"}}>
+        {this.state.type=="tuba"?
+        <div>
         <button className="openbtn" style={{left:"1%"}} onClick={this.openNav}>></button> 
         <TubaSidebar>
         <div id="myTubaSidebar" className="tubaSidebar">
@@ -101,7 +100,7 @@ class ProductPage extends Component {
 
         <div>Bell Size: {this.state.details[3]}</div></a>
         </div>
-        </TubaSidebar></div>
+        </TubaSidebar></div>:null}
 
 
         <div className="main-container">
