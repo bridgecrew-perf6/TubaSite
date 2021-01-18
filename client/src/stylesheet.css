@@ -151,6 +151,10 @@ td:focus-within {
   
   width: 45%;
 }
+.tubaImageYamaha{
+  width: 65%;
+
+}
 
 .main{
   padding-bottom:4%;
@@ -377,6 +381,14 @@ body.welcome {
 .tubaDisplayImage{
 
   width: 40%;
+}
+.tubaDisplayImageYamaha{
+
+  width: 60%;
+}
+.mouthpeiceDisplayImage{
+  margin-top: 10%;
+  width: 50%;
 }
 
 .split {

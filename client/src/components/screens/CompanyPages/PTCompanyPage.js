@@ -17,9 +17,6 @@ class PTCompanyPage extends Component {
       super(props);
       console.log(props);
     }
-    goCompany(name){
-      this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
-  }
     
   render() {
       const { user } = this.props.auth;
@@ -35,7 +32,7 @@ class PTCompanyPage extends Component {
         <tr>
           <td><img 
            src={ PTLogo} style={{width:"40%"}}
-           onClick={() => this.goCompany("BaS")} className="logoImage"/></td>
+           className="logoImage"/></td>
           <td><p  className="pCompanyDescription">
           Mr. Perantoni, Mr. Tucci and their manufacturing staff have spared no effort to provide modern and progressive Euphonium and tuba players suitable tools with which their musical objectives can be readily attained. Perantucci tuba mouthpieces offer the greatest selection of mature, proven designs ever provided.            
           </p></td>
@@ -47,7 +44,7 @@ class PTCompanyPage extends Component {
         <div className="tableSection">
         <hr></hr>
         <br></br>
-        <table>
+        <table  className = "tubaTable">
           <td>
           <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","PTCBBb",this.props.history)} >
           <div><img 

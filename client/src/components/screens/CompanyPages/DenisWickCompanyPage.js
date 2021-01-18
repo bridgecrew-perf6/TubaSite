@@ -45,7 +45,7 @@ class DenisWickCompanyPage extends Component {
         <div className="tableSection">
         <hr></hr>
         <br></br>
-        <table>
+        <table  className = "tubaTable">
         <tr>
           <td>
           <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","DWCBBb",this.props.history)}>

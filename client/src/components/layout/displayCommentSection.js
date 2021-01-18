@@ -8,7 +8,7 @@ class CommentSection extends Component {
     render() {
       return (
         <div className="containerForComments">
-        <div className="center-col">
+        <div className="center-col" >
         {this.props.children}
         </div>
         </div>

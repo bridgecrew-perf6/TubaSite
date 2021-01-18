@@ -100,9 +100,10 @@ class ProductPage extends Component {
         <div><img  src={bellLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>  
 
         <div>Bell Size: {this.state.details[3]}</div></a>
-        </div>
+        </div></TubaSidebar></div>:
 
-        </TubaSidebar></div>:
+
+
         <div>
          <TubaSidebar>
          <div id="myTubaSidebar" className="tubaSidebar">
@@ -110,6 +111,9 @@ class ProductPage extends Component {
          <a href="#">
         <div><img  src={companyLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>  
         <div>Company: {this.state.details[2]}</div></a>
+        <a href="#">
+        <div><img  src={keyLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
+        <div>Key: {this.state.details[4]}</div></a>
 
 
          </div>
@@ -123,8 +127,14 @@ class ProductPage extends Component {
           <div className="left-container">
           <h2 style={{  textDecoration: "underline"}}>{ this.state.details[0]}</h2>
                 <div style={{alignItems:"center",marginTop:"8%"}}>
-                <img src ={this.state.details[1]} className="tubaDisplayImage"></img>
-                  
+                  {
+                    this.state.type=="tuba"?(
+                    this.state.details[2]=="Yamaha"?
+                   <img src ={this.state.details[1]} className="tubaDisplayImageYamaha"></img>:
+                   <img src ={this.state.details[1]} className="tubaDisplayImage"></img>
+                   ):
+                   <img src ={this.state.details[1]} className="mouthpeiceDisplayImage"></img>
+                  }
                 </div>
 
             
@@ -171,34 +181,3 @@ export default connect(
   { logoutUser }
 )(ProductPage);
 
-
-/*  <table className="newTable" style={{position:"fixed",bottom:"0px",border:"black"}}>
-          <tbody style={{border:"black"}}>
-          <tr style={{textAlign:"left"}}>
-          <td>Rating: 0</td>
-          <td>Key: {this.state.details[4]}</td>
-          </tr>
-          <tr style={{textAlign:"left"}}>
-          <td>Company: {this.state.details[2]}</td>
-          <td>Bell Size: {this.state.details[3]} </td>
-          
-          </tr>
-          </tbody>
-          </table>
-          
-          
-          
-          
-          {this.state.isPreviousReview? null:
-          <div className="centered">
-            
-            <h3>No Previous Review {this.state.reviewData}</h3>
-            <h2></h2>
-            
-          </div>
-    }
-          
-          
-          
-          
-          */

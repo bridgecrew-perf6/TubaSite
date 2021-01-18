@@ -50,7 +50,7 @@ class CommentSection extends Component {
 
 
           
-        <div style={{backgroundColor:"#aaa",borderRadius:"6px",padding:"5px"}}>
+        <div style={{backgroundColor:"#aaa",borderRadius:"6px",padding:"5px",border:"3px solid black"}}>
              { console.log('This will run after 1 second!',this.state.model,this.state.user)}
             <div style={{marginBottom:"2%",left:"50%"}}>
               <ReactStars

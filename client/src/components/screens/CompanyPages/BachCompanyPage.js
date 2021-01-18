@@ -47,7 +47,7 @@ class BachCompanyPage extends Component {
         <div className="tableSection">
         <hr></hr>
         <br></br>
-        <table>
+        <table  className = "tubaTable">
         <tr>
         <td>
           <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","BCBBb",this.props.history)} >

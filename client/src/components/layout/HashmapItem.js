@@ -112,16 +112,16 @@ const mapping = new Map([
 
     //Denis Wick
     
-    ["DWCBBb",["C / BBb Mouthpeice",dwMouthpeice,"Denis Wick",0,"0"]],
-    ["DWFEEb",["F / EEb Mouthpeice",dwMouthpeice,"Denis Wick",0,"0"]],
+    ["DWCBBb",["C / BBb Mouthpeice",dwMouthpeice,"Denis Wick",0,"Low"]],
+    ["DWFEEb",["F / EEb Mouthpeice",dwMouthpeice,"Denis Wick",0,"High"]],
 
     //Bach
-    ["BCBBb",["C / BBb Mouthpeice",bachMouthpeice,"Bach",0,"0"]],
-    ["BFEEb",["F / EEb Mouthpeice",bachMouthpeice,"Bach",0,"0"]],
+    ["BCBBb",["C / BBb Mouthpeice",bachMouthpeice,"Bach",0,"Low"]],
+    ["BFEEb",["F / EEb Mouthpeice",bachMouthpeice,"Bach",0,"High"]],
 
     //PT
-    ["PTCBBb",["C / BBb Mouthpeice",ptMouthpeice,"Perantucci",0,"0"]],
-    ["PTFEEb",["F / EEb Mouthpeice",ptMouthpeice,"Perantucci",0,"0"]],
+    ["PTCBBb",["C / BBb Mouthpeice",ptMouthpeice,"Perantucci",0,"Low"]],
+    ["PTFEEb",["F / EEb Mouthpeice",ptMouthpeice,"Perantucci",0,"High"]],
 
 
 
