@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../../stylesheet.css";
 import ReactStars from "react-rating-stars-component";
- 
+import {postReview} from "../../redux/actions/reviewActions"
 
 class CommentSection extends Component {
   constructor(props) {
@@ -16,12 +16,22 @@ class CommentSection extends Component {
   handleChange= (event) => {
     this.setState({comment :event.target.value});
   }
+  async postReview(model,data){
+    postReview(model,data);
+    
+  };
   submit= (event) =>{
     if(this.state.rating && this.state.comment){
       
-      
+      this.postReview("B&SGR51",
+      {
+        "comment": this.state.comment,
+        "author":"ABC",
+        "rating":this.state.rating
+      }
+      );
       console.log("Successfully sent");
-
+      window.location.reload();
     }else{
       this.setState({showButton:true})
       setTimeout(() => {

@@ -105,7 +105,7 @@ dishRouter.route('/comments/:product')
             }, (err) => next(err));
         }
         else {
-            err = new Error('Dish ' + req.params.dishId + ' not found');
+            err = new Error('Dish ' + ' not found');
             err.status = 404;
             return next(err);
         }
