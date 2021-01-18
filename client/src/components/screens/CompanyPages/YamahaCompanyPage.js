@@ -13,7 +13,9 @@ import PhotoEb632 from '../../Images/Tubas/Yamaha/EbTuba/yeb632.jpg';
 import PhotoF621 from '../../Images/Tubas/Yamaha/FTuba/yfb621.jpg';
 import PhotoF822 from '../../Images/Tubas/Yamaha/FTuba/yfb822.jpg';
 
-import "../../../stylesheet.css"
+import "../../../stylesheet.css";
+import navigator from "../../layout/navigateProduct";
+
 
 
 
@@ -24,9 +26,6 @@ class YamahaCompanyPage extends Component {
     }
     goCompany(name){
       this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
-  }
-  goIndividualPage(type,name){
-    this.props.history.push({pathname: "product/"+type+"/"+name });
   }
     
   render() {
@@ -61,11 +60,11 @@ class YamahaCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoBb632}  onClick={() => this.goIndividualPage("tuba","Y632B")} className="tubaImage"/></td>
-          <td><img src={PhotoBb641} onClick={() => this.goIndividualPage("tuba","Y641")} className="tubaImage"/></td>
+        <td><img src={PhotoBb632}  onClick={() => navigator("tuba","Y632B",this.props.history)} className="tubaImage"/></td>
+          <td><img src={PhotoBb641} onClick={() => navigator("tuba","Y641",this.props.history)} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoBb841} onClick={() => this.goIndividualPage("tuba","Y841")} className="tubaImage"/></td>
+        <td><img src={PhotoBb841} onClick={() => navigator("tuba","Y841",this.props.history)} className="tubaImage"/></td>
         <td></td>
         </tr>
         </tbody>
@@ -80,8 +79,8 @@ class YamahaCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoC822} onClick={() => this.goIndividualPage("tuba","Y822C")} className="tubaImage"/></td>
-        <td><img src={PhotoC861} onClick={() => this.goIndividualPage("tuba","Y861")} className="tubaImage"/></td>
+        <td><img src={PhotoC822} onClick={() => navigator("tuba","Y822C",this.props.history)} className="tubaImage"/></td>
+        <td><img src={PhotoC861} onClick={() => navigator("tuba","Y861",this.props.history)} className="tubaImage"/></td>
         </tr>
         </tbody>
         
@@ -95,8 +94,8 @@ class YamahaCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoF621} onClick={() => this.goIndividualPage("tuba","Y621")} className="tubaImage"/></td>
-        <td><img src={PhotoF822} onClick={() => this.goIndividualPage("tuba","Y822F")}className="tubaImage"/></td>
+        <td><img src={PhotoF621} onClick={() => navigator("tuba","Y621",this.props.history)} className="tubaImage"/></td>
+        <td><img src={PhotoF822} onClick={() => navigator("tuba","Y822F",this.props.history)}className="tubaImage"/></td>
         </tr>
         </tbody>
         </table>
@@ -110,8 +109,8 @@ class YamahaCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoEb321}  onClick={() => this.goIndividualPage("tuba","Y321")} className="tubaImage"/></td>
-        <td><img src={PhotoEb632}  onClick={() => this.goIndividualPage("tuba","Y632E")} className="tubaImage"/></td>
+        <td><img src={PhotoEb321}  onClick={() =>navigator("tuba","Y321",this.props.history)} className="tubaImage"/></td>
+        <td><img src={PhotoEb632}  onClick={() => navigator("tuba","Y632E",this.props.history)} className="tubaImage"/></td>
 
         </tr>
         </tbody>

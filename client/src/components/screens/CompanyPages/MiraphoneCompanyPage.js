@@ -13,7 +13,9 @@ import Photo181 from '../../Images/Tubas/Miraphone/FTuba/181.jpg';
 import Photo281 from '../../Images/Tubas/Miraphone/FTuba/281.jpg';
 import Photo481 from '../../Images/Tubas/Miraphone/FTuba/481.jpg';
 import Photo1281 from '../../Images/Tubas/Miraphone/FTuba/1281.jpg';
-import "../../../stylesheet.css"
+import "../../../stylesheet.css";
+import navigator from "../../layout/navigateProduct";
+
 
 
 
@@ -26,9 +28,6 @@ class MiraphoneCompanyPage extends Component {
       this.props.history.push({pathname: "BaScompanyPage", state: {companyName: name} });
   }
     
-  goIndividualPage(type,name){
-    this.props.history.push({pathname: "product/"+type+"/"+name });
-  }
   render() {
       const { user } = this.props.auth;
        return (
@@ -59,8 +58,8 @@ class MiraphoneCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={Photo1291}  onClick={() => this.goIndividualPage("tuba","M1291")} className="tubaImage"/></td>
-          <td><img src={Photo9000} onClick={() => this.goIndividualPage("tuba","M9000")}className="tubaImage"/></td>
+        <td><img src={Photo1291}  onClick={() =>navigator("tuba","M1291",this.props.history)} className="tubaImage"/></td>
+          <td><img src={Photo9000} onClick={() =>navigator("tuba","M9000",this.props.history)}className="tubaImage"/></td>
         </tr>
         </tbody>
         </table>
@@ -74,11 +73,11 @@ class MiraphoneCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={Photo88} onClick={() => this.goIndividualPage("tuba","M88")} className="tubaImage"/></td>
-        <td><img src={Photo291} onClick={() => this.goIndividualPage("tuba","M291")}className="tubaImage"/></td>
+        <td><img src={Photo88} onClick={() => navigator("tuba","M88",this.props.history)} className="tubaImage"/></td>
+        <td><img src={Photo291} onClick={() => navigator("tuba","M291",this.props.history)}className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={Photo1293} onClick={() => this.goIndividualPage("tuba","M1293")} className="tubaImage"/></td>
+        <td><img src={Photo1293} onClick={() => navigator("tuba","M1293",this.props.history)} className="tubaImage"/></td>
         </tr></tbody>
         </table>
         </div>
@@ -90,13 +89,13 @@ class MiraphoneCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={Photo181} onClick={() => this.goIndividualPage("tuba","M181")}className="tubaImage"/></td>
-        <td><img src={Photo281} onClick={() => this.goIndividualPage("tuba","M281")} className="tubaImage"/></td>
+        <td><img src={Photo181} onClick={() =>navigator("tuba","M181",this.props.history)}className="tubaImage"/></td>
+        <td><img src={Photo281} onClick={() => navigator("tuba","M281",this.props.history)} className="tubaImage"/></td>
         </tr>
         
         <tr>
-        <td><img src={Photo481} onClick={() => this.goIndividualPage("tuba","M481")} className="tubaImage"/></td>
-        <td><img src={Photo1281} onClick={() => this.goIndividualPage("tuba","M1281")}className="tubaImage"/></td>
+        <td><img src={Photo481} onClick={() => navigator("tuba","M481",this.props.history)} className="tubaImage"/></td>
+        <td><img src={Photo1281} onClick={() => navigator("tuba","M1281",this.props.history)}className="tubaImage"/></td>
         </tr></tbody>
         </table>
         </div>
@@ -109,7 +108,7 @@ class MiraphoneCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={Photo7050}  onClick={() => this.goIndividualPage("tuba","M7050")} className="tubaImage"/></td>
+        <td><img src={Photo7050}  onClick={() => navigator("tuba","M7050",this.props.history)} className="tubaImage"/></td>
         <td class="NullTdClass"></td>
         </tr></tbody>
         </table>

@@ -22,7 +22,7 @@ var fetchedData =false;
 class ProductPage extends Component {
     constructor(props) {
       super(props);
-      console.log(props.match.params.name);
+      console.log(props.match.params.type);
       const x =  mapping.get(props.match.params.name);
       this.state = { 
         params: props.match.params, 

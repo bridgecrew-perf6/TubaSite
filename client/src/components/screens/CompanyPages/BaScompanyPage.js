@@ -13,8 +13,7 @@ import BS3100Photo from '../../Images/Tubas/BaS/FTuba/3100wgj-l.jpg';
 import BS5100Photo from '../../Images/Tubas/BaS/FTuba/bs5100w_full-1.jpg';
 import MRPFPhoto from '../../Images/Tubas/BaS/FTuba/bsmrpf_full.png';
 import "../../../stylesheet.css";
-import { Redirect } from 'react-router';
-
+import navigator from "../../layout/navigateProduct";
 
 
 class BaSCompanyPage extends Component {
@@ -27,20 +26,7 @@ class BaSCompanyPage extends Component {
       this.props.history.push({pathname: "BaScompanyPage"});
       this.props.history.go(0);
     }
-    /*
-    return  <Redirect to={this.state.redirect} />;
-      //this.props.history.push({pathname: "BaScompanyPage"});
-      this.props.history.go(0);
-     */
-    goCompany(type,name){
-      this.props.history.push({pathname: "product/"+type+"/"+name , state: { detail: name}});
-      this.props.history.go(0);
-    }
-    /*
-    goCompany(type,name){
-      const path = "product/"+type+"/"+name ;
-      return <Redirect to={path}/>;
-    }*/
+    
   render() {
       const { user } = this.props.auth;
        return (
@@ -72,13 +58,9 @@ class BaSCompanyPage extends Component {
         <br></br>
         <table className = "tubaTable">
         <tbody>
-        <tr>
-        <td><img onMouseEnter={(e) =>this.setState({isGR55:false})} 
-           src={GR55Photo} 
-
-           
-           onClick={() => this.goCompany("tuba","B&SGR55")} className="tubaImage"/></td>
-          <td><img src={GR51Photo} onClick={() => this.goCompany("tuba","B&SGR51")} className="tubaImage"/></td>
+        <tr> 
+          <td><img src={GR55Photo}  onClick={() => navigator("tuba","B&SGR55",this.props.history)} className="tubaImage"/></td>
+          <td><img src={GR51Photo} onClick={() => navigator("tuba","B&SGR51",this.props.history)} className="tubaImage"/></td>
         </tr>
         </tbody>
         </table>
@@ -92,11 +74,11 @@ class BaSCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={BS3198Photo} onClick={() => this.goCompany("tuba","B&S3198")} className="tubaImage"/></td>
-        <td><img src={GR41Photo} onClick={() => this.goCompany("tuba","B&SGR41")} className="tubaImage"/></td>
+        <td><img src={BS3198Photo} onClick={() => navigator("tuba","B&S3198",this.props.history)} className="tubaImage"/></td>
+        <td><img src={GR41Photo} onClick={() => navigator("tuba","B&SGR41",this.props.history)} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={MRPCPhoto} onClick={() => this.goCompany("tuba","B&SMRPC")} className="tubaImage"/></td>
+        <td><img src={MRPCPhoto} onClick={() => navigator("tuba","B&SMRPC",this.props.history)} className="tubaImage"/></td>
         </tr>
         </tbody>
         </table>
@@ -109,12 +91,12 @@ class BaSCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={BS3099Photo} onClick={() =>  this.goCompany("tuba","B&S3099")} className="tubaImage"/></td>
-        <td><img src={BS3100Photo} onClick={() =>  this.goCompany("tuba","B&S3100")} className="tubaImage"/></td>
+        <td><img src={BS3099Photo} onClick={() =>  navigator("tuba","B&S3099",this.props.history)} className="tubaImage"/></td>
+        <td><img src={BS3100Photo} onClick={() =>  navigator("tuba","B&S3100",this.props.history)} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={BS5100Photo} onClick={() => this.goCompany("tuba","B&S5100")} className="tubaImage"/></td>
-        <td><img src={MRPFPhoto} onClick={() =>  this.goCompany("tuba","B&SMRPF")} className="tubaImage"/></td>
+        <td><img src={BS5100Photo} onClick={() => navigator("tuba","B&S5100",this.props.history)} className="tubaImage"/></td>
+        <td><img src={MRPFPhoto} onClick={() =>  navigator("tuba","B&SMRPF",this.props.history)} className="tubaImage"/></td>
         </tr>
         </tbody>
         </table>
