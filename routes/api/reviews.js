@@ -92,7 +92,7 @@ dishRouter.route('/comments/:product')
     .catch((err) => next(err));
 })
 .post((req, res, next) => {
-    const model = req.body.model;
+    const model = req.params.product;
     Dishes.findOne({model})
     .then((dish) => {
         if (dish != null) {

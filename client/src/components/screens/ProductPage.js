@@ -125,7 +125,7 @@ class ProductPage extends Component {
 
                     (comment.length!=0)?
                     comment.map((message) =>  <CommentBox  author={message[0]} rating = {1} comment={message[1]}/>)
-                    :null
+                    :<CommentBox/>
                   }
                  
                 </CommentDisplaySection>

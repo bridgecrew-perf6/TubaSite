@@ -519,13 +519,22 @@ textarea{
 .center-col {
   flex: 1;
   background: #aaa;
-  overflow-y: scroll;
+  overflow: auto;
   min-height: 45vh;
   max-height: 45vh;
-  padding:1%;
+  padding-bottom:12%;
   border-radius: 6px;
   
 }
+.containerForComments {
+  box-sizing: padding-box;
+  -moz-box-sizing: padding-box;
+  -webkit-box-sizing: padding-box;
+  
+  
+}
+
+
 
 .boxed {
 
