@@ -460,14 +460,13 @@ body.welcome {
   max-height: 75%;
   
 
-
 }
 .left-container {
   flex: 0 1 50%;
   min-height: 100%;
   max-width: 50%;
   background: white;
-  padding: .5em;
+  padding: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -492,10 +491,10 @@ body.welcome {
 }
 .half-container1 {
   flex: 0 0 100%;
-  min-height: 55vh;
-  max-height: 55vh;
+  min-height: 50vh;
+  max-height: 50vh;
   background: darkgoldenrod;
-  padding: .5em;
+  padding: 10px;
   overflow: hidden;
 }
 .half-container2 {

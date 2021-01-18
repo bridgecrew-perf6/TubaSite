@@ -81,11 +81,11 @@ class AppIndex extends Component {
             <div><img  src={homeLogo} className="NavDescriptionLogo"/></div>
             <div>HomePage</div></a>
             <a href="#">
-            <div><img  src={aboutLogo} className="NavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
-            <div>About</div></a>
-            <a href="#">
             <div><img  src={rankLogo} className="NavDescriptionLogo"/></div>
             <div>Ranking</div></a>
+            <a href="#">
+            <div><img  src={aboutLogo} className="NavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
+            <div>About</div></a>
             <a href="#"onClick={this.onLogoutClick}>
             <div><img  src={logoutLogo} className="NavDescriptionLogo"/></div>
             <div>Logout</div></a>

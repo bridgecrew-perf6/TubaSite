@@ -80,7 +80,7 @@ class ProductPage extends Component {
       const { user } = this.props.auth;
        return (
          
-        <div onLoad={() => this.fetchData()}>
+        <div>
         <div style={{alignContent:"center",alignItems:"center"}}>
         <button className="openbtn" style={{left:"1%"}} onClick={this.openNav}>></button> 
         <TubaSidebar>

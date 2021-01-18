@@ -54,12 +54,12 @@ class CommentSection extends Component {
             style={{backgroundColor:"white",border:"5px solid darkgoldenrod"}}
             onChange={this.handleChange}
             />
-            <p style={{left:"3%", bottom:"15%",visibility: this.state.showButton? "visible":"hidden", color:"darkred", 
+            <p style={{left:"3%", bottom:"10%",visibility: this.state.showButton? "visible":"hidden", color:"darkred", 
              position:"absolute",fontSize:"13px"}}>**Please fill in BOTH the rating and review section</p>
             
             <button
                 onClick={this.submit}
-                style={{right:"2%", bottom:"12%",   position:"absolute",fontSize:"20px"
+                style={{right:"2%", bottom:"10%",   position:"absolute",fontSize:"20px"
             }}
             >Submit</button>
     </div>
