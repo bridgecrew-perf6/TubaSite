@@ -5,6 +5,12 @@ import { logoutUser } from "../../redux/actions/authActions";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../../stylesheet.css";
 import authorImage from "../Images/About/author.png";
+import boxLogo from "../Images/About/box.svg";
+import listenLogo from "../Images/About/ear.svg";
+import readLogo from "../Images/About/reading-book.svg";
+
+
+
 
 
 class AboutPage extends Component {
@@ -20,15 +26,29 @@ class AboutPage extends Component {
   return (
       <div className = "split"style={{textAlign:"center",height:"100%",position:"fixed",zIndex:4,backgroundColor:"white"}}>
        <h1>About the Site</h1>
+       <hr className="hrForAbout"></hr>
+
+       <table style={{marginTop: "6vh",marginBottom: "6vh",padding: "10px", borderCollapse: "separate",
+  borderSpacing: "10px 0"}} >
+       <tbody style={{padding:"20px"}}>
+       <tr style={{borderSpacing: "50px 0"}}>
+       <td className="aboutLogoBox"><div><img src={boxLogo} className="aboutLogo"/></div> <b>Share</b> your opinion</td>
+       <td className="aboutLogoBox"><div><img src={readLogo} className="aboutLogo"/></div><b>Learn</b> tuba models</td>
+       <td className="aboutLogoBox"><div><img src={listenLogo} className="aboutLogo"/></div><b>Listen</b> to others</td>
+
+       
+       </tr>
+       </tbody>
+       </table>
 
 
 
       <hr className="hrForAbout"></hr>
-       <table style={{marginTop: "0px"}} >
+       <table style={{marginTop: "3vh"}} >
        <col style={{width: "30%"}} /> 
   
       <col style={{width: "70%"}}  />
-       <tbody style={{paddingTop:"0px"}}>
+       <tbody style={{paddingTop:"3px"}}>
        <tr>
        <td><img src={authorImage} style = {{borderRadius:"50%",width: "200px",height:"200px",opacity:"90%"}}/></td>
        <td  >

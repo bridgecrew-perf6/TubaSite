@@ -25,7 +25,7 @@ class DenisWickCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >Denis Wick</h4>
+        <h2 >Denis Wick</h2>
         <hr></hr>
         <table>
           <tbody>

@@ -141,7 +141,7 @@ class ProductPage extends Component {
             </div>
           <div className="right-container">
               <div className="half-container1">
-              <h2 style={{marginBottom:"0.5%"}} >Review</h2><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
+              <h2 style={{marginBottom:"0.5%"}} >Reviews</h2><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
                 <CommentDisplaySection >
                   {
                     

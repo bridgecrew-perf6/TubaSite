@@ -38,7 +38,7 @@ class MeinlWestonCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >Meinl Weston</h4>
+        <h2 >Meinl Weston</h2>
         <hr></hr>
         <table>
           <tbody>

@@ -27,7 +27,7 @@ class BachCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >Bach</h4>
+        <h2 >Bach</h2>
         <hr></hr>
         <table>
           <tbody>

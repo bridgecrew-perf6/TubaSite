@@ -33,7 +33,7 @@ class MiraphoneCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >Miraphone</h4>
+        <h2 >Miraphone</h2>
         <hr></hr>
         <table>
           <tbody>

@@ -588,3 +588,14 @@ textarea{
   padding-top: 20px;
 }
 
+
+.aboutLogo{
+  width :  180px;
+  height: 180px;
+}
+
+.aboutLogoBox{
+  border: 0.5px solid 	#DCDCDC;
+  padding: 10px  10px;
+}
+

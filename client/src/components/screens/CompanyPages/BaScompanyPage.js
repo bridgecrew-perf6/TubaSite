@@ -31,7 +31,7 @@ class BaSCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >B&S</h4>
+        <h2 >B&S</h2>
         <hr></hr>
         <table>
           <tbody>

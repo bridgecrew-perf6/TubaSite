@@ -25,7 +25,7 @@ class PTCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >Perantucci</h4>
+        <h2 >Perantucci</h2>
         <hr></hr>
         <table>
           <tbody>

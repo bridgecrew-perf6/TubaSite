@@ -28,7 +28,7 @@ class BessonCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >Besson</h4>
+        <h2 >Besson</h2>
         <hr></hr>
         <table><tbody>
         <tr>

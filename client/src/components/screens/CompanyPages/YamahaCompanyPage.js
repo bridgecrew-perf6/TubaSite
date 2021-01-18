@@ -36,7 +36,7 @@ class YamahaCompanyPage extends Component {
         <div  style={{textAlign: "center"}}>
         <br></br>
         <div className="topTableSection">
-        <h4 >Yamaha</h4>
+        <h2>Yamaha</h2>
         <hr></hr>
         <table>
         <tbody>
