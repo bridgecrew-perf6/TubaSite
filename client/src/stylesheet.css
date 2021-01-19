@@ -159,7 +159,7 @@ td:focus-within {
   width: 45%;
 }
 .tubaImageYamaha{
-  width: 70%;
+  width: 80%;
 
 }
 
@@ -179,16 +179,7 @@ td:focus-within {
   left: 0;
   width: 100%;
 }
-.notLoggedInBottombar{
-  margin-top:5%;
-  position:fixed;
-  padding: 1rem;
-  height: 10rem;
-  background-color: darkgoldenrod;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
+
 
 
 
@@ -391,7 +382,8 @@ body.welcome {
 }
 .tubaDisplayImageYamaha{
 
-  width: 60%;
+  width: 70%;
+  border-radius: 3px;
 }
 .mouthpeiceDisplayImage{
   margin-top: 10%;
@@ -503,13 +495,13 @@ body.welcome {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: darkgoldenrod;
   
 }
 .half-container1 {
   flex: 0 0 100%;
   min-height: 52vh;
   max-height: 52vh;
-  background: darkgoldenrod;
   padding: 10px;
   overflow: hidden;
 }
@@ -518,7 +510,6 @@ body.welcome {
   flex: 0 0 100%;
   min-height: 45vh;
   max-height: 45vh;
-  background: darkgoldenrod;
   padding: .5em;
   overflow: hidden;
 }

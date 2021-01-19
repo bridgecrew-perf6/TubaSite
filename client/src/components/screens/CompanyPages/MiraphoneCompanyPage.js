@@ -71,11 +71,11 @@ class MiraphoneCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={Photo88} onClick={() => navigator("tuba","M88",this.props.history)} className="tubaImage"/></td>
+        <td><img src={Photo1293} onClick={() => navigator("tuba","M1293",this.props.history)} className="tubaImage"/></td>
         <td><img src={Photo291} onClick={() => navigator("tuba","M291",this.props.history)}className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={Photo1293} onClick={() => navigator("tuba","M1293",this.props.history)} className="tubaImage"/></td>
+        <td><img src={Photo88} onClick={() => navigator("tuba","M88",this.props.history)} className="tubaImage"/></td>
         </tr></tbody>
         </table>
         </div>
@@ -87,13 +87,14 @@ class MiraphoneCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={Photo181} onClick={() =>navigator("tuba","M181",this.props.history)}className="tubaImage"/></td>
-        <td><img src={Photo281} onClick={() => navigator("tuba","M281",this.props.history)} className="tubaImage"/></td>
-        </tr>
-        
-        <tr>
         <td><img src={Photo481} onClick={() => navigator("tuba","M481",this.props.history)} className="tubaImage"/></td>
         <td><img src={Photo1281} onClick={() => navigator("tuba","M1281",this.props.history)}className="tubaImage"/></td>
+          </tr>
+        
+        <tr>
+        <td><img src={Photo281} onClick={() => navigator("tuba","M281",this.props.history)} className="tubaImage"/></td>
+        <td><img src={Photo181} onClick={() =>navigator("tuba","M181",this.props.history)}className="tubaImage"/></td>
+
         </tr></tbody>
         </table>
         </div>

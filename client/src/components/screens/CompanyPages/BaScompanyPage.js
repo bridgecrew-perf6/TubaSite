@@ -71,11 +71,12 @@ class BaSCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
+        <td><img src={MRPCPhoto} onClick={() => navigator("tuba","B&SMRPC",this.props.history)} className="tubaImage"/></td>
         <td><img src={BS3198Photo} onClick={() => navigator("tuba","B&S3198",this.props.history)} className="tubaImage"/></td>
-        <td><img src={GR41Photo} onClick={() => navigator("tuba","B&SGR41",this.props.history)} className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={MRPCPhoto} onClick={() => navigator("tuba","B&SMRPC",this.props.history)} className="tubaImage"/></td>
+        <td><img src={GR41Photo} onClick={() => navigator("tuba","B&SGR41",this.props.history)} className="tubaImage"/></td>
+
         </tr>
         </tbody>
         </table>
@@ -88,12 +89,13 @@ class BaSCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={BS3099Photo} onClick={() =>  navigator("tuba","B&S3099",this.props.history)} className="tubaImage"/></td>
         <td><img src={BS3100Photo} onClick={() =>  navigator("tuba","B&S3100",this.props.history)} className="tubaImage"/></td>
+        <td><img src={MRPFPhoto} onClick={() =>  navigator("tuba","B&SMRPF",this.props.history)} className="tubaImage"/></td>
+
         </tr>
         <tr>
         <td><img src={BS5100Photo} onClick={() => navigator("tuba","B&S5100",this.props.history)} className="tubaImage"/></td>
-        <td><img src={MRPFPhoto} onClick={() =>  navigator("tuba","B&SMRPF",this.props.history)} className="tubaImage"/></td>
+        <td><img src={BS3099Photo} onClick={() =>  navigator("tuba","B&S3099",this.props.history)} className="tubaImage"/></td> 
         </tr>
         </tbody>
         </table>

@@ -24,23 +24,25 @@ class AboutPage extends Component {
       
       
   return (
-      <div className = "split" style={{textAlign:"center",height:"100%",position:"fixed",zIndex:4,backgroundColor:"white"}}>
-       <div className = "aboutUpperPart">
+      <div className = "split" style={{textAlign:"center",height:"100%",position:"fixed",zIndex:4,backgroundColor:"white",}}>
+       <div className = "aboutUpperPart"style={{ marginBottom: "4vh"}}>
        <h1>About the Site</h1>
        <hr className="hrForAbout"></hr>
 
-       <table style={{marginTop: "6vh",marginBottom: "6vh",padding: "10px", borderCollapse: "separate",
+       <table style={{marginTop: "6vh",padding: "10px", borderCollapse: "separate",
        borderSpacing: "10px 0"}} >
        <tbody style={{padding:"20px"}}>
        <tr style={{borderSpacing: "50px 0"}}>
        <td className="aboutLogoBox"><div><img src={boxLogo} className="aboutLogo"/></div> <b>Share</b> your opinion</td>
        <td className="aboutLogoBox"><div><img src={readLogo} className="aboutLogo"/></div><b>Learn</b> tuba models</td>
        <td className="aboutLogoBox"><div><img src={listenLogo} className="aboutLogo"/></div><b>Listen</b> to others</td>
-
+      
        
        </tr>
        </tbody>
        </table>
+       <p style={{fontSize:"10px"}}>*All the photos used in this site are extracted from the respective company's official website. </p>
+       <p style={{fontSize:"10px"}}>**Please contact the website owner if your company does not allow the photos to be used in this website </p>
        </div>
 
 
@@ -54,8 +56,8 @@ class AboutPage extends Component {
        <tr>
        <td><img src={authorImage} className="authorImage"/></td>
        <td  >
-         <p style={{fontSize:"22.8px",textAlign:"left"}}>
-         Toto (author) is a programmer in London. He realized his passion for playing the tuba during high school, where he served as the principal tuba player in the symphonic and wind orchestra. His favorite tuba and mouthpiece are B&S GR41 and PT 50.
+         <p style={{fontSize:"21.3px",textAlign:"left"}}>
+        The website owner is a programmer in London. He realized his passion for playing the tuba during high school, where he served as the principal tuba player in the symphonic and wind orchestra. His favorite tuba and mouthpiece are B&S GR41 and PT 50.
         
        </p></td>
        </tr>
@@ -63,7 +65,7 @@ class AboutPage extends Component {
        </table>
        </div>
 
-       
+
         </div>
    
     );

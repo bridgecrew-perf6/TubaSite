@@ -94,8 +94,9 @@ class YamahaCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoF621} onClick={() => navigator("tuba","Y621",this.props.history)} className="tubaImageYamaha"/></td>
         <td><img src={PhotoF822} onClick={() => navigator("tuba","Y822F",this.props.history)}className="tubaImageYamaha"/></td>
+
+        <td><img src={PhotoF621} onClick={() => navigator("tuba","Y621",this.props.history)} className="tubaImageYamaha"/></td>
         </tr>
         </tbody>
         </table>
@@ -109,8 +110,9 @@ class YamahaCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoEb321}  onClick={() =>navigator("tuba","Y321",this.props.history)} className="tubaImageYamaha"/></td>
         <td><img src={PhotoEb632}  onClick={() => navigator("tuba","Y632E",this.props.history)} className="tubaImageYamaha"/></td>
+
+        <td><img src={PhotoEb321}  onClick={() =>navigator("tuba","Y321",this.props.history)} className="tubaImageYamaha"/></td>
 
         </tr>
         </tbody>

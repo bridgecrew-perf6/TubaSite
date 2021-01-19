@@ -82,16 +82,17 @@ class MeinlWestonCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
-        <td><img src={PhotoC3225} onClick={() => navigator("tuba","MW3225",this.props.history)} className="tubaImage"/></td>
         <td><img src={PhotoC6450} onClick={() => navigator("tuba","MW6450",this.props.history)} className="tubaImage"/></td>
+        <td><img src={PhotoC3225} onClick={() => navigator("tuba","MW3225",this.props.history)} className="tubaImage"/></td>
+        </tr>
+        <tr>
+        <td><img src={PhotoC5450P} onClick={() => navigator("tuba","MW5450P",this.props.history)} className="tubaImage"/></td>
+        <td><img src={PhotoC5450R} onClick={() => navigator("tuba","MW5450R",this.props.history)} className="tubaImage"/></td>
+
         </tr>
         <tr>
         <td><img src={PhotoC3450} onClick={() => navigator("tuba","MW3450",this.props.history)} className="tubaImage"/></td>
-        <td><img src={PhotoC5450P} onClick={() => navigator("tuba","MW5450P",this.props.history)} className="tubaImage"/></td>
-        </tr>
-        <tr>
-        
-        <td><img src={PhotoC5450R} onClick={() => navigator("tuba","MW5450R",this.props.history)} className="tubaImage"/></td>
+
         
         </tr>
         </tbody>
@@ -105,15 +106,16 @@ class MeinlWestonCompanyPage extends Component {
         <table className = "tubaTable">
         <tbody>
         <tr>
+        <td><img src={PhotoF6460} onClick={() =>navigator("tuba","MW6460",this.props.history)}  className="tubaImage"/></td>
+
         <td><img src={PhotoF4250} onClick={() => navigator("tuba","MW4250",this.props.history)}  className="tubaImage"/></td>
-        <td><img src={PhotoF45} onClick={() => navigator("tuba","MW45",this.props.history)}  className="tubaImage"/></td>
         </tr>
         <tr>
         <td><img src={PhotoF182} onClick={() => navigator("tuba","MW182",this.props.history)}  className="tubaImage"/></td>
         <td><img src={PhotoF2250} onClick={() => navigator("tuba","MW2250",this.props.history)}  className="tubaImage"/></td>
         </tr>
         <tr>
-        <td><img src={PhotoF6460} onClick={() =>navigator("tuba","MW6460",this.props.history)}  className="tubaImage"/></td>
+        <td><img src={PhotoF45} onClick={() => navigator("tuba","MW45",this.props.history)}  className="tubaImage"/></td>
         
         </tr>
         </tbody>
