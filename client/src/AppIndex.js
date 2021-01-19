@@ -17,7 +17,7 @@ import PerantucciCompanyPage from  "./components/screens/CompanyPages/PTCompanyP
 import BachCompanyPage from  "./components/screens/CompanyPages/BachCompanyPage";
 import DenisWickCompanyPage from  "./components/screens/CompanyPages/DenisWickCompanyPage";
 import Sidebar from "./components/layout/Sidebar";
-import NewLanding from "./components/layout/NewLanding";
+import NewLanding from "./components/screens/NewLanding";
 import aboutLogo from "./components/Images/Logos/about.svg";
 import rankLogo from "./components/Images/Logos/rank.svg";
 import homeLogo from "./components/Images/Logos/home.svg";
