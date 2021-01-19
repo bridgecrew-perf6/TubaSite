@@ -41,7 +41,7 @@ class RankingPage extends Component {
 
      console.log(ratingMap);
      
-      ratingMap.sort(function (vote1, vote2) {
+    ratingMap.sort(function (vote1, vote2) {
 
       // Sort by votes
       // If the first item has a higher number, move it down
@@ -65,9 +65,9 @@ class RankingPage extends Component {
   return (
     <div style={{textAlign:"center", justifyContent:"center",alignItems:"center"}}>
       <div style={{ marginBottom: "4vh"}}>
-       <h2>Top 3</h2>
+       <h2>Top 3 Rated</h2>
        </div>
-       <div style={{textAlign:"center",justifyContent:"center",alignItems:"center" ,marginTop:"7vh"}}  >
+       <div style={{textAlign:"center",justifyContent:"center",alignItems:"center" ,marginTop:"4vh"}}  >
        <SlidingRank rankings={this.state.rankings}/>
        
        </div>

@@ -3,10 +3,30 @@ import "../../stylesheet.css";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import hashmapItem from "../layout/HashmapItem";
-
+import oneLogo from "../Images/Ranking/one.svg";
+import twoLogo from "../Images/Ranking/peace.svg";
+import threeLogo from "../Images/Ranking/three.svg";
 
 
 export default class DisplayCommentBox extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            indicator: 0
+        }
+    }
+
+    switch(){
+        this.state.indicator+=1;
+        switch(this.state.indicator){
+            case 1:
+                return oneLogo;
+            case 2:
+                return  twoLogo;
+            case 3:
+                return threeLogo;
+        }
+    }
 
     makingBox(modelName,rating){
         const inputDetails = hashmapItem.get(modelName);
@@ -15,11 +35,17 @@ export default class DisplayCommentBox extends Component {
         const company = inputDetails[2];
        
         return(
-        <div className="each-slide" style={{backgroundColor: "white",justifyContent:"center"}}>
+        <div className="each-slide"
+         style={{backgroundColor: "white", padding:"2vh",justifyContent:"center",textAlign:"center",border:"7px solid darkgoldenrod"}}>
             <div className="image-container">
-              <img src={imageTuba} style={{width:"17%"}}/>
-              <p>{company+" "+title}</p>
-              <br></br>
+              <img src={imageTuba} style={{width:"18%"}}/>
+              <h3>Model: {company+" "+title} 
+             
+              <img src= {this.switch()} style={{marginLeft:"22px",width:"7vh"}}/>
+              
+              
+               </h3>
+              <div></div>
               </div>
         </div>)
 
