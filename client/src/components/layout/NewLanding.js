@@ -33,12 +33,12 @@ class NewLanding extends Component {
       
       <div>
         
-        <body class="welcome">
-          <span id="splash-overlay"style={{  zIndex: 4}} class="splash"></span>
-          <span id="welcome"style={{  zIndex: 4}} ></span>
+        <body class="welcome" >
+          <span id="splash-overlay"style={{  zIndex: 6}} class="splash"></span>
+          <span id="welcome"style={{  zIndex: 6}} ></span>
          
         
-        <div className="row" style={{  zIndex: 5,position:"absolute",right:"10rem",top:"25rem",padding:"20px",borderRadius: "10px",textAlign:"center",backgroundColor:"silver",opacity: 0.9, visibility: this.state.visibility}}>
+        <div className="row" style={{  zIndex: 7,position:"absolute",right:"10rem",top:"25rem",padding:"20px",borderRadius: "10px",textAlign:"center",backgroundColor:"silver",opacity: 0.9, visibility: this.state.visibility}}>
             <h4>
               <a href="#" style={{color:"black"}}onClick={this.navigate}><u>Rate and Review</u></a> 
             </h4>
@@ -75,7 +75,7 @@ class NewLanding extends Component {
               </Link>
              </div>
       </div>
-      <BackgroundSlideshow images={[ backgroundImage1, backgroundImage2, backgroundImage3 ]} style={{zIndex: -1}}/>
+      <BackgroundSlideshow images={[ backgroundImage1, backgroundImage2, backgroundImage3 ]} style={{zIndex: 5}}/>
 
       </body>
       </div>

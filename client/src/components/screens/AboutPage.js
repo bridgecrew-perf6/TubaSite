@@ -24,12 +24,13 @@ class AboutPage extends Component {
       
       
   return (
-      <div className = "split"style={{textAlign:"center",height:"100%",position:"fixed",zIndex:4,backgroundColor:"white"}}>
+      <div className = "split" style={{textAlign:"center",height:"100%",position:"fixed",zIndex:4,backgroundColor:"white"}}>
+       <div className = "aboutUpperPart">
        <h1>About the Site</h1>
        <hr className="hrForAbout"></hr>
 
        <table style={{marginTop: "6vh",marginBottom: "6vh",padding: "10px", borderCollapse: "separate",
-  borderSpacing: "10px 0"}} >
+       borderSpacing: "10px 0"}} >
        <tbody style={{padding:"20px"}}>
        <tr style={{borderSpacing: "50px 0"}}>
        <td className="aboutLogoBox"><div><img src={boxLogo} className="aboutLogo"/></div> <b>Share</b> your opinion</td>
@@ -40,9 +41,10 @@ class AboutPage extends Component {
        </tr>
        </tbody>
        </table>
+       </div>
 
 
-
+      <div className="aboutLowerPart">
       <hr className="hrForAbout"></hr>
        <table style={{marginTop: "3vh"}} >
        <col style={{width: "30%"}} /> 
@@ -59,6 +61,9 @@ class AboutPage extends Component {
        </tr>
        </tbody>
        </table>
+       </div>
+
+       
         </div>
    
     );
