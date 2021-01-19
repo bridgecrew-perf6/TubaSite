@@ -24,6 +24,8 @@ import homeLogo from "./components/Images/Logos/home.svg";
 import logoutLogo from "./components/Images/Logos/logout.svg";
 import ProductPage from  "./components/screens/ProductPage";
 import AboutPage from "./components/screens/AboutPage";
+import RankingPage from "./components/screens/RankingPage";
+
 
 
 
@@ -78,7 +80,7 @@ class AppIndex extends Component {
             <a href="/dashboard">
             <div><img  src={homeLogo} className="NavDescriptionLogo"/></div>
             <div>HomePage</div></a>
-            <a href="#">
+            <a href="/ranking">
             <div><img  src={rankLogo} className="NavDescriptionLogo"/></div>
             <div>Ranking</div></a>
             <a href="/about" >
@@ -110,6 +112,7 @@ class AppIndex extends Component {
             <PrivateRoute exact path="/BachPage" component={BachCompanyPage} />
             <PrivateRoute exact path="/DenisWickPage" component={DenisWickCompanyPage} />
             <PrivateRoute exact path="/product/:type/:name" component={ProductPage} />
+            <PrivateRoute exact path="/ranking" component={RankingPage} />
             </Switch>
             </div>
             { this.props.auth.isAuthenticated? <Bottombar />:null}

@@ -9,7 +9,8 @@ class CommentSection extends Component {
     this.state={
       showButton :false,
       model: props.model,
-      user: props.user
+      user: props.user,
+      commentedAuthors: props.commentedAuthors
     };
   }
   ratingChanged = (newRating) => {
@@ -23,26 +24,32 @@ class CommentSection extends Component {
     
   };
   submit= (event) =>{
-    if(this.state.rating && this.state.comment){
+    if(!this.state.commentedAuthors.includes(this.state.user)){
+      if(this.state.rating && this.state.comment){
      
-      this.postNewReview(this.state.model,
-      {
-        "comment": this.state.comment,
-        "author": this.state.user,
-        "rating":this.state.rating
+        this.postNewReview(this.state.model,
+        {
+          "comment": this.state.comment,
+          "author": this.state.user,
+          "rating":this.state.rating
+        }
+        );
+        console.log("Successfully sent");
+        window.location.reload();
+      }else{
+        this.setState({showButton:true})
+        setTimeout(() => {
+          this.setState({showButton:false})
+          console.log('This will run after 1 second!')
+        }, 2500)
+  
+        console.log("Please fill in BOTH the rating and review section");
       }
-      );
-      console.log("Successfully sent");
-      window.location.reload();
-    }else{
-      this.setState({showButton:true})
-      setTimeout(() => {
-        this.setState({showButton:false})
-        console.log('This will run after 1 second!')
-      }, 2500)
 
-      console.log("Please fill in BOTH the rating and review section");
+    }else{
+      console.log("Commented Already");
     }
+    
   }
     render() {
       
@@ -64,7 +71,7 @@ class CommentSection extends Component {
             </div>
             <textarea
             id="exampleFormControlTextarea1"
-            placeholder="//Type your review here!!"
+            placeholder="//Type your review here!! !!Please be noted that you could only submit your review once only for each item"
             rows="10"
             style={{backgroundColor:"white",border:"5px solid darkgoldenrod"}}
             onChange={this.handleChange}

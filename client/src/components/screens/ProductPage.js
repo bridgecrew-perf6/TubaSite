@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../redux/actions/authActions";
 import "../../stylesheet.css";
 import mapping from "../layout/HashmapItem";
-import {postReview,getAllReviews} from "../../redux/actions/reviewActions";
+import {getAllReviews} from "../../redux/actions/reviewActions";
 import TubaSidebar from "../layout/TubaDescriptionSidebar";
 import ratingLogo from "../Images/Logos/rating.svg";
 import keyLogo from "../Images/Logos/musical-note.svg";
@@ -18,6 +18,7 @@ import CommentBox from "../layout/DisplayCommentBox";
 
 var bigData ="";
 var comment=[];
+var commentedAuthors=[];
 var fetchedData =false;
 class ProductPage extends Component {
     constructor(props) {
@@ -41,9 +42,9 @@ class ProductPage extends Component {
     componentDidUpdate() {
     console.log("WHYO")
         this.fetchData();
-      
         
     }
+
     async fetchData(){
       getAllReviews(this.state.params.name).then(data => { 
         this.realSetState(data); fetchedData=true ;return;}).catch(err => {console.log("Halloworld");console.log(err); return err})
@@ -57,7 +58,8 @@ class ProductPage extends Component {
        if(bigData!=null){
          for(var i =bigData.length-1;i>-1;i--){
            var x=bigData[i];
-           comment.push([x.author,x.comment,x.createdAt]);
+           comment.push([x.author,x.comment,x.createdAt,x.rating]);
+           commentedAuthors.push(x.author);
          }
          this.setState({reviewData: comment.length})
 
@@ -150,7 +152,7 @@ class ProductPage extends Component {
                     //this.state.commentStorage
 
                     (comment.length!=0)?
-                    comment.map((message) =>  <CommentBox  author={message[0]} rating = {1} comment={message[1]} time={message[2]}/>)
+                    comment.map((message) =>  <CommentBox  author={message[0]} rating = {message[3]} comment={message[1]} time={message[2]}/>)
                     :<CommentBox/>
                   }
                  
@@ -159,7 +161,7 @@ class ProductPage extends Component {
               <div className="half-container2">
               <h3 style={{marginBottom:"0.5%"}}>Your Review</h3><hr style={{width:"100%",marginTop:"0%",borderColor:"black"}}></hr>
 
-              <CommentSection user = {user.name} model={this.state.params.name}/>
+              <CommentSection user = {user.name} model={this.state.params.name} commentedAuthors={commentedAuthors}/>
          </div>
         
     </div>

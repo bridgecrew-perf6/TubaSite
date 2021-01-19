@@ -24,7 +24,6 @@ export default class DisplayCommentBox extends Component {
                 activeColor="#ffd700"/></div> : null }
 
                  {this.props.comment?  <p style={{margin:"0px"}}>Comment: {this.props.comment}</p>:<p style={{textAlign:"center"}}>No comment at this moment</p>}
-                 {this.props.rating?  <p style={{margin:"0px"}}>Rating: {this.props.rating}</p>:null}
 
                  {this.props.author?  <p style={{margin:"0px"}}>Author: {this.props.author}</p>:null}
                  {this.props.time?  <p style={{margin:"0px"}}>Date: 
@@ -40,3 +39,7 @@ export default class DisplayCommentBox extends Component {
       );
     }
 }
+
+
+//{this.props.rating?  <p style={{margin:"0px"}}>Rating: {this.props.rating}</p>:null}
+//
