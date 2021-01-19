@@ -50,10 +50,10 @@ class AboutPage extends Component {
       <col style={{width: "70%"}}  />
        <tbody style={{paddingTop:"3px"}}>
        <tr>
-       <td><img src={authorImage} style = {{borderRadius:"50%",width: "200px",height:"200px",opacity:"90%"}}/></td>
+       <td><img src={authorImage} className="authorImage"/></td>
        <td  >
          <p style={{fontSize:"22.8px",textAlign:"left"}}>
-         Toto (author) is a programmer in London. He realized his passion for playing the tuba during high school, where he served as the principal tuba player in the symphonic and wind orchestra. His favorite tuba and mouthpiece are B&SGR41 and PT50.
+         Toto (author) is a programmer in London. He realized his passion for playing the tuba during high school, where he served as the principal tuba player in the symphonic and wind orchestra. His favorite tuba and mouthpiece are B&S GR41 and PT 50.
         
        </p></td>
        </tr>

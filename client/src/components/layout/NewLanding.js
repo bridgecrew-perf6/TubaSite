@@ -9,6 +9,8 @@ import backgroundImage2 from "../Images/HomeBackgroundImages/jessica-pamp-uuKE4D
 import backgroundImage3 from "../Images/HomeBackgroundImages/samuel-ramos-Md8c-amE5ms-unsplash.jpg";
 import BackgroundSlideshow from 'react-background-slideshow';
 
+
+
 class NewLanding extends Component {
   
   constructor(props) {
@@ -22,6 +24,9 @@ class NewLanding extends Component {
   setTimeout(() => {
     this.setState({visibility: "visible"})
   }, 2200);}
+   navigate= e =>{
+    this.props.history.push("/about");
+  }
 
   render() {
     return (
@@ -35,11 +40,10 @@ class NewLanding extends Component {
         
         <div className="row" style={{  zIndex: 5,position:"absolute",right:"10rem",top:"25rem",padding:"20px",borderRadius: "10px",textAlign:"center",backgroundColor:"silver",opacity: 0.9, visibility: this.state.visibility}}>
             <h4>
-              <b>Review</b> your  {" "}
-              <span style={{ fontFamily: "monospace" }}>Tuba</span> 
+              <a href="#" style={{color:"black"}}onClick={this.navigate}><u>Rate and Review</u></a> 
             </h4>
             <p className="flow-text grey-text text-darken-1">
-              Rate and Review
+               tuba and mouthpeice
             </p>
             <br />
             <div className="col s6">
