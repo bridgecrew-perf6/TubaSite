@@ -94,18 +94,18 @@ class ProductPage extends Component {
         <div id="myTubaSidebar" className="tubaSidebar">
         <br></br>
         <a href="#">
-        <div><img  src={ratingLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
-        <div>Rating: {this.state.averageRating} </div></a>
+        <div><img  src={ratingLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle",marginBottom:"1vh"}}/></div>
+        <div className = "BoxInsideSideBar">Average Rating: {this.state.averageRating} </div></a>
         <a href="#">
-        <div><img  src={keyLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
-        <div>Key: {this.state.details[4]}</div></a>
+        <div ><img  src={keyLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle" ,marginBottom:"1vh"}}/></div>
+        <div  className = "BoxInsideSideBar">Key: {this.state.details[4]}</div></a>
         <a href="#">
-        <div><img  src={companyLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>  
-        <div>Company: {this.state.details[2]}</div></a>
+        <div><img  src={companyLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle" ,marginBottom:"1vh"}}/></div>  
+        <div  className = "BoxInsideSideBar">Company: {this.state.details[2]}</div></a>
         <a href="#"onClick={this.onLogoutClick}>
-        <div><img  src={bellLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>  
+        <div><img  src={bellLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle" ,marginBottom:"1vh"}}/></div>  
 
-        <div>Bell Size: {this.state.details[3]}</div></a>
+        <div  className = "BoxInsideSideBar">Bell Size: {this.state.details[3]}</div></a>
         </div></TubaSidebar></div>:
 
 

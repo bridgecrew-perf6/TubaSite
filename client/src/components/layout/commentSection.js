@@ -43,11 +43,10 @@ class CommentSection extends Component {
           console.log('This will run after 1 second!')
         }, 2500)
   
-        console.log("Please fill in BOTH the rating and review section");
       }
 
     }else{
-      console.log("Commented Already");
+      alert("You have commented already! You are allowed to comment once only for each item!")
     }
     
   }

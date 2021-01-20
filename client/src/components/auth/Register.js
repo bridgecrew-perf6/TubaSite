@@ -68,7 +68,7 @@ onSubmit = e => {
           <p style={{fontSize:"19px"}}>We use cookies and similar technologies to recognize your repeat visits and to measure the effectiveness of campaigns and analyze traffic.</p>
 
            <p style={{fontSize:"19px"}}>According to the  EU cookie law, we need your consent for us to manage your cookies.</p>
-          <p style={{fontSize:"19px"}}>By clicking the "I accept Button", you consent to the use of cookies. Otherwise, you would not be able to access the website.</p>
+          <p style={{fontSize:"19px"}}>By clicking the "Accept" button, you thereby give consent to us for the use of cookies. Otherwise, you would not be able to access the website.</p>
           </div>
           <button className="CookiesButton" onClick={onClose}>Decline</button>
           <button className="CookiesButton"

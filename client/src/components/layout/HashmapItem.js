@@ -82,15 +82,15 @@ const mapping = new Map([
 
     //Miraphone
     ["M1291",["1291",Photo1291,"Miraphone",18,504,"BBb"]],
-    ["M9000",["9000 Ambassador",Photo9000,"Miraphone",19,685 ,"BBb"]],
-    ["M88",["88",Photo88,"Miraphone",17,717,"C"]],
-    ["M291",["291 Bruckner",Photo291,"Miraphone",18,504 ,"C"]],
-    ["M1293",["1293",Photo1293,"Miraphone",19,685 ,"C"]],
+    ["M9000",["9000 Ambassador",Photo9000,"Miraphone",19.685 ,"BBb"]],
+    ["M88",["88",Photo88,"Miraphone",17.717,"C"]],
+    ["M291",["291 Bruckner",Photo291,"Miraphone",18.504 ,"C"]],
+    ["M1293",["1293",Photo1293,"Miraphone",19.685 ,"C"]],
     
-    ["M181",["181 Belcanto",Photo181,"Miraphone",16,535,"F"]],
-    ["M281",["281 Firebird",Photo281,"Miraphone",15,748,"F"]],
-    ["M481",["481 Elektra",Photo481,"Miraphone",16,535,"F"]],
-    ["M1281",["1281 Petruschka",Photo1281,"Miraphone",16,535 ,"F"]],
+    ["M181",["181 Belcanto",Photo181,"Miraphone",16.535,"F"]],
+    ["M281",["281 Firebird",Photo281,"Miraphone",15.748,"F"]],
+    ["M481",["481 Elektra",Photo481,"Miraphone",16.535,"F"]],
+    ["M1281",["1281 Petruschka",Photo1281,"Miraphone",16.535 ,"F"]],
     ["M7050",["M7050 Ambassador",Photo7050,"Miraphone",18.898,"EEb"]],
 
     //Besson
