@@ -32,7 +32,7 @@ export default class DisplayCommentBox extends Component {
             case "Bach":
                 return "30.4%";
             case "Perantucci":
-                return "30.4%";
+                return "34.7%";
                 
         }
     }
