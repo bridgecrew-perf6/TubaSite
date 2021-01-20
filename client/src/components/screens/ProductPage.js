@@ -82,7 +82,7 @@ class ProductPage extends Component {
        return (
          
         <div>
-          <button className="openbtn" style={{left:"1%"}} onClick={this.openNav}>></button> 
+          <button className="leftDescriptionButton"  onClick={this.openNav}>></button> 
         {this.state.type=="tuba"?
         <div>
         
