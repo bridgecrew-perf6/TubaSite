@@ -520,8 +520,8 @@ body.welcome {
 .half-container2 {
   position:relative;
   flex: 0 0 100%;
-  min-height: 45vh;
-  max-height: 45vh;
+  min-height: 49vh;
+  max-height: 49vh;
   padding: .5em;
   overflow: hidden;
 }
