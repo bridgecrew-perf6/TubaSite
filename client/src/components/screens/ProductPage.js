@@ -42,19 +42,17 @@ class ProductPage extends Component {
       this.fetchData();
     }
     componentDidUpdate() {
-    console.log("WHYO")
         this.fetchData();
         
     }
 
     async fetchData(){
       getAllReviews(this.state.params.name).then(data => { 
-        this.realSetState(data); fetchedData=true ;return;}).catch(err => {console.log("Halloworld");console.log(err); return err})
+        this.realSetState(data); fetchedData=true ;return;}).catch(err => {console.log("Error");console.log(err); return err})
       
     };
      realSetState(data){
        if(fetchedData==false){
-        console.log("afenb");
         console.log(data);
        bigData =data;
        if(bigData!=null){
@@ -73,7 +71,6 @@ class ProductPage extends Component {
     }
     
     openNav() {
-      console.log("HERE");
       document.getElementById("myTubaSidebar").style.width = "13%";
      
     }
@@ -82,7 +79,6 @@ class ProductPage extends Component {
     
   render() {
       const { user } = this.props.auth;
-      {console.log("bafeibibf",this.state.params.name," faef ",user.name)}
        return (
          
         <div>
@@ -151,8 +147,6 @@ class ProductPage extends Component {
                 <CommentDisplaySection >
                   {
                     
-                    console.log("ehere"),
-                    console.log(comment),
                     //this.state.commentStorage
 
                     (comment.length!=0)?
