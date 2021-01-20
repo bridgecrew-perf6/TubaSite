@@ -36,9 +36,9 @@ export default class DisplayCommentBox extends Component {
        
         return(
         <div className="each-slide"
-         style={{backgroundColor: "white", padding:"2vh",justifyContent:"center",textAlign:"center",border:"7px solid darkgoldenrod"}}>
-            <div className="image-container">
-              <img src={imageTuba} style={{width:"18%"}}/>
+         style={{backgroundColor: "white", padding:"2vh",justifyContent:"center",textAlign:"center",border:"7px solid darkgoldenrod",width:"100%"}}>
+            <div className="image-container" style={{minHeight:"50%"}}>
+              <img src={imageTuba} style={{width: company=="Yamaha"? "30.4%":"18%"}}/>
               <h3>Model: {company+" "+title} 
              
               <img src= {this.switch()} style={{marginLeft:"22px",width:"7vh"}}/>

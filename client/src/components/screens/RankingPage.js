@@ -34,9 +34,9 @@ class RankingPage extends Component {
        var x =0;
        var commentLength = i.comments.length;
        for (var j of i.comments){
-         x+=j.rating;
+         if(j.rating!="NaN") x+=j.rating;
        }
-       ratingMap.push({modelName : modelName,rating: x/commentLength});
+       ratingMap.push({modelName : modelName,rating: x==0?x:x/commentLength});
      }
 
      console.log(ratingMap);
