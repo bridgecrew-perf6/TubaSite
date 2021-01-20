@@ -54,7 +54,7 @@ class AboutPage extends Component {
       <col style={{width: "70%"}}  />
        <tbody style={{paddingTop:"3px"}}>
        <tr>
-       <td><img src={authorImage} className="authorImage"/></td>
+       <td><div><img src={authorImage} className="authorImage"/></div></td>
        <td  >
          <p style={{fontSize:"21.3px",textAlign:"left"}}>
         The website owner is a programmer in London. He realized his passion for playing the tuba during high school, where he served as the principal tuba player in the symphonic and wind orchestra. His favorite tuba and mouthpiece are B&S GR41 and PT 50.
