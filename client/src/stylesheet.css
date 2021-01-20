@@ -186,11 +186,9 @@ td:focus-within {
   padding: 20px;
   height: 10rem;
   background-color:darkgoldenrod;
-  opacity: 90%;
   bottom: 0;
   align-items: center;
   text-align: center;
-  left: 0;
   width: 100%;
 }
 
