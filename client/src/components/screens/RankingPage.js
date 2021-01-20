@@ -23,12 +23,10 @@ class RankingPage extends Component {
   }
   async fetchData(){
     getAllReviewsForRanking().then(data => { 
-       this.setData(data)}).catch(err => {console.log("Halloworld");console.log(err); return err})
+       this.setData(data)}).catch(err => {console.log("Error");console.log(err); return err})
     
   };
   setData(data){
-    console.log("huhih");
-    console.log(data);
      for(var i of data){
        const modelName = i.model;
        var x =0;
@@ -39,7 +37,6 @@ class RankingPage extends Component {
        ratingMap.push({modelName : modelName,rating: x==0?x:x/commentLength});
      }
 
-     console.log(ratingMap);
      
     ratingMap.sort(function (vote1, vote2) {
 
@@ -50,10 +47,8 @@ class RankingPage extends Component {
       if (vote1.rating < vote2.rating) return 1;
     
     });
-    console.log(ratingMap)
 
 
-     console.log("aekjf")
      this.setState({rankings: ratingMap.slice(0,3)});
     
   }
