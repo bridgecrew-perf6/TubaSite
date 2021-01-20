@@ -62,7 +62,7 @@ class RankingPage extends Component {
       <div style={{ marginBottom: "4vh"}}>
        <h2>Top 3 Rated</h2>
        </div>
-       <div style={{textAlign:"center",justifyContent:"center",alignItems:"center" ,marginTop:"4vh"}}  >
+       <div style={{textAlign:"center",justifyContent:"center",alignItems:"center" }}  >
        <SlidingRank rankings={this.state.rankings}/>
        
        </div>

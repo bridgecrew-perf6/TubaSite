@@ -81,7 +81,7 @@ const mapping = new Map([
     
 
     //Miraphone
-    ["M1291",["1291",Photo1291,"Miraphone",18,504,"BBb"]],
+    ["M1291",["1291",Photo1291,"Miraphone",18.504,"BBb"]],
     ["M9000",["9000 Ambassador",Photo9000,"Miraphone",19.685 ,"BBb"]],
     ["M88",["88",Photo88,"Miraphone",17.717,"C"]],
     ["M291",["291 Bruckner",Photo291,"Miraphone",18.504 ,"C"]],

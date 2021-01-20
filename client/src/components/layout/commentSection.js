@@ -69,7 +69,7 @@ class CommentSection extends Component {
             </div>
             <textarea
             id="exampleFormControlTextarea1"
-            placeholder="//Type your review here!! !!Please be noted that you could only submit your review once only for each item"
+            placeholder="//Type your review here!! !!Please note that you could only submit your review once only for each item"
             rows="10"
             style={{backgroundColor:"white",border:"5px solid darkgoldenrod"}}
             onChange={this.handleChange}

@@ -25,8 +25,8 @@ class AboutPage extends Component {
       
   return (
       <div className = "split" style={{textAlign:"center",height:"100%",position:"fixed",zIndex:4,backgroundColor:"white",}}>
-       <div className = "aboutUpperPart"style={{ marginBottom: "4vh"}}>
-       <h1>About the Site</h1>
+       <div className = "aboutUpperPart"style={{ marginBottom: "3vh"}}>
+       <h2>About the Site</h2>
        <hr className="hrForAbout"></hr>
 
        <table style={{marginTop: "6vh",padding: "10px", borderCollapse: "separate",

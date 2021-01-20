@@ -15,6 +15,27 @@ export default class DisplayCommentBox extends Component {
             indicator: 0
         }
     }
+    switchForPhotoDisplayWidth(company){
+        switch(company){
+            case "Meinl Weston":
+                return "18%";
+            case "B & S":
+                return "18%";
+            case "Miraphone":
+                return "19.8%";
+            case "Besson":
+                return "18%";
+            case "yamaha":
+                return "30.4%";
+            case "Denis Wick":
+                return "30.4%";
+            case "Bach":
+                return "30.4%";
+            case "Perantucci":
+                return "30.4%";
+                
+        }
+    }
 
     switch(){
         this.state.indicator+=1;
@@ -38,7 +59,13 @@ export default class DisplayCommentBox extends Component {
         <div className="each-slide"
          style={{backgroundColor: "white", padding:"2vh",justifyContent:"center",textAlign:"center",border:"7px solid darkgoldenrod",width:"100%"}}>
             <div className="image-container" style={{minHeight:"50%"}}>
-              <img src={imageTuba} style={{width: company=="Yamaha"? "30.4%":"18%"}}/>
+              <img src={imageTuba} 
+              
+              style={{
+                  width: this.switchForPhotoDisplayWidth(company)
+                  
+                  
+                  }}/>
               <h3>Model: {company+" "+title} 
              
               <img src= {this.switch()} style={{marginLeft:"22px",width:"7vh"}}/>
@@ -66,4 +93,4 @@ export default class DisplayCommentBox extends Component {
 
 
 //{this.props.rating?  <p style={{margin:"0px"}}>Rating: {this.props.rating}</p>:null}
-//
+//company=="Yamaha"? "30.4%":"18%"

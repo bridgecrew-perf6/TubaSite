@@ -512,8 +512,8 @@ body.welcome {
 }
 .half-container1 {
   flex: 0 0 100%;
-  min-height: 52vh;
-  max-height: 52vh;
+  min-height: 46vh;
+  max-height: 46vh;
   padding: 10px;
   overflow: hidden;
 }
