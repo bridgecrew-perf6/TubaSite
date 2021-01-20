@@ -19,6 +19,7 @@ import CommentBox from "../layout/DisplayCommentBox";
 var bigData ="";
 var comment=[];
 var commentedAuthors=[];
+var totalRating=0;
 var fetchedData =false;
 class ProductPage extends Component {
     constructor(props) {
@@ -31,7 +32,8 @@ class ProductPage extends Component {
         isPreviousReview:false,
         reviewData: "avs",
         x:'',
-        commentStorage:[]
+        commentStorage:[],
+        averageRating:"NA"
 
       };
 
@@ -60,8 +62,10 @@ class ProductPage extends Component {
            var x=bigData[i];
            comment.push([x.author,x.comment,x.createdAt,x.rating]);
            commentedAuthors.push(x.author);
+           totalRating+=x.rating;
          }
-         this.setState({reviewData: comment.length})
+         this.setState({reviewData: comment.length});
+         this.setState({averageRating: Math.round((totalRating/ comment.length) * 10) / 10})
 
        }
       
@@ -91,7 +95,7 @@ class ProductPage extends Component {
         <br></br>
         <a href="#">
         <div><img  src={ratingLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
-        <div>Rating: 0</div></a>
+        <div>Rating: {this.state.averageRating} </div></a>
         <a href="#">
         <div><img  src={keyLogo} className="NewNavDescriptionLogo" style={{verticalAlign: "middle"}}/></div>
         <div>Key: {this.state.details[4]}</div></a>

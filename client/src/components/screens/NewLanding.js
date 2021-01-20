@@ -43,7 +43,7 @@ class NewLanding extends Component {
               <a href="#" style={{color:"black"}}onClick={this.navigate}><u>Rate and Review</u></a> 
             </h4>
             <p className="flow-text grey-text text-darken-1">
-               tuba and mouthpeice
+               Tuba and Mouthpeice
             </p>
             <br />
             <div className="col s6">
