@@ -33,7 +33,7 @@ class NewLanding extends Component {
       
       <div>
         
-        <body class="welcome" >
+        <body className="welcome" >
           <span id="splash-overlay"style={{  zIndex: 6}} class="splash"></span>
           <span id="welcome"style={{  zIndex: 6}} ></span>
          

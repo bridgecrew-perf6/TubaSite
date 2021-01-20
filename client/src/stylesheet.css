@@ -620,3 +620,19 @@ textarea{
   animation: 1.6s ease-out 0s 1 slideInFromBottom;
 }
 
+.CookiesButton {
+  background-color: white; 
+  padding-left: 3vh;
+  padding-right: 3vh;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  font-size: 36px;
+  color: black; 
+  border: 2px solid darkgoldenrod;
+  margin:3%
+}
+
+.CookiesButton:hover {
+  background-color: darkgoldenrod;
+  color: white;
+}
