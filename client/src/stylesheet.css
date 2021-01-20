@@ -599,10 +599,10 @@ textarea{
 }
 
 .authorImage{
-  width: 200px;
-  height:200px;
-  opacity:90%;
-  border: 6px solid darkgoldenrod;
+  width: 22vh;
+  height: 22vh;
+  border-radius: 50%;
+  border: 3px solid darkgoldenrod;
 
 }
 
