@@ -144,6 +144,7 @@ class ProductPage extends Component {
           <div className="right-container">
               <div className="half-container1">
               <h3 style={{marginBottom:"0.5%",color:"darkgoldenrod"}} >Reviews</h3><hr style={{width:"100%",marginTop:"0%",borderColor:"darkgoldenrod"}}></hr>
+              <br/>
                 <CommentDisplaySection >
                   {
                     
@@ -157,7 +158,8 @@ class ProductPage extends Component {
                 </CommentDisplaySection>
               </div>
               <div className="half-container2">
-              <h3 style={{marginBottom:"0.5%",color:"darkgoldenrod"}}>Your Review</h3><hr style={{width:"100%",marginBottom:"1.5%",borderColor:"darkgoldenrod"}}></hr>
+              <h3 style={{marginBottom:"0.5%",color:"darkgoldenrod"}}>Your Review</h3>
+              <hr style={{width:"100%",marginBottom:"1.5%",borderColor:"darkgoldenrod"}}></hr>
 
               <CommentSection user = {user.name} model={this.state.params.name} commentedAuthors={commentedAuthors}/>
          </div>

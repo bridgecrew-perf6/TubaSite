@@ -24,9 +24,9 @@ class AboutPage extends Component {
       
       
   return (
-      <div className = "split" style={{textAlign:"center",height:"100%",position:"fixed",zIndex:4,backgroundColor:"white",}}>
-       <div className = "aboutUpperPart"style={{ marginBottom: "3vh"}}>
-       <h2>About the Site</h2>
+      <div  style={{textAlign:"center",height:"100%",position:"fixed",zIndex:4,background:" rgb(36, 34, 34) ",}}>
+       <div className = "aboutUpperPart"style={{ marginBottom: "1vh"}}>
+       <h3 style={{color:"white"}}>About the Site</h3>
        <hr className="hrForAbout"></hr>
 
        <table style={{marginTop: "6vh",padding: "10px", borderCollapse: "separate",
@@ -41,14 +41,14 @@ class AboutPage extends Component {
        </tr>
        </tbody>
        </table>
-       <p style={{fontSize:"10px"}}>*All the photos used in this site are extracted from the respective company's official website. </p>
-       <p style={{fontSize:"10px"}}>**Please contact the website owner if your company does not allow the photos to be used in this website </p>
+       <p style={{fontSize:"10px",color:"white"}}>*All the photos used in this site are extracted from the respective company's official website. </p>
+       <p style={{fontSize:"10px",color:"white"}}>**Please contact the website owner if your company does not allow the photos to be used in this website </p>
        </div>
 
 
       <div className="aboutLowerPart">
       <hr className="hrForAbout"></hr>
-       <table style={{marginTop: "3vh"}} >
+       <table style={{marginTop: "2vh"}} >
        <col style={{width: "30%"}} /> 
   
       <col style={{width: "70%"}}  />
@@ -56,7 +56,7 @@ class AboutPage extends Component {
        <tr>
        <td><div><img src={authorImage} className="authorImage"/></div></td>
        <td  >
-         <p style={{fontSize:"21.3px",textAlign:"left"}}>
+         <p style={{fontSize:"21.3px",textAlign:"left",color:"white"}}>
         The website owner is a programmer in London. He realized his passion for playing the tuba during high school, where he served as the principal tuba player in the symphonic and wind orchestra. His favorite tuba and mouthpiece are B&S GR41 and PT 50.
         
        </p></td>
