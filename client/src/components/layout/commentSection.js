@@ -41,7 +41,7 @@ class CommentSection extends Component {
         setTimeout(() => {
           this.setState({showButton:false})
           console.log('This will run after 1 second!')
-        }, 2500)
+        }, 3000)
   
       }
 
@@ -56,12 +56,12 @@ class CommentSection extends Component {
 
 
           
-        <div style={{backgroundColor:"#aaa",borderRadius:"6px",padding:"5px",border:"3px solid black"}}>
+        <div style={{backgroundColor:"rgb(32, 31, 31)",borderRadius:"6px",padding:"5px",border:"3px solid darkgoldenrod"}}>
             <div style={{marginBottom:"2%",left:"50%"}}>
               <ReactStars
                 count={5}
                 onChange={this.ratingChanged}
-                color={ "black"}
+                border="3px solid white"
                 size={20}
                 activeColor="#ffd700"
                 
@@ -71,18 +71,19 @@ class CommentSection extends Component {
             id="exampleFormControlTextarea1"
             placeholder="//Type your review here!! !!Please note that you could only submit your review once only for each item"
             rows="10"
-            style={{backgroundColor:"white",border:"5px solid darkgoldenrod"}}
+            style={{backgroundColor:" rgb(90, 84, 84)",border:"3px solid white", color:"white"}}
             onChange={this.handleChange}
             />
-            <p style={{left:"3%", bottom:"12%",visibility: this.state.showButton? "visible":"hidden", color:"darkred", 
-             position:"absolute",fontSize:"13px"}}>**Please fill in BOTH the rating and review section</p>
+            <p style={{left:"3%", bottom:"7%",visibility: this.state.showButton? "visible":"hidden", color:"darkred", 
+             position:"absolute",fontSize:"14px"}}>**Please {" "}fill in BOTH the <br/>Rating and  Review section</p>
             
             
             <button
                 onClick={this.submit}
-                style={{right:"2%", marginTop:"0.5%",marginBottom:"0.5%",fontSize:"20px"
-            }}
-            >Submit</button>
+                style={{ right:"10px",marginTop:"0.5%",marginBottom:"0.5%",
+                fontSize:"20px", borderRadius:"6px",backgroundColor:" rgb(90, 84, 84)",
+                color:"white", border:"2px solid white"
+            }} >Submit</button>
     </div>
       );
     }

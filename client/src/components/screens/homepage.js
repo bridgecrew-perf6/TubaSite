@@ -80,7 +80,7 @@ class HomePage extends Component {
       const { user } = this.props.auth;
       
   return (
-      <div >
+      <div  >
         <div  style={{textAlign: "center"}}>
         <h3 >
             <b>Welcome Back!</b> {user.name.split(" ")[0]}

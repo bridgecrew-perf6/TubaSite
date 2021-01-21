@@ -27,11 +27,17 @@ class NewLanding extends Component {
    navigate= e =>{
     this.props.history.push("/about");
   }
+  componentDidMount() {
+    // If logged in and user navigates to Login page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
+    }
+  }
 
   render() {
     return (
       
-      <div>
+      <div style={{backgroundColor:'white'}}>
         
         <body className="welcome" >
           <span id="splash-overlay"style={{  zIndex: 6}} class="splash"></span>
