@@ -401,16 +401,20 @@ body.welcome {
 
 .tubaDisplayImage{
 
-  width: 40%;
+  width: 45%;
+  border: 5px solid darkgoldenrod;
+  border-radius: 5px;
+  background-color: white;
 }
 .tubaDisplayImageYamaha{
 
   width: 70%;
-  border-radius: 3px;
+  border: 5px solid darkgoldenrod;
+  border-radius: 5px
 }
 .mouthpeiceDisplayImage{
   margin-top: 10%;
-  width: 50%;
+  width: 56%;
 }
 
 .split {
@@ -502,7 +506,8 @@ body.welcome {
   min-height: 100%;
   max-width: 50%;
   min-width: 50%;
-  padding: 10px;
+  padding: 5vh;
+  padding-top: 7vh;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -673,3 +678,4 @@ textarea{
 .table-spacing{
   border-spacing:5px;
 }
+

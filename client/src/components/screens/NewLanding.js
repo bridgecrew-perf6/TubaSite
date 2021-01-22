@@ -44,9 +44,9 @@ class NewLanding extends Component {
           <span id="welcome"style={{  zIndex: 6}} ></span>
          
         
-        <div className="row" style={{  zIndex: 7,position:"absolute",right:"10rem",top:"25rem",padding:"3vh",borderRadius: "1vh",textAlign:"center",backgroundColor:"silver",opacity: 0.9, visibility: this.state.visibility}}>
+        <div className="row" style={{  zIndex: 7,position:"absolute",right:"10rem",top:"25rem",padding:"3vh",borderRadius: "1vh",textAlign:"center",backgroundColor:" rgb(36, 34, 34)", visibility: this.state.visibility}}>
             <h4>
-              <a href="#" style={{color:"black"}}onClick={this.navigate}><u>Rate and Review</u></a> 
+              <a href="#" style={{color:"darkgoldenrod"}}onClick={this.navigate}><u>Rate and Review</u></a> 
             </h4>
             <p className="flow-text grey-text text-darken-1">
                Tuba and Mouthpeice
