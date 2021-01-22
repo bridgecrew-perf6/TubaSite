@@ -46,19 +46,19 @@ render() {
     const { errors } = this.state;
 return (
   <div  style={{backgroundColor:" rgb(36, 34, 34)",width:"100%",minHeight:"100%",maxHeight:"100%",padding:"5%",paddingBottom:"20%"}}>
-      <div className="container" style={{backgroundColor:" rgb(90, 84, 84)",padding:"1%",borderRadius:"0.5%"}}>
-        <div style={{ marginTop: "2rem" }} className="row">
+      <div className="container" style={{backgroundColor:" rgb(90, 84, 84)",padding:"4%",borderRadius:"0.5%"}}>
+        <div  className="row">
           <div className="col s8 offset-s2">
           <Link to="/" className="btn-flat waves-effect" style={{height:"50px"}}>
-              <p > {" <- "}Home</p>
+              <p style={{color:"darkgoldenrod"}}> {" <- "}Home</p>
               
             </Link>
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
-              <h4 style={{color:"white"}}>
+              <h4 style={{color:"darkgoldenrod"}}>
                 <b >Login</b> below
               </h4>
               <p className="white-text text-darken-1">
-                Don't have an account? <Link to="/register"style={{color:"white"}}>Register</Link>
+                Don't have an account? <Link to="/register"style={{color:"darkgoldenrod"}}>Register</Link>
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>

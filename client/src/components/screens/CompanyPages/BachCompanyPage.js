@@ -53,7 +53,7 @@ class BachCompanyPage extends Component {
           <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","BCBBb",this.props.history)} >
           <div><img 
            src={ mouthpeice} 
-            className="logoImage"/></div>
+            className="mouthpeiceLogoImage"/></div>
            C / BBb 
            </div>
            </td>
@@ -61,7 +61,7 @@ class BachCompanyPage extends Component {
           <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","BFEEb",this.props.history)} >
           <div><img 
            src={ mouthpeice} 
-            className="logoImage"/></div>
+            className="mouthpeiceLogoImage"/></div>
            F / EEb 
            </div>
            </td>

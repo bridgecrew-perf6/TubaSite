@@ -49,7 +49,7 @@ class PTCompanyPage extends Component {
           <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","PTCBBb",this.props.history)} >
           <div><img 
            src={ mouthpeice} 
-            className="logoImage"/></div>
+            className="mouthpeiceLogoImage"/></div>
            C / BBb 
            </div>
            </td>
@@ -57,7 +57,7 @@ class PTCompanyPage extends Component {
           <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","PTFEEb",this.props.history)} >
           <div><img 
            src={ mouthpeice} 
-            className="logoImage"/></div>
+            className="mouthpeiceLogoImage"/></div>
            F / EEb 
            </div>
            </td>

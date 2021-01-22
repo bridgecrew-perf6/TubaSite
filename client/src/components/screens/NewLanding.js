@@ -23,7 +23,7 @@ class NewLanding extends Component {
   hallo(){
   setTimeout(() => {
     this.setState({visibility: "visible"})
-  }, 2200);}
+  }, 0);}
    navigate= e =>{
     this.props.history.push("/about");
   }
@@ -39,12 +39,14 @@ class NewLanding extends Component {
       
       <div style={{backgroundColor:'white'}}>
         
-        <body className="welcome" >
-          <span id="splash-overlay"style={{  zIndex: 6}} class="splash"></span>
-          <span id="welcome"style={{  zIndex: 6}} ></span>
+        <body  >
+
          
         
-        <div className="row" style={{  zIndex: 7,position:"absolute",right:"10rem",top:"25rem",padding:"3vh",borderRadius: "1vh",textAlign:"center",backgroundColor:" rgb(36, 34, 34)", visibility: this.state.visibility}}>
+        <div className="row" style={{ 
+           zIndex: 7,position:"absolute",right:"10rem",top:"25rem",padding:"3vh",borderRadius: "1vh",
+           textAlign:"center",backgroundColor:" rgb(36, 34, 34)", border:"2px solid darkgoldenrod",
+           visibility: this.state.visibility}}>
             <h4>
               <a href="#" style={{color:"darkgoldenrod"}}onClick={this.navigate}><u>Rate and Review</u></a> 
             </h4>
@@ -101,3 +103,4 @@ export default connect(
   mapStateToProps,
   { loginUser }
 )(NewLanding);
+
