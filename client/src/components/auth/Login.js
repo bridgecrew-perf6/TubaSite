@@ -45,8 +45,8 @@ this.props.loginUser(userData); // since we handle the redirect within our compo
 render() {
     const { errors } = this.state;
 return (
-  <div>
-      <div className="container">
+  <div style={{backgroundColor:"white",height:"100%"}}>
+      <div className="container" >
         <div style={{ marginTop: "4rem" }} className="row">
           <div className="col s8 offset-s2">
             <Link to="/" className="btn-flat waves-effect">
@@ -54,8 +54,8 @@ return (
               home
             </Link>
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
-              <h4>
-                <b>Login</b> below
+              <h4 style={{color:"black"}}>
+                <b >Login</b> below
               </h4>
               <p className="grey-text text-darken-1">
                 Don't have an account? <Link to="/register">Register</Link>

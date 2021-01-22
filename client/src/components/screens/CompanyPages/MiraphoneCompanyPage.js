@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
-import MiraphoneLogo from'../../Images/Company/tuba/miraphone.jpeg';
+import MiraphoneLogo from'../../Images/Company/tuba/miraphone.svg';
 import Photo1291 from '../../Images/Tubas/Miraphone/BbTuba/1291.jpg';
 import Photo9000 from  '../../Images/Tubas/Miraphone/BbTuba/9000.jpg';
 import Photo88 from '../../Images/Tubas/Miraphone/CTuba/88.jpg';
@@ -38,7 +38,7 @@ class MiraphoneCompanyPage extends Component {
         <table>
           <tbody>
         <tr>
-          <td><img 
+          <td style={{backgroundColor:"rgb(58, 51, 51) "}}><img 
            src={ MiraphoneLogo} 
            onClick={() => navigateCompany("Miraphone")} className="logoImage"/></td>
           <td ><p className="pCompanyDescription">Today Miraphone is one of the biggest instrument manufacturer worldwide. All important decisions are made from within the Cooperative which creates strong identification with the company and highest motivation towards success. 

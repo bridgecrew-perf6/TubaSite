@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
-import DenisWickLogo from'../../Images/Company/mouthpeice/dw.png';
+import DenisWickLogo from'../../Images/Company/mouthpeice/dw.svg';
 import mouthpeice from'../../Images/Mouthpeice/dw.jpg';
 import navigator from "../../layout/navigateProduct";
 

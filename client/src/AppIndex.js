@@ -96,7 +96,7 @@ class AppIndex extends Component {
 
 
             <Navbar />
-            <div  >
+            <div style={{backgroundColor:"rgb(36, 34, 34)"}}  >
             <Route exact path="/" component={NewLanding} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />

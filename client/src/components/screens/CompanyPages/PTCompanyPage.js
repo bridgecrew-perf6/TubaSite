@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
-import PTLogo from'../../Images/Company/mouthpeice/pt.jpg';
+import PTLogo from'../../Images/Company/mouthpeice/perantucci.svg';
 import mouthpeice from'../../Images/Mouthpeice/pt.jpg';
 import navigator from "../../layout/navigateProduct";
 

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
-import BachLogo from'../../Images/Company/mouthpeice/bach.png';
+import BachLogo from'../../Images/Company/mouthpeice/bach.svg';
 import mouthpeice from'../../Images/Mouthpeice/bach.jpg';
 import navigator from "../../layout/navigateProduct";
 

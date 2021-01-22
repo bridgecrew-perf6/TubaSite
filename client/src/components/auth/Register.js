@@ -57,18 +57,18 @@ onSubmit = e => {
   confirmAlert({
     customUI: ({ onClose }) => {
       return (
-        <div className='custom-ui'>
+        <div className='custom-ui' style={{backgroundColor:"white"}}>
 
-          <div style={{alignItems:"center", textAlign:"center",width:"75"}}>
+          <div style={{alignItems:"center", textAlign:"center",width:"75",backgroundColor:"white"}}>
           <h1 >Our cookies policy</h1>
           <hr style={{marginBottom:"2vh", marginTop:"4vh",width:"100%"}}></hr>
           <div style={{padding:"3vh", textAlign:"left"}}>
-          <h4 style={{textAlign:"left",marginBottom:"3.5vh"}}>What do we use cookies for?</h4>
+          <h4 style={{textAlign:"left",marginBottom:"3.5vh",color:"black"}}>What do we use cookies for?</h4>
           
-          <p style={{fontSize:"19px"}}>We use cookies and similar technologies to recognize your repeat visits and to measure the effectiveness of campaigns and analyze traffic.</p>
+          <p style={{fontSize:"19px", color:"black"}}>We use cookies and similar technologies to recognize your repeat visits and to measure the effectiveness of campaigns and analyze traffic.</p>
 
-           <p style={{fontSize:"19px"}}>According to the  EU cookie law, we need your consent for us to manage your cookies.</p>
-          <p style={{fontSize:"19px"}}>By clicking the "Accept" button, you thereby give consent to us for the use of cookies. Otherwise, you would not be able to access the website.</p>
+          <p style={{fontSize:"19px", color:"black"}}>According to the  EU cookie law, we need your consent for us to manage your cookies.</p>
+          <p style={{fontSize:"19px", color:"black"}}>By clicking the "Accept" button, you thereby give consent to us for the use of cookies. Otherwise, you would not be able to access the website.</p>
           </div>
           <button className="CookiesButton" onClick={onClose}>Decline</button>
           <button className="CookiesButton"
@@ -99,7 +99,8 @@ onSubmit = e => {
 render() {
     const { errors } = this.state;
 return (
-      <div className="container">
+  <div  style={{backgroundColor:"white"}}>
+      <div className="container" style={{backgroundColor:"white"}}>
         <div className="row">
           <div className="col s8 offset-s2">
             <Link to="/" className="btn-flat waves-effect">
@@ -107,7 +108,7 @@ return (
               home
             </Link>
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
-              <h4>
+              <h4  style={{color:"black"}}>
                 <b>Register</b> below
               </h4>
               <p className="grey-text text-darken-1">
@@ -189,6 +190,7 @@ return (
             </form>
           </div>
         </div>
+      </div>
       </div>
     );
   }

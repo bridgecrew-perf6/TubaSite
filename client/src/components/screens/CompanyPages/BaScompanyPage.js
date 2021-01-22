@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
-import BaSLogo from'../../Images/Company/tuba/bas.png';
+import BaSLogo from'../../Images/Company/tuba/bas.svg';
 import GR55Photo from'../../Images/Tubas/BaS/BbTuba/bsgr55_full.png';
 import GR51Photo from'../../Images/Tubas/BaS/BbTuba/bsgr51_full.png';
 import BS3198Photo from '../../Images/Tubas/BaS/CTuba/bs3198_full.png';

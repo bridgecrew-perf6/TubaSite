@@ -51,13 +51,13 @@
     top: 80px;
     right:2%;
     font-size: 20px;
-    background-color: #111;
+    background-color:darkgoldenrod;
     color: white;
     padding: 10px 15px;
   }
   
   .openbtn:hover {
-    background-color: #444;
+    background-color: darkgoldenrod;
   }
   
   .leftDescriptionButton {
@@ -66,7 +66,7 @@
     top: 80px;
     left:2%;
     font-size: 20px;
-    background-color: rgb(90, 84, 84);
+    background-color: darkgoldenrod;
     border-radius: 50%;
     color: white;
     padding: 10px 15px;
@@ -97,6 +97,15 @@ h4{
   margin-top: 1%;
   margin-bottom: 1%;
 }
+h2{
+  color:white
+}
+h4{
+  color:white
+}
+p{
+  color:white
+}
 
 table{
   width:75%;
@@ -122,16 +131,18 @@ tr{
 td{
   text-align:center;
   border-width: 0;
+  background-color:rgb(58, 51, 51) ;
 }
 
 
 .logoImage{
 
-  width: 70%;
+  width: 90%;
+  padding: 10px;
 }
 .mouthpeiceLogoImage{
 
-  width: 55%;
+  width: 75%;
 }
 .mwLogoImage{
 
@@ -155,12 +166,12 @@ td{
 
 
 .tubaTable{
-  width:75%;
-  padding:15%;
+    width:80%;
   table-layout : fixed;
   margin-top: 1%;
-  margin-left: auto;
-  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 13px 13px;
+  padding:10px;
   font-size: 34px;
 }
 table.tubaTable td:hover,
@@ -171,7 +182,7 @@ td:focus-within {
 
 .tubaImage{
   
-  width: 45%;
+  width: 55%;
 }
 .tubaImageYamaha{
   width: 80%;
@@ -183,7 +194,6 @@ td:focus-within {
 }
 
 .bottombar{
-  margin-top:5%;
   padding: 20px;
   height: 10rem;
   background-color:darkgoldenrod;
@@ -481,22 +491,24 @@ body.welcome {
 .main-container {
   display: flex;
   width: 100%;
-  max-height: 75%;
   position:fixed;
   z-index: 1;
+  background: rgb(36, 34, 34);
 
-  
 
 }
 .left-container {
   flex: 0 1 50%;
   min-height: 100%;
   max-width: 50%;
-  background: white;
+  min-width: 50%;
   padding: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: rgb(36, 34, 34);
+
+
 }
 .right-container {
   flex: 0 1 50%;
@@ -653,4 +665,11 @@ textarea{
 }
 .BoxInsideSideBar{
   font-size: 23px;
+}
+
+
+
+
+.table-spacing{
+  border-spacing:5px;
 }

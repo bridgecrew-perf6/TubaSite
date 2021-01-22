@@ -4,14 +4,14 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../redux/actions/authActions";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../../stylesheet.css";
-import BaSLogo from'../Images/Company/tuba/bas.png';
-import MiraphoneLogo from'../Images/Company/tuba/miraphone.jpeg';
-import MWLogo from'../Images/Company/tuba/mw.png';
-import DWLogo from'../Images/Company/mouthpeice/dw.png';
-import BachLogo from'../Images/Company/mouthpeice/bach.png';
-import PTLogo from'../Images/Company/mouthpeice/pt.jpg';
-import YamahaLogo from'../Images/Company/tuba/yamaha.jpg';
-import BessonLogo from'../Images/Company/tuba/besson.jpg';
+import BaSLogo from'../Images/Company/tuba/bas.svg';
+import MiraphoneLogo from'../Images/Company/tuba/miraphone.svg';
+import MWLogo from'../Images/Company/tuba/mw.svg';
+import DWLogo from'../Images/Company/mouthpeice/dw.svg';
+import BachLogo from'../Images/Company/mouthpeice/bach.svg';
+import PTLogo from'../Images/Company/mouthpeice/perantucci.svg';
+import YamahaLogo from'../Images/Company/tuba/yamaha.svg';
+import BessonLogo from'../Images/Company/tuba/besson.svg';
 
 
 const TubaLogos = [BaSLogo,MiraphoneLogo,MWLogo,YamahaLogo,BessonLogo];
@@ -80,15 +80,15 @@ class HomePage extends Component {
       const { user } = this.props.auth;
       
   return (
-      <div  >
-        <div  style={{textAlign: "center"}}>
-        <h3 >
-            <b>Welcome Back!</b> {user.name.split(" ")[0]}
+      <div style={{backgroundColor:"rgb(36, 34, 34)", height:"100%"}} >
+        <div  style={{textAlign: "center",padding: "20px"}}>
+        <h3 style={{color:"white"}}>
+            <b >Welcome Back!</b> {user.name.split(" ")[0]}
         </h3>
         <br></br>
         <div className="firstPageSection" style={{marginBottom:"4%"}}>
-        <h4> <a style={{display: "inline"}} onClick={this.tubaDisplay}> {this.state.isTuba?<p style={{color:"black",display: "inline"}}>Tuba</p>:<p  style={{color:"silver",display: "inline"}}>Tuba</p>} | </a>
-        <a style={{display: "inline"}} onClick={this.mouthpeiceDisplay}> {this.state.isTuba?<p style={{color:"silver",display: "inline"}}>Mouthpeice</p>:<p  style={{color:"black",display: "inline"}}>Mouthpeice</p>} </a>
+        <h4> <a style={{display: "inline"}} onClick={this.tubaDisplay}> {this.state.isTuba?<p style={{color:"white",display: "inline"}}>Tuba</p>:<p  style={{color:"black",display: "inline"}}>Tuba</p>} | </a>
+        <a style={{display: "inline"}} onClick={this.mouthpeiceDisplay}> {this.state.isTuba?<p style={{color:"black",display: "inline"}}>Mouthpeice</p>:<p  style={{color:"white",display: "inline"}}>Mouthpeice</p>} </a>
         </h4>
         <hr></hr>
         <br></br>
@@ -98,20 +98,20 @@ class HomePage extends Component {
         <table className="tubaTable">
         <tbody>
         <tr>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[0]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[0])} className="logoImage"/></td>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[1]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[1])} className="logoImage"/></td>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[2]]}onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[2])} className="logoImage"/></td>
+          <td className="TubaLogoDes" ><img src={TubaLogos[this.state.TubaCompaniesPhotosList[0]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[0])} className="logoImage"/></td>
+          <td className="TubaLogoDes"><img src={TubaLogos[this.state.TubaCompaniesPhotosList[1]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[1])} className="logoImage"/></td>
+          <td className="TubaLogoDes"><img src={TubaLogos[this.state.TubaCompaniesPhotosList[2]]}onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[2])} className="logoImage"/></td>
         </tr>
         <tr>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[3]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[3])} className="logoImage"/></td>
-          <td><img src={TubaLogos[this.state.TubaCompaniesPhotosList[4]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[4])} className="logoImage"/></td>
+          <td className="TubaLogoDes"><img src={TubaLogos[this.state.TubaCompaniesPhotosList[3]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[3])} className="logoImage"/></td>
+          <td className="TubaLogoDes"><img src={TubaLogos[this.state.TubaCompaniesPhotosList[4]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[4])} className="logoImage"/></td>
         </tr>
         </tbody>
         </table>
         
         :
         
-        <table className="tubaTable" style={{marginBottom:"11%"}}>
+        <table className="tubaTable" style={{marginBottom:"18%", backgroundColor:"rgb(36, 34, 34)"}}>
         <tbody >
         <tr>
           <td><img src={MouthpeiceLogos[this.state.MouthpeiceCompaniesPhotosList[0]]} onClick={() => this.goMouthpeiceCompany(this.state.MouthpeiceCompaniesPhotosList[0])} className="mouthpeiceLogoImage"/></td>

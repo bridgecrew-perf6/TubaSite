@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
-import YamahaLogo from'../../Images/Company/tuba/yamaha.jpg';
+import YamahaLogo from'../../Images/Company/tuba/yamaha.svg';
 import PhotoBb632 from '../../Images/Tubas/Yamaha/BbTuba/ybb632.jpg';
 import PhotoBb641 from '../../Images/Tubas/Yamaha/BbTuba/ybb641.jpg';
 import PhotoBb841 from '../../Images/Tubas/Yamaha/BbTuba/ybb841.jpg';
