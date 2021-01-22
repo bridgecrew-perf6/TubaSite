@@ -115,7 +115,9 @@ table{
   margin-left: auto;
   margin-right: auto;
   font-size: 34px;
+  margin-bottom: 3vh;
 }
+
 .hrForAbout{
   width: 75%;
   height:3px;
@@ -126,12 +128,14 @@ table{
 tr{
   vertical-align:"bottom";
   border-width: 0;
+  
 }
 
 td{
   text-align:center;
   border-width: 0;
   background-color:rgb(58, 51, 51) ;
+  
 }
 
 
@@ -166,11 +170,12 @@ td{
 
 
 .tubaTable{
-    width:80%;
+  width:80%;
   table-layout : fixed;
   margin-top: 1%;
   border-collapse: separate;
   border-spacing: 13px 13px;
+  margin-bottom: 0px;
   padding:10px;
   font-size: 34px;
 }
