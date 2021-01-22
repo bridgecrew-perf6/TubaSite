@@ -87,8 +87,8 @@ class HomePage extends Component {
         </h3>
         <br></br>
         <div className="firstPageSection" style={{marginBottom:"4%"}}>
-        <h4> <a style={{display: "inline"}} onClick={this.tubaDisplay}> {this.state.isTuba?<p style={{color:"white",display: "inline"}}>Tuba</p>:<p  style={{color:"black",display: "inline"}}>Tuba</p>} | </a>
-        <a style={{display: "inline"}} onClick={this.mouthpeiceDisplay}> {this.state.isTuba?<p style={{color:"black",display: "inline"}}>Mouthpeice</p>:<p  style={{color:"white",display: "inline"}}>Mouthpeice</p>} </a>
+        <h4> <a style={{display: "inline"}} onClick={this.tubaDisplay}> {this.state.isTuba?<p style={{color:"darkgoldenrod",display: "inline"}}>Tuba</p>:<p  style={{color:"black",display: "inline"}}>Tuba</p>} | </a>
+        <a style={{display: "inline"}} onClick={this.mouthpeiceDisplay}> {this.state.isTuba?<p style={{color:"black",display: "inline"}}>Mouthpeice</p>:<p  style={{color:"darkgoldenrod",display: "inline"}}>Mouthpeice</p>} </a>
         </h4>
         <hr></hr>
         <br></br>

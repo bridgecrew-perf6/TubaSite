@@ -127,7 +127,7 @@ class ProductPage extends Component {
 
         <div className="main-container">
           <div className="left-container">
-          <h2 style={{  textDecoration: "underline"}}>{ this.state.details[0]}</h2>
+          <h2 style={{  textDecoration: "underline",color:"white"}}>{ this.state.details[0]}</h2>
                 <div style={{alignItems:"center",marginTop:"8%"}}>
                   {
                     this.state.type=="tuba"?(
