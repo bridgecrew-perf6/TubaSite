@@ -33,9 +33,9 @@ class AboutPage extends Component {
        borderSpacing: "10px 0"}} >
        <tbody style={{padding:"20px"}}>
        <tr style={{borderSpacing: "50px 0"}}>
-       <td className="aboutLogoBox"><div><img src={boxLogo} className="aboutLogo"/></div> <b>Share</b> your opinion</td>
-       <td className="aboutLogoBox"><div><img src={readLogo} className="aboutLogo"/></div><b>Learn</b> tuba models</td>
-       <td className="aboutLogoBox"><div><img src={listenLogo} className="aboutLogo"/></div><b>Listen</b> to others</td>
+       <td className="aboutLogoBox"><div><img src={boxLogo} className="aboutLogo"/></div> <b style={{color:"darkgoldenrod"}}>Share</b> your opinion</td>
+       <td className="aboutLogoBox"><div><img src={readLogo} className="aboutLogo"/></div><b style={{color:"darkgoldenrod"}}>Learn</b> tuba models</td>
+       <td className="aboutLogoBox"><div><img src={listenLogo} className="aboutLogo"/></div><b style={{color:"darkgoldenrod"}}>Listen</b> to others</td>
       
        
        </tr>
