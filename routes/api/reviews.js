@@ -7,6 +7,10 @@ const dishRouter = express.Router();
 
 dishRouter.use(bodyParser.json());
 
+//const spawn = require("child_process").spawn;
+//var util = require('util');
+
+
 //FIRST
 dishRouter.route('/').get((req,res,next) => {
     Dishes.find({})
@@ -93,6 +97,14 @@ dishRouter.route('/comments/:product')
 })
 .post((req, res, next) => {
     const model = req.params.product;
+    //const pythonProcess = spawn('python',["./expertAI.py",req.body.comments]);
+    //util.log('readingin');
+    //pythonProcess.stdout.on('data',function(chunk){
+
+        //var textChunk = chunk.toString('utf8');// buffer to string
+
+        //util.log(textChunk);
+    //});
     Dishes.findOne({model})
     .then((dish) => {
         if (dish != null) {

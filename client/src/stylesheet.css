@@ -141,7 +141,7 @@ td{
 
 .logoImage{
 
-  width: 90%;
+  width: 70%;
   padding: 10px;
 }
 .mouthpeiceLogoImage{
@@ -235,19 +235,24 @@ td:focus-within {
 .tubaDisplayImage{
 
   width: 45%;
-  border: 5px solid darkgoldenrod;
-  border-radius: 5px;
-  background-color: white;
+  border-radius: 1vh;
+  padding: 2vh;
+  background-color:  rgb(90, 84, 84);
 }
 .tubaDisplayImageYamaha{
 
   width: 70%;
   border: 5px solid darkgoldenrod;
-  border-radius: 5px
+  border-radius: 1vh;
+  padding: 2vh;
+  background-color:  rgb(90, 84, 84);
 }
 .mouthpeiceDisplayImage{
   margin-top: 10%;
   width: 56%;
+  border-radius: 1vh;
+  padding: 2vh;
+  background-color:  rgb(90, 84, 84);
 }
 
 .split {

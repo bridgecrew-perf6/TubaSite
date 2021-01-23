@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
 import DenisWickLogo from'../../Images/Company/mouthpeice/dw.svg';
-import mouthpeice from'../../Images/Mouthpeice/dw.jpg';
+import mouthpeice from'../../Images/Mouthpeice/dw-1.png';
 import navigator from "../../layout/navigateProduct";
 
 import navigateCompany from "../../layout/navigateCompany";

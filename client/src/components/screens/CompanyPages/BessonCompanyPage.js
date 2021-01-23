@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
 import BessonLogo from'../../Images/Company/tuba/besson.svg';
-import PhotoBb994 from '../../Images/Tubas/Besson/BbTuba/be994.jpg';
-import PhotoEb980 from '../../Images/Tubas/Besson/EbTuba/be980.jpg';
-import PhotoEb983 from '../../Images/Tubas/Besson/EbTuba/be983.jpg';
+import PhotoBb994 from '../../Images/Tubas/Besson/BbTuba/be994-1.png';
+import PhotoEb980 from '../../Images/Tubas/Besson/EbTuba/be980-1.png';
+import PhotoEb983 from '../../Images/Tubas/Besson/EbTuba/be983-1.png';
 import navigator from "../../layout/navigateProduct";
 import navigateCompany from "../../layout/navigateCompany";
 
