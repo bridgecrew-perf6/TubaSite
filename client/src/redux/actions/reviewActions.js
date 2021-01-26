@@ -24,3 +24,4 @@ export const postReview = (productName,comment) => {
       
     return dataPromise;
   };
+  

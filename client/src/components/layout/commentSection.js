@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../../stylesheet.css";
 import ReactStars from "react-rating-stars-component";
 import {postReview} from "../../redux/actions/reviewActions"
+import getSentiment from "./getSentiment"
 
 class CommentSection extends Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class CommentSection extends Component {
     
   };
   submit= (event) =>{
+    console.log(getSentiment("abc"))
     if(!this.state.commentedAuthors.includes(this.state.user)){
       if(this.state.rating && this.state.comment){
      
