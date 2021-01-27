@@ -24,32 +24,40 @@ class CommentSection extends Component {
     postReview(model,data);
     
   };
-  submit= (event) =>{
-    console.log(getSentiment("abc"))
+  submit = (event) =>{
     if(!this.state.commentedAuthors.includes(this.state.user)){
       if(this.state.rating && this.state.comment){
-     
-        this.postNewReview(this.state.model,
-        {
-          "comment": this.state.comment,
-          "author": this.state.user,
-          "rating":this.state.rating
-        }
-        );
-        console.log("Successfully sent");
-        window.location.reload();
+        this.postData(this.state.comment)
       }else{
         this.setState({showButton:true})
         setTimeout(() => {
           this.setState({showButton:false})
-          console.log('This will run after 1 second!')
-        }, 3000)
+        }, 2500)
   
       }
 
     }else{
       alert("You have commented already! You are allowed to comment once only for each item!")
     }
+    
+  }
+  async postData(comment){
+     await getSentiment(comment).then(SentimentScore=>{
+      console.log(SentimentScore);
+      this.postNewReview(this.state.model,
+        
+        {
+          "comment": this.state.comment,
+          "author": this.state.user,
+          "rating":this.state.rating,
+          "sentiment":SentimentScore
+        }
+        );
+        
+        console.log("Successfully sent");
+        window.location.reload();
+      }
+      )
     
   }
     render() {

@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import "../../stylesheet.css";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import hashmapItem from "../layout/HashmapItem";
+import hashmapItem from "./HashmapItem";
 import oneLogo from "../Images/Ranking/one.svg";
 import twoLogo from "../Images/Ranking/peace.svg";
 import threeLogo from "../Images/Ranking/three.svg";
 
-
+var indicator = 0;
 export default class DisplayCommentBox extends Component {
     constructor(props){
         super(props);
@@ -38,8 +38,9 @@ export default class DisplayCommentBox extends Component {
     }
 
     switch(){
-        this.state.indicator+=1;
-        switch(this.state.indicator){
+        indicator+=1;
+        console.log(indicator);
+        switch(indicator){
             case 1:
                 return oneLogo;
             case 2:
@@ -57,7 +58,7 @@ export default class DisplayCommentBox extends Component {
        
         return(
         <div className="each-slide"
-         style={{backgroundColor: "white", padding:"2vh",justifyContent:"center",textAlign:"center",border:"7px solid darkgoldenrod",width:"100%"}}>
+         style={{backgroundColor: "rgb(90, 84, 84)", padding:"2vh",justifyContent:"center",textAlign:"center",border:"7px solid darkgoldenrod",width:"100%"}}>
             <div className="image-container" style={{minHeight:"50%"}}>
               <img src={imageTuba} 
               
@@ -78,10 +79,11 @@ export default class DisplayCommentBox extends Component {
 
     }
     render() {
+        {indicator=this.props.indicator}
     return( 
         
         <div>
-            {console.log("hehe",this.props.rankings)}
+           
             { this.props.rankings!=null?
             <Slide style={{backgroundColor: "white"}}>{ this.props.rankings.map((message) =>  this.makingBox(message.modelName,message.rating))}
 

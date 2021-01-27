@@ -15,6 +15,10 @@ var commentSchema = new Schema({
   author:  {
       type: String,
       required: true
+  },
+  sentiment: {
+    type:  Number,
+    required: true
   }
 }, {
   timestamps: true
