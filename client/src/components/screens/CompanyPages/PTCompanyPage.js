@@ -43,7 +43,6 @@ class PTCompanyPage extends Component {
 
         <div className="tableSection">
         <hr></hr>
-        <br></br>
         <table  className = "tubaTable">
           <td>
           <div className ="alignMouthpeiceNameAndImage" onClick={() => navigator("mouthpeice","PTCBBb",this.props.history)} >

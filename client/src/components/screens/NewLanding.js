@@ -37,7 +37,7 @@ class NewLanding extends Component {
   render() {
     return (
       
-      <div style={{backgroundColor:'white'}}>
+      <div style={{backgroundColor:'yellow', zIndex: 7}}>
         
         <body  >
 

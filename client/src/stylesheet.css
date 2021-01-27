@@ -115,12 +115,13 @@ table{
   margin-left: auto;
   margin-right: auto;
   font-size: 34px;
-  margin-bottom: 3vh;
+  margin-bottom: 1%;
 }
 
 .hrForAbout{
   width: 75%;
   height:3px;
+  margin-bottom: 1vh;
   border: 0 none;
   background-color:darkgoldenrod;
 }
@@ -134,7 +135,7 @@ tr{
 td{
   text-align:center;
   border-width: 0;
-  background-color:rgb(58, 51, 51) ;
+  background-color: rgb(102, 95, 95);
   
 }
 
@@ -153,7 +154,8 @@ td{
   width: 40%;
 }
 .topTableSection{
-  margin-top: 0.5%;
+  margin-top: 0.2%;
+  margin-bottom: 2%;
 }
 
 .firstPageSection{
@@ -236,8 +238,9 @@ td:focus-within {
 
   width: 45%;
   border-radius: 1vh;
+  border: 5px solid darkgoldenrod;
   padding: 2vh;
-  background-color:  rgb(90, 84, 84);
+  background-color:   rgb(102, 95, 95);
 }
 .tubaDisplayImageYamaha{
 
@@ -245,14 +248,16 @@ td:focus-within {
   border: 5px solid darkgoldenrod;
   border-radius: 1vh;
   padding: 2vh;
-  background-color:  rgb(90, 84, 84);
+  background-color:   rgb(102, 95, 95);
 }
 .mouthpeiceDisplayImage{
   margin-top: 10%;
   width: 56%;
   border-radius: 1vh;
   padding: 2vh;
-  background-color:  rgb(90, 84, 84);
+  border: 5px solid darkgoldenrod;
+
+  background-color:   rgb(102, 95, 95);
 }
 
 .split {
@@ -417,7 +422,7 @@ textarea{
 .boxed {
 
   border: 3px solid white ;
-  background-color: rgb(90, 84, 84) ;
+  background-color:  rgb(102, 95, 95) ;
   border-radius: 6px;
   color: white;
   margin-bottom: 2.5%;
@@ -429,6 +434,8 @@ textarea{
 
 .NullTdClass{
   border : white;
+  background-color: aqua;
+  visibility:hidden;
 }
 .alignMouthpeiceNameAndImage{
   text-align: center;

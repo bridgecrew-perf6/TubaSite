@@ -58,7 +58,6 @@ class MeinlWestonCompanyPage extends Component {
         <div className="tableSection">
         <h4 >BBb Tuba</h4>
         <hr></hr>
-        <br></br>
         <table className = "tubaTable">
         <tbody>
         <tr>
@@ -78,7 +77,6 @@ class MeinlWestonCompanyPage extends Component {
         <div className="tableSection">
         <h4 >CC Tuba</h4>
         <hr></hr>
-        <br></br>
         <table className = "tubaTable">
         <tbody>
         <tr>
@@ -102,7 +100,6 @@ class MeinlWestonCompanyPage extends Component {
         <div className="tableSection">
         <h4 >F Tuba</h4>
         <hr></hr>
-        <br></br>
         <table className = "tubaTable">
         <tbody>
         <tr>

@@ -44,7 +44,6 @@ class DenisWickCompanyPage extends Component {
 
         <div className="tableSection">
         <hr></hr>
-        <br></br>
         <table  className = "tubaTable">
         <tr>
           <td>

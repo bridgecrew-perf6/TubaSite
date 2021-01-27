@@ -80,18 +80,19 @@ class HomePage extends Component {
       const { user } = this.props.auth;
       
   return (
-      <div style={{backgroundColor:"rgb(36, 34, 34)", height:"100%"}} >
+      <div style={{backgroundColor:"rgb(36, 34, 34)", height:"80%"}} >
         <div  style={{textAlign: "center",padding: "20px"}}>
         <h3 style={{color:"white"}}>
             <b >Welcome Back!</b> {user.name.split(" ")[0]}
         </h3>
         <br></br>
         <div className="firstPageSection" style={{marginBottom:"4%"}}>
-        <h4> <a style={{display: "inline"}} onClick={this.tubaDisplay}> {this.state.isTuba?<p style={{color:"darkgoldenrod",display: "inline"}}>Tuba</p>:<p  style={{color:"black",display: "inline"}}>Tuba</p>} | </a>
-        <a style={{display: "inline"}} onClick={this.mouthpeiceDisplay}> {this.state.isTuba?<p style={{color:"black",display: "inline"}}>Mouthpeice</p>:<p  style={{color:"darkgoldenrod",display: "inline"}}>Mouthpeice</p>} </a>
+        <h4> <a style={{display: "inline"}} onClick={this.tubaDisplay}> {this.state.isTuba?<p style={{color:"darkgoldenrod",display: "inline"}}>Tuba</p>:<p  style={{color:" rgb(102, 95, 95)",display: "inline"}}>Tuba</p>}  </a>
+        <p style={{display: "inline",color:"rgb(102, 95, 95)"}} >|</p>
+
+        <a style={{display: "inline"}} onClick={this.mouthpeiceDisplay}> {this.state.isTuba?<p style={{color:" rgb(102, 95, 95)",display: "inline"}}>Mouthpeice</p>:<p  style={{color:"darkgoldenrod",display: "inline"}}>Mouthpeice</p>} </a>
         </h4>
         <hr></hr>
-        <br></br>
 
 
         {this.state.isTuba?
@@ -102,9 +103,10 @@ class HomePage extends Component {
           <td className="TubaLogoDes"><img src={TubaLogos[this.state.TubaCompaniesPhotosList[1]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[1])} className="logoImage"/></td>
           <td className="TubaLogoDes"><img src={TubaLogos[this.state.TubaCompaniesPhotosList[2]]}onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[2])} className="logoImage"/></td>
         </tr>
-        <tr>
+        <tr >
           <td className="TubaLogoDes"><img src={TubaLogos[this.state.TubaCompaniesPhotosList[3]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[3])} className="logoImage"/></td>
           <td className="TubaLogoDes"><img src={TubaLogos[this.state.TubaCompaniesPhotosList[4]]} onClick={() => this.goTubaCompany(this.state.TubaCompaniesPhotosList[4])} className="logoImage"/></td>
+          
         </tr>
         </tbody>
         </table>

@@ -46,7 +46,6 @@ class BessonCompanyPage extends Component {
         <div className="tableSection">
         <h4 >BBb Tuba</h4>
         <hr></hr>
-        <br></br>
         <table className = "tubaTable"><tbody>
         <tr>
         <td><img src={PhotoBb994}  onClick={() => navigator("tuba","B994",this.props.history)} className="tubaImage" style={{color: "white"}}/></td>
@@ -65,7 +64,6 @@ class BessonCompanyPage extends Component {
         <div className="tableSection">
         <h4 >EEb Tuba</h4>
         <hr></hr>
-        <br></br>
         <table className = "tubaTable">
         <tbody>
         <tr>

@@ -38,7 +38,7 @@ class MiraphoneCompanyPage extends Component {
         <table>
           <tbody>
         <tr>
-          <td style={{backgroundColor:"rgb(58, 51, 51) "}}><img 
+          <td style={{backgroundColor:" rgb(102, 95, 95)"}}><img 
            src={ MiraphoneLogo} 
            onClick={() => navigateCompany("Miraphone")} className="logoImage"/></td>
           <td ><p className="pCompanyDescription">Today Miraphone is one of the biggest instrument manufacturer worldwide. All important decisions are made from within the Cooperative which creates strong identification with the company and highest motivation towards success. 

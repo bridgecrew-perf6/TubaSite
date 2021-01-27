@@ -5,8 +5,10 @@ import { logoutUser } from "../../redux/actions/authActions";
 import "../../stylesheet.css";
 import {getAllReviewsForRanking} from "../../redux/actions/reviewActions";
 import SlidingRank from "../layout/slindingRanks";
-
-
+import newLogo from "../Images/Logos/new.svg";
+import commentLogo from "../Images/Logos/message.svg";
+import TubaSidebar from "../layout/TubaDescriptionSidebar";
+import expertAiLogo from "../Images/Company/expertAI.png";
 
 var fetchedData =false;
 var ratingMap = [];
@@ -72,18 +74,41 @@ class RankingPage extends Component {
      this.setState({rankings: ratingMap.slice(0,3)});
      this.setState({sentimentRatings: sentimentMap.slice(0,3)});
   }
+  openNav() {
+    document.getElementById("myTubaSidebar").style.width = "13%";
+   
+  }
 
 
   render() {
       
       
   return (
+    
     <div style={{backgroundColor:"rgb(36, 34, 34)", height:"100%"}} >
+      <TubaSidebar >
+        <div id="myTubaSidebar" className="tubaSidebar">
+          <div style={{paddingTop:"10vh",paddingRight:"2vh",paddingLeft:"1vh",alignContent:"center"}}>
+            <div style={{marginBottom:"7vh"}}>
+            <img src = {commentLogo} style={{width:"19vh",backgroundColor:"white", opacity:"90%", borderRadius:"1vh", padding:"1vh"}}/>
+            <p style={{color:"white"}}>Tubasite uses the comment submitted in each review to calculate the average score based on the sentiment detected in the section
+            </p>
+            </div>
+            <img src={expertAiLogo} style={{width:"19vh",backgroundColor:"white", opacity:"90%", borderRadius:"1vh"}}/>
+          <p style={{color:"white"}}>A huge shout-out to expert.ai who provides the NLP API. This could not be done without their machine learning models</p>
+          </div>
+        </div>
+        </TubaSidebar>
+     {this.state.category=="Sentiment"?<button className="leftDescriptionButton" style={{backgroundColor:"black"}}  onClick={this.openNav}>?</button>: null}
+
     <div style={{textAlign:"center", justifyContent:"center",alignItems:"center", height:"100%"}}>
         <br/>
-        <h4> 
-        <a style={{display: "inline"}} onClick={()=>this.changeCategory("Rating")}> {this.state.category=="Rating"?<p style={{color:"darkgoldenrod",display: "inline"}}>Rating</p>:<p  style={{color:"black",display: "inline"}}>Rating</p>} | </a>
-        <a style={{display: "inline"}} onClick={()=>this.changeCategory("Sentiment")}> {this.state.category=="Sentiment"?<p style={{color:"darkgoldenrod",display: "inline"}}>Sentiment Rating</p>:<p  style={{color:"black",display: "inline"}}>Sentiment Rating</p>} </a>
+        <h4 style={{marginBottom:"1.2%"}}> 
+        <a style={{display: "inline"}} onClick={()=>this.changeCategory("Rating")}> {this.state.category=="Rating"?<p style={{color:"darkgoldenrod",display: "inline"}}>Rating</p>:<p  style={{color:"rgb(102, 95, 95)",display: "inline"}}>Rating</p>}  </a>
+        <p style={{display: "inline",color:"rgb(102, 95, 95)"}} >|</p>
+        <a style={{display: "inline"}} onClick={()=>this.changeCategory("Sentiment")}> {this.state.category=="Sentiment"?<div style={{display:"inline"}}><p style={{color:"darkgoldenrod",display: "inline"}}>Sentiment Rating</p><img src={newLogo} fill="yellow" style={{width:"4vh"}}/></div>:
+        <div style={{display:"inline"}}><p style={{color:"rgb(102, 95, 95)",display: "inline"}}>Sentiment Rating</p><img src={newLogo} style={{width:"4vh"}}/></div>
+         } </a>
         </h4>
        </div>
        <div style={{textAlign:"center",justifyContent:"center",alignItems:"center" }}  >

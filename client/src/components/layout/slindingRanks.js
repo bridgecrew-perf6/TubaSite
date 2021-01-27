@@ -58,7 +58,7 @@ export default class DisplayCommentBox extends Component {
        
         return(
         <div className="each-slide"
-         style={{backgroundColor: "rgb(90, 84, 84)", padding:"2vh",justifyContent:"center",textAlign:"center",border:"7px solid darkgoldenrod",width:"100%"}}>
+         style={{backgroundColor: "rgb(90, 84, 84)", padding:"2vh",justifyContent:"center",textAlign:"center",border:"7px solid rgb(80, 95, 95)",width:"100%"}}>
             <div className="image-container" style={{minHeight:"50%"}}>
               <img src={imageTuba} 
               
