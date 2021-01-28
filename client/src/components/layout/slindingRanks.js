@@ -25,7 +25,7 @@ export default class DisplayCommentBox extends Component {
                 return "19.8%";
             case "Besson":
                 return "18%";
-            case "yamaha":
+            case "Yamaha":
                 return "30.4%";
             case "Denis Wick":
                 return "30.4%";

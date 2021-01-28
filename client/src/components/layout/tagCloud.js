@@ -30,6 +30,7 @@ export default class DisplayCommentBox extends Component {
         <div style={{height:"70vh",alignContent:"center", paddingTop:"20vh"}}>
             <div  style={{top: "500px"}}>
             <TagCloud
+            
             minSize={30}
             maxSize={60}
             tags={data}
