@@ -19,7 +19,10 @@ var commentSchema = new Schema({
   sentiment: {
     type:  Number,
     required: true
-  }
+  },
+  keywords: [{
+    type: String
+  }]
 }, {
   timestamps: true
 });

@@ -11,6 +11,7 @@ class CommentSection extends Component {
       showButton :false,
       model: props.model,
       user: props.user,
+      commented:false,
       commentedAuthors: props.commentedAuthors
     };
   }
@@ -43,19 +44,29 @@ class CommentSection extends Component {
   }
   async postData(comment){
      await getSentiment(comment).then(SentimentScore=>{
-      console.log(SentimentScore);
-      this.postNewReview(this.state.model,
+      console.log(SentimentScore,"Here");
+      if(!this.state.commented){
+        this.postNewReview(this.state.model,
         
         {
           "comment": this.state.comment,
           "author": this.state.user,
           "rating":this.state.rating,
-          "sentiment":SentimentScore
+          "sentiment":SentimentScore[0],
+          "keywords":SentimentScore[1],
         }
         );
+        this.setState({commented:true});
+      }else{
+        return;
+      }
+        
         
         console.log("Successfully sent");
-        window.location.reload();
+        setTimeout(() => {
+          window.location.reload();
+        }, 5)
+        
       }
       )
     

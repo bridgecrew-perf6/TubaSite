@@ -58,7 +58,7 @@ export default class DisplayCommentBox extends Component {
        
         return(
         <div className="each-slide"
-         style={{backgroundColor: "rgb(90, 84, 84)", padding:"2vh",justifyContent:"center",textAlign:"center",border:"7px solid rgb(80, 95, 95)",width:"100%"}}>
+         style={{backgroundColor: "rgb(90, 84, 84)", padding:"2vh",justifyContent:"center",textAlign:"center",width:"100%"}}>
             <div className="image-container" style={{minHeight:"50%"}}>
               <img src={imageTuba} 
               
@@ -82,10 +82,12 @@ export default class DisplayCommentBox extends Component {
         {indicator=this.props.indicator}
     return( 
         
-        <div>
+        <div >
            
             { this.props.rankings!=null?
-            <Slide style={{backgroundColor: "white"}}>{ this.props.rankings.map((message) =>  this.makingBox(message.modelName,message.rating))}
+            <Slide style={{backgroundColor: "rgb(90, 84, 84)",border:"7px solid rgb(80, 95, 95)"
+            }}
+            >{ this.props.rankings.map((message) =>  this.makingBox(message.modelName,message.rating))}
 
         </Slide>:null}
         </div>

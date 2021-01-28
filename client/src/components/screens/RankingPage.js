@@ -9,10 +9,11 @@ import newLogo from "../Images/Logos/new.svg";
 import commentLogo from "../Images/Logos/message.svg";
 import TubaSidebar from "../layout/TubaDescriptionSidebar";
 import expertAiLogo from "../Images/Company/expertAI.png";
-
+import TagCloud from "../layout/tagCloud";
 var fetchedData =false;
 var ratingMap = [];
 var sentimentMap = [];
+var keywordsMap =new Map();
 
 
 class RankingPage extends Component {
@@ -20,7 +21,8 @@ class RankingPage extends Component {
     super(props);
     this.state = {
       height: props.height,
-      category : "Rating"
+      category : "Rating",
+      looped:false
     };
   }
 
@@ -30,6 +32,9 @@ class RankingPage extends Component {
         return <SlidingRank rankings={this.state.rankings} indicator={0}/>
       case  "Sentiment":
         return <SlidingRank rankings={this.state.sentimentRatings} indicator={0}/>
+      case  "Cloud":
+        return <TagCloud data={keywordsMap} indicator={1}/>
+
     }
 
   }
@@ -55,8 +60,22 @@ class RankingPage extends Component {
        var sentimentX =0;
        var commentLength = i.comments.length;
        for (var j of i.comments){
+         //keywordsMap
          if(j.rating!="NaN") x+=j.rating;
          if(j.sentiment!="NaN") sentimentX+=j.sentiment;
+         if(j.keywords!=null){
+           for( var i =0;i<j.keywords.length;i++ ){
+              if(keywordsMap.has(j.keywords[i])){
+                keywordsMap.set(j.keywords[i],keywordsMap.get(j.keywords[i])+1)
+              }else{
+                keywordsMap.set(j.keywords[i],1)
+              }
+           }
+         };
+         console.log("UUUU")
+         console.log(keywordsMap)
+         this.setState({looped:true})
+
        }
        ratingMap.push({modelName : modelName,rating: x==0?x:x/commentLength});
        sentimentMap.push({modelName : modelName,rating: sentimentX==0?sentimentX:sentimentX/commentLength});
@@ -91,7 +110,8 @@ class RankingPage extends Component {
           <div style={{paddingTop:"10vh",paddingRight:"2vh",paddingLeft:"1vh",alignContent:"center"}}>
             <div style={{marginBottom:"7vh"}}>
             <img src = {commentLogo} style={{width:"19vh",backgroundColor:"white", opacity:"90%", borderRadius:"1vh", padding:"1vh"}}/>
-            <p style={{color:"white"}}>Tubasite uses the comment submitted in each review to calculate the average score based on the sentiment detected in the section
+            <p style={{color:"white"}}>Tubasite uses the comment submitted in each review to {" "}
+            {this.state.category=="Sentiment"? <p style={{display: "inline"}}>calculate the average score based on the sentiment detected in the section</p>:<p style={{display: "inline"}}>calculate the most frequently used keywords</p>}
             </p>
             </div>
             <img src={expertAiLogo} style={{width:"19vh",backgroundColor:"white", opacity:"90%", borderRadius:"1vh"}}/>
@@ -99,15 +119,24 @@ class RankingPage extends Component {
           </div>
         </div>
         </TubaSidebar>
-     {this.state.category=="Sentiment"?<button className="leftDescriptionButton" style={{backgroundColor:"black"}}  onClick={this.openNav}>?</button>: null}
+     {this.state.category=="Sentiment"||this.state.category=="Cloud"?<button className="leftDescriptionButton" style={{backgroundColor:"black"}}  onClick={this.openNav}>?</button>: null}
 
     <div style={{textAlign:"center", justifyContent:"center",alignItems:"center", height:"100%"}}>
         <br/>
         <h4 style={{marginBottom:"1.2%"}}> 
-        <a style={{display: "inline"}} onClick={()=>this.changeCategory("Rating")}> {this.state.category=="Rating"?<p style={{color:"darkgoldenrod",display: "inline"}}>Rating</p>:<p  style={{color:"rgb(102, 95, 95)",display: "inline"}}>Rating</p>}  </a>
+        <a style={{display: "inline"}} onClick={()=>this.changeCategory("Rating")}> {this.state.category=="Rating"?<p style={{color:"darkgoldenrod",display: "inline"}}>Rating</p>:<p  style={{color:"rgb(102, 95, 95)",display: "inline"}}>Rating</p>} 
+        </a>
+
         <p style={{display: "inline",color:"rgb(102, 95, 95)"}} >|</p>
+
         <a style={{display: "inline"}} onClick={()=>this.changeCategory("Sentiment")}> {this.state.category=="Sentiment"?<div style={{display:"inline"}}><p style={{color:"darkgoldenrod",display: "inline"}}>Sentiment Rating</p><img src={newLogo} fill="yellow" style={{width:"4vh"}}/></div>:
         <div style={{display:"inline"}}><p style={{color:"rgb(102, 95, 95)",display: "inline"}}>Sentiment Rating</p><img src={newLogo} style={{width:"4vh"}}/></div>
+         } </a>
+
+        <p style={{display: "inline",color:"rgb(102, 95, 95)"}} >|</p>
+
+        <a style={{display: "inline"}} onClick={()=>this.changeCategory("Cloud")}> {this.state.category=="Cloud"?<div style={{display:"inline"}}><p style={{color:"darkgoldenrod",display: "inline"}}>Keywords Cloud</p><img src={newLogo} fill="yellow" style={{width:"4vh"}}/></div>:
+        <div style={{display:"inline"}}><p style={{color:"rgb(102, 95, 95)",display: "inline"}}>Keywords Cloud</p><img src={newLogo} style={{width:"4vh"}}/></div>
          } </a>
         </h4>
        </div>
