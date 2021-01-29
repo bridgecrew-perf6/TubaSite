@@ -26,10 +26,10 @@ class AboutPage extends Component {
   return (
       <div  style={{textAlign:"center",height:"100%",position:"fixed",zIndex:4,background:" rgb(36, 34, 34) ",}}>
        <div className = "aboutUpperPart"style={{ marginBottom: "1vh"}}>
-       <h3 style={{color:"white"}}>About the Site</h3>
+       <h4 style={{color:"white"}}>About the Site</h4>
        <hr className="hrForAbout"></hr>
 
-       <table style={{marginTop: "6vh",padding: "10px", borderCollapse: "separate",
+       <table style={{marginTop: "3vh",padding: "10px", borderCollapse: "separate",
        borderSpacing: "10px 0"}} >
        <tbody style={{padding:"20px"}}>
        <tr style={{borderSpacing: "50px 0"}}>
@@ -48,7 +48,7 @@ class AboutPage extends Component {
 
       <div className="aboutLowerPart">
       <hr className="hrForAbout"></hr>
-       <table style={{marginTop: "2vh"}} >
+       <table style={{marginTop: "3vh"}} >
        <col style={{width: "30%"}} /> 
   
       <col style={{width: "70%"}}  />

@@ -27,12 +27,12 @@ export default class DisplayCommentBox extends Component {
     render() {
         {indicator+=this.props.indicator}
     return(
-        <div style={{height:"70vh",alignContent:"center", paddingTop:"20vh"}}>
+        <div style={{height:"70vh", paddingRight:"12vh",paddingLeft:"8vh",alignContent:"center",textAlign:"center", paddingTop:"20vh"}}>
             <div  style={{top: "500px"}}>
             <TagCloud
             
-            minSize={30}
-            maxSize={60}
+            minSize={14}
+            maxSize={30}
             tags={data}
            
             />
