@@ -1,7 +1,8 @@
 # TubaSite
 
-link: https://tubasite.herokuapp.com 
-<br/>author: Issac To
+Link: https://tubasite.herokuapp.com 
+<br/>About: Multi-Rating
+<br/>Author: Issac To
 
 ## 1. 🎉 Introduction
 
@@ -32,6 +33,8 @@ npm install
 cd ..
 npm run dev  
 ```
+
+4. Go to http://localhost:3000
 
 ## 3. 📌 Structure
 
