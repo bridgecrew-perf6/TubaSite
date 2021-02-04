@@ -79,7 +79,7 @@ class HomePage extends Component {
       const { user } = this.props.auth;
       
   return (
-      <div style={{backgroundColor:"rgb(36, 34, 34)", height:"80%"}} >
+      <div style={{backgroundColor:"rgb(36, 34, 34)", height:"100%"}} >
         <div  style={{textAlign: "center",padding: "10px"}}>
         <h3 style={{color:"white"}}>
             <b >Welcome Back!</b> {user.name.split(" ")[0]}
