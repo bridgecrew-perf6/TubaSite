@@ -78,7 +78,7 @@ class CommentSection extends Component {
 
           
         <div style={{backgroundColor:"rgb(32, 31, 31)",borderRadius:"6px",padding:"5px",border:"3px solid darkgoldenrod"}}>
-            <div style={{marginBottom:"2%",left:"50%"}}>
+            <div >
               <ReactStars
                 count={5}
                 onChange={this.ratingChanged}
