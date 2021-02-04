@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { loginUser } from "../../redux/actions/authActions";
 import "../../stylesheet.css";
 import BackgroundImage from "../Images/HomeBackgroundImages/brian-matangelo-KV8BNwpj6B8-unsplash.jpg";
-import BackgroundSlideshow from 'react-background-slideshow';
+
 
 
 
