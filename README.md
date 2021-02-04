@@ -7,6 +7,8 @@ link: https://tubasite.herokuapp.com
 
 Tubasite is a rating and reviewing website solely for tuba's models.  The website is unique in that natural language processing technologies are used, which includes sentiment analysis and key elements identification. As such, not only could users look at the highest rated tuba model, but also could they look at the highest ranked tuba models based on sentiment analysis. A huge shout-out to expert.ai for providing such awesome technology.
 
+### High Level Graph
+
 
 ## 2.  📝 Implementation
 
