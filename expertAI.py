@@ -1,8 +1,9 @@
 import os
 import json
-os.environ["EAI_USERNAME"] = Your_Experai_Username
-os.environ["EAI_PASSWORD"] = Your_Experai_Password
 from expertai.nlapi.cloud.client import ExpertAiClient
+
+os.environ["EAI_USERNAME"] = Your_Expertai_Username
+os.environ["EAI_PASSWORD"] = Your_Expertai_Password
 
 def lambda_handler(event, context):
     client = ExpertAiClient()   
