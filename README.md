@@ -6,7 +6,7 @@
 
 | Login+Comment        | Review + Ranking           | 
 | ------------- |:-------------:| 
-| <img src="Images/Demonstration1.gif" width=100%/>      | <img src="Images/Demonstration2.gif" width=100%/> |
+| <img src="Images/Demonstration1.gif" color= "white" width=100%/>   | <img src="Images/Demonstration2.gif" width=100%/> |
 
 
 Link: https://tubasite.herokuapp.com 
