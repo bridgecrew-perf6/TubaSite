@@ -2,9 +2,9 @@
 
 <p align="center">
 <br/>
-<img src="Images/Demonstration1.gif"/>
+<img src="Images/Demonstration1.gif" width=50%/>
 <br/>
-<img src="Images/Demonstration2.gif"/>
+<img src="Images/Demonstration2.gif" width=50%/>
 <br/>
 </p>
 
