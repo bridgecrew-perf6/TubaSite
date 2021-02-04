@@ -1,11 +1,7 @@
-#mv expertAI.py /Users/issac/Documents/ExperAi/bin/python
-#$ cd documents/ExperAi/lib/python3.7/site-packages/
-# zip -r9 lambda_function.zip *
-#source ExperAi/bin/activate
 import os
 import json
-os.environ["EAI_USERNAME"] = 'tototototoman@gmail.com'
-os.environ["EAI_PASSWORD"] = 'pUfver-rodkoj-zigso7'
+os.environ["EAI_USERNAME"] = Your_Experai_Username
+os.environ["EAI_PASSWORD"] = Your_Experai_Password
 from expertai.nlapi.cloud.client import ExpertAiClient
 
 def lambda_handler(event, context):

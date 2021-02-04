@@ -1,5 +1,5 @@
 module.exports = {
-    mongoURI: "mongodb+srv://issac:XqRw1VouxsqfBWae@merntry.xitkw.mongodb.net/MernTry?retryWrites=true&w=majority",
+    mongoURI: Your_Mongodb_Uri,
     useUnifiedTopology: true ,
     secretOrKey: "secret"
 };
