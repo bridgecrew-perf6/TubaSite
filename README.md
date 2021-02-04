@@ -8,6 +8,8 @@ link: https://tubasite.herokuapp.com (Apologies : Heroku free tier deployment ma
 Tubasite is a rating and reviewing website solely for tuba's models.  The website is unique in that natural language processing technologies are used, which includes sentiment analysis and key elements identification. As such, not only could users look at the highest rated tuba model, but also could they look at the highest ranked tuba models based on sentiment analysis. A huge shout-out to expert.ai for providing such awesome technology.
 
 
+## 2.  📝 Implementation
+
 1. Add a file inside the config folder to link your mongodb database
 ``` javascript
 module.exports = {
@@ -27,7 +29,7 @@ cd ..
 npm run dev  
 ```
 
-## 2. 📌 Structure
+## 3. 📌 Structure
 
 
 ### A. 💎 Full Stack Framework (MERN)
@@ -42,7 +44,6 @@ npm run dev
 * Amazon Gateway
 
 
-## 3.  📝 Implementation
 
 
 ## 4.  ⚠️ Problem
