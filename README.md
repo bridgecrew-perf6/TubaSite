@@ -39,7 +39,7 @@ module.exports = {
     secretOrKey: "secret"
 };
 ```
-2. Fill in your own Expert.Ai credentials inside expertAi.py and deploy it on AWS Lambda and Gateway. References are on the bottom
+2. Fill in your Expert.Ai credentials inside expertAi.py and deploy it on AWS Lambda and Gateway. References are on the bottom
 
 ``` javascript
 
