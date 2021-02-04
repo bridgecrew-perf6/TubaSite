@@ -1,11 +1,9 @@
 # TubaSite
 
-<p align="center">
 | Login+Comment        | Review + Ranking           | 
 | ------------- |:-------------:| 
 | <img src="Images/Demonstration1.gif" width=50%/>      | <img src="Images/Demonstration2.gif" width=50%/> |
 
-</p>
 
 Link: https://tubasite.herokuapp.com 
 <br/>About: Multi-Rating
