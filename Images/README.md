@@ -1,7 +1,9 @@
 # TubaSite
 
 <br/>
-![Why](https://github.com/issacto/TubaSite/blob/main/Images/logo.png" |width="550px")
+<p align="center">
+![](https://github.com/issacto/TubaSite/blob/main/Images/logo.png")
+</p>
 <br/>
 Link: https://tubasite.herokuapp.com 
 <br/>About: Review and Rating Website with NLP
