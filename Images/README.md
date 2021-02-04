@@ -2,7 +2,7 @@
 
 <br/>
 <p align="center">
-![](https://github.com/issacto/TubaSite/blob/main/Images/logo.png")
+![](https://github.com/issacto/TubaSite/blob/main/Images/logo.png)
 </p>
 <br/>
 Link: https://tubasite.herokuapp.com 
