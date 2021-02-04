@@ -1,7 +1,7 @@
 # TubaSite
 
 <p align="center">
-<img src="Images/logo.png" width="300px">
+<img src="Images/logo.png" width="400px">
 </p>
 
 | Login+Comment        | Review + Ranking           | 
@@ -19,7 +19,10 @@ Tubasite is a rating and reviewing website solely for tuba's models.  The websit
 
 ### High Level Graph
 
+<p align="center">
 <img src="Images/Graph.png" width="700px">
+</p>
+
 
 
 ## 2.  📝 Implementation
