@@ -1,7 +1,24 @@
 # TubaSite
 
-# 1. Introduction
+<br/>
+<p align="center">
+![](https://github.com/issacto/TubaSite/blob/main/Images/logo.png" |width="550px")
+</p>
+<br/>
+Link: https://tubasite.herokuapp.com 
+<br/>About: Review and Rating Website with NLP
+<br/>Author: Issac To
 
+<hr/>
+
+| Login+Comment        | Review + Ranking           | 
+| ------------- |:-------------:| 
+| ![]("https://github.com/issacto/TubaSite/blob/main/Images/Demonstration1.gif" | width=100%)   | <img src="https://github.com/issacto/TubaSite/blob/main/Images/Demonstration2.gif" width=100%/> |
+
+
+
+
+# 1. Introduction
 ## A.💡 Inspiration
 ### 📣 A Platform for Tuba
 Getting a tuba is costly. A professional tuba costs at least 9000 USD. 
@@ -13,7 +30,7 @@ However, there is no specialized platform nor forum solely for tuba models on th
 Have you ever got confused seeing generous comments but with a low rating meanwhile the opposite on a review website? Everyone has their own way for rating and it's hard to get a fair way to standardize the ra. Yet, wouldn't it be fairer if the rating comes from the comments, the experience instead?
 
 ## B.❓What it does
-Tuba site is a tuba review website.  It provides analysis results such as highest average rating results, highest average comment rating results, and top mentioned word identification.
+Tuba site is a tuba review website.  Aside from review and rating, it also provides analysis results such as highest average rating, highest average comment rating, and top mentioned word identification.
 
 
 
