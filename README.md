@@ -4,7 +4,7 @@
 <img src="Images/logo.png" width="400px" />
 </p>
 <br/>
-
+<hr/>
 
 | Login+Comment        | Review + Ranking           | 
 | ------------- |:-------------:| 
@@ -29,7 +29,7 @@ Tubasite is a rating and reviewing website solely for tuba's models.  The websit
 
 ## 2.  📝 Implementation
 
-1. Add a file key.js inside the config folder to link your mongodb database
+1. Fill in your mongodb database uri inside the config/key.js file
 ``` javascript
 module.exports = {
     mongoURI: YourMongodbLink,
@@ -37,7 +37,14 @@ module.exports = {
     secretOrKey: "secret"
 };
 ```
-2. Set up the Expert.Ai file and put it on AWS Lambda and Gateway. References are on the bottom
+2. Fill in your own Expert.Ai credentials inside expertAi.py and deploy it on AWS Lambda and Gateway. References are on the bottom
+
+``` javascript
+
+os.environ["EAI_USERNAME"] = Your_Experai_Username
+os.environ["EAI_PASSWORD"] = Your_Experai_Password
+
+```
 
 3. Install and run the program
 ```javascript 
