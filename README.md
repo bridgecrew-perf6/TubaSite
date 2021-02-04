@@ -3,7 +3,7 @@
 link : https://tubasite.herokuapp.com
 
 
-##1. 🎉 Introduction
+## 1. 🎉 Introduction
 
 Tubasite is a rating and reviewing website solely for the brass instrument tuba. 
 
@@ -14,7 +14,7 @@ npm run dev
 ```
 
 
-## Structure
+## 2. Structure
 
 <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
    </a>
