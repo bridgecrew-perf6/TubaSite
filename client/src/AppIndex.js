@@ -25,16 +25,8 @@ import logoutLogo from "./components/Images/Logos/logout.svg";
 import ProductPage from  "./components/screens/ProductPage";
 import AboutPage from "./components/screens/AboutPage";
 import RankingPage from "./components/screens/RankingPage";
+import HomePage from  "./components/screens/HomePage";
 
-
-
-
-
-
-
-
-
-import HomePage from  "./components/screens/Homepage";
 import "./stylesheet.css";
 import history from "./history";
 
