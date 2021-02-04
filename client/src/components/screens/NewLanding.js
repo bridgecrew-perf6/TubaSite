@@ -4,9 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../redux/actions/authActions";
 import "../../stylesheet.css";
-import backgroundImage1 from "../Images/HomeBackgroundImages/brian-matangelo-KV8BNwpj6B8-unsplash.jpg";
-import backgroundImage2 from "../Images/HomeBackgroundImages/jessica-pamp-uuKE4DnGcfY-unsplash.png";
-import backgroundImage3 from "../Images/HomeBackgroundImages/samuel-ramos-Md8c-amE5ms-unsplash.png";
+import BackgroundImage from "../Images/HomeBackgroundImages/brian-matangelo-KV8BNwpj6B8-unsplash.jpg";
 import BackgroundSlideshow from 'react-background-slideshow';
 
 
@@ -37,7 +35,7 @@ class NewLanding extends Component {
   render() {
     return (
       
-      <div style={{backgroundColor:'yellow', zIndex: 7}}>
+      <div style={{backgroundImage: `url(${BackgroundImage})`,backgroundSize: "cover", height: "94vh", color: "#f5f5f5"}}>
         
         <body  >
 
@@ -83,8 +81,6 @@ class NewLanding extends Component {
               </Link>
              </div>
       </div>
-      <BackgroundSlideshow images={[ backgroundImage1, backgroundImage2, backgroundImage3 ]} style={{zIndex: 5}}/>
-
       </body>
       </div>
     );

@@ -21,9 +21,8 @@ const TubaCompanyPagesString = ["BaSPage","MiraphonePage","MeinlWestonPage","Yam
 const MouthpeiceCompanyPagesString = ["PerantucciPage","DenisWickPage","BachPage"];
 
 class HomePage extends Component {
-    constructor() {
-        super();
-        
+    constructor(props) {
+        super(props);
         this.state = {TubaCompaniesPhotosList: [],MouthpeiceCompaniesPhotosList: [], isTuba:true};
         let TubaPosition = Math.floor(Math.random()* TubaLogos.length);
         let MouthpeicePosition = Math.floor(Math.random()* MouthpeiceLogos.length);
@@ -81,12 +80,11 @@ class HomePage extends Component {
       
   return (
       <div style={{backgroundColor:"rgb(36, 34, 34)", height:"80%"}} >
-        <div  style={{textAlign: "center",padding: "20px"}}>
+        <div  style={{textAlign: "center",padding: "10px"}}>
         <h3 style={{color:"white"}}>
             <b >Welcome Back!</b> {user.name.split(" ")[0]}
         </h3>
-        <br></br>
-        <div className="firstPageSection" style={{marginBottom:"4%"}}>
+        <div className="firstPageSection" style={{marginTop:"3vh"}} >
         <h4> <a style={{display: "inline"}} onClick={this.tubaDisplay}> {this.state.isTuba?<p style={{color:"darkgoldenrod",display: "inline"}}>Tuba</p>:<p  style={{color:" rgb(102, 95, 95)",display: "inline"}}>Tuba</p>}  </a>
         <p style={{display: "inline",color:"rgb(102, 95, 95)"}} >|</p>
 

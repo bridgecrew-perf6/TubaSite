@@ -12,7 +12,7 @@ Tubasite is a rating and reviewing website solely for tuba's models.  The websit
 
 ## 2.  📝 Implementation
 
-1. Add a file inside the config folder to link your mongodb database
+1. Add a file key.js inside the config folder to link your mongodb database
 ``` javascript
 module.exports = {
     mongoURI: YourMongodbLink,

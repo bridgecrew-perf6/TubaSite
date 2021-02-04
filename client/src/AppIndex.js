@@ -34,7 +34,7 @@ import RankingPage from "./components/screens/RankingPage";
 
 
 
-import HomePage from  "./components/screens/homepage";
+import HomePage from  "./components/screens/Homepage";
 import "./stylesheet.css";
 import history from "./history";
 

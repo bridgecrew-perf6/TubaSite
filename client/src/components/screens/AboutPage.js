@@ -24,12 +24,12 @@ class AboutPage extends Component {
       
       
   return (
-      <div  style={{textAlign:"center",height:"100%",position:"fixed",zIndex:4,background:" rgb(36, 34, 34) ",}}>
-       <div className = "aboutUpperPart"style={{ marginBottom: "1vh"}}>
-       <h4 style={{color:"white"}}>About the Site</h4>
+      <div  style={{textAlign:"center",height:"94%",position:"fixed",background:" rgb(36, 34, 34) ",justifyContent:"center", display:"flex",alignItems:"center"}}>
+       <div className = "aboutUpperPart">
+       <h2 style={{color:"white"}}>About the Site</h2>
        <hr className="hrForAbout"></hr>
 
-       <table style={{marginTop: "3vh",padding: "10px", borderCollapse: "separate",
+       <table style={{marginTop: "3vh",padding: "4vh", borderCollapse: "separate",
        borderSpacing: "10px 0"}} >
        <tbody style={{padding:"20px"}}>
        <tr style={{borderSpacing: "50px 0"}}>
@@ -43,29 +43,8 @@ class AboutPage extends Component {
        </table>
        <p style={{fontSize:"10px",color:"white"}}>*All the photos used in this site are extracted from the respective company's official website. </p>
        <p style={{fontSize:"10px",color:"white"}}>**Please contact the website owner if your company does not allow the photos to be used in this website </p>
+       <hr className="hrForAbout"></hr>
        </div>
-
-
-      <div className="aboutLowerPart">
-      <hr className="hrForAbout"></hr>
-       <table style={{marginTop: "3vh"}} >
-       <col style={{width: "30%"}} /> 
-  
-      <col style={{width: "70%"}}  />
-       <tbody style={{paddingTop:"3px"}}>
-       <tr>
-       <td><div><img src={authorImage} className="authorImage"/></div></td>
-       <td  >
-         <p style={{fontSize:"21.3px",textAlign:"left",color:"white"}}>
-        The website owner is a programmer in London. He realized his passion for playing the tuba during high school, where he served as the principal tuba player in the symphonic and wind orchestra. His favorite tuba and mouthpiece are B&S GR41 and PT 50.
-        
-       </p></td>
-       </tr>
-       </tbody>
-       </table>
-       </div>
-
-
         </div>
    
     );
