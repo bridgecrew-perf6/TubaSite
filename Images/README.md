@@ -1,19 +1,10 @@
 # TubaSite
 
-<br/>
-<p align="center">
-! [](https://github.com/issacto/TubaSite/blob/main/Images/logo.png)
-</p>
-<br/>
 Link: https://tubasite.herokuapp.com 
 <br/>About: Review and Rating Website with NLP
 <br/>Author: Issac To
 
 <hr/>
-
-| Login+Comment        | Review + Ranking           | 
-| ------------- |:-------------:| 
-| ![]("https://github.com/issacto/TubaSite/blob/main/Images/Demonstration1.gif" | width=100%)   | <img src="https://github.com/issacto/TubaSite/blob/main/Images/Demonstration2.gif" width=100%/> |
 
 
 
