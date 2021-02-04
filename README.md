@@ -1,5 +1,9 @@
 # TubaSite
 
+<p align="center">
+<img src="Images/logo.png" width="300px">
+</p>
+
 | Login+Comment        | Review + Ranking           | 
 | ------------- |:-------------:| 
 | <img src="Images/Demonstration1.gif" width=100%/>      | <img src="Images/Demonstration2.gif" width=100%/> |
