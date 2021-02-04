@@ -1,13 +1,13 @@
 # TubaSite
 
-link : https://tubasite.herokuapp.com
-author @Issac To
+link: https://tubasite.herokuapp.com (Apologies : Heroku free tier deployment may take several seconds to run.)
+<br/>author: Issac To
 
 ## 1. 🎉 Introduction
 
 Tubasite is a rating and reviewing website solely for the brass instrument tuba. 
 
-Apologies : Heroku free tier deployment may take several seconds to run.
+
 
 ```
 npm run dev  
