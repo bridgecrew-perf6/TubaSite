@@ -1,6 +1,6 @@
 # TubaSite
 
-link: https://tubasite.herokuapp.com (Apologies : Heroku free tier deployment may take several seconds to run.)
+link: https://tubasite.herokuapp.com 
 <br/>author: Issac To
 
 ## 1. 🎉 Introduction
@@ -47,7 +47,8 @@ npm run dev
 
 
 ## 4.  ⚠️ Problem
-1. Due to the limits of Mongodb Free Tier, tubasite doesn't allow clients to edit, comment and like their comments. 
+1. Due to the limitations of Mongodb Free Tier, tubasite doesn't allow clients to edit, comment and like their comments. 
+2. Due to the limitations of Heroku free tier deployment, it may take several seconds to load the heroku website
 
 ## 5.  ↗️ Reference
 1. https://github.com/therealexpertai/nlapi-python
