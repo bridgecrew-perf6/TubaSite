@@ -1,8 +1,11 @@
 # TubaSite
 <br/>
 <p align="center">
-<img src="Images/logo.png" width="400px" />
+<img src="Images/logo.png" width="550px" />
 </p>
+Link: https://tubasite.herokuapp.com 
+<br/>About: Review and Rating Website with NLP
+<br/>Author: Issac To
 <br/>
 <hr/>
 
@@ -11,9 +14,7 @@
 | <img src="Images/Demonstration1.gif" backgroundColor= white width=100%/>   | <img src="Images/Demonstration2.gif" width=100%/> |
 
 
-Link: https://tubasite.herokuapp.com 
-<br/>About: Multi-Rating
-<br/>Author: Issac To
+
 
 ## 1. 🎉 Introduction
 
