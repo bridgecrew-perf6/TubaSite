@@ -1,7 +1,8 @@
 # TubaSite
 
 <p align="center">
-<img src="Images/Demonstration.gif"/>
+<img src="Images/Demonstration1.gif"/>
+<img src="Images/Demonstration2.gif"/>
 </p>
 
 Link: https://tubasite.herokuapp.com 
