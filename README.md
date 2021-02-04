@@ -9,6 +9,8 @@ Tubasite is a rating and reviewing website solely for tuba's models.  The websit
 
 ### High Level Graph
 
+<img src="Images/Graph.png" width="700px">
+
 
 ## 2.  📝 Implementation
 
@@ -33,7 +35,6 @@ npm run dev
 
 ## 3. 📌 Structure
 
-<img src="Images/Graph.png" width="700px">
 
 
 ### A. 💎 Full Stack Framework (MERN)
