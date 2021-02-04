@@ -26,13 +26,13 @@ npm run dev
 <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a>
 <a href="https://www.expert.ai" target="_blank"> <img src="Images/EAI.jpg" alt="python" width="40" height="40"/> </a>
 
-## A. 💎 Full Stack Framework (MERN)
+### A. 💎 Full Stack Framework (MERN)
 * Mongodb
 * Express
 * React
 * Node
 
-## B. 🚀 NLP Plugin
+### B. 🚀 NLP Plugin
 * Express.ai (Python)
 * Amazon Lambda
 * Amazon Gateway
