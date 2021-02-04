@@ -1,7 +1,8 @@
 # TubaSite
 
-
+<p align="center">
 <img src="Images/Demonstration.gif"/>
+</p>
 
 Link: https://tubasite.herokuapp.com 
 <br/>About: Multi-Rating
