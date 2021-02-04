@@ -21,6 +21,8 @@ module.exports = {
 3. Install and run the program
 ```javascript 
 npm install
+cd client
+npm install
 npm run dev  
 ```
 
