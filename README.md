@@ -1,11 +1,10 @@
 # TubaSite
 
 <p align="center">
-<br/>
-<img src="Images/Demonstration1.gif" width=50%/>
-<br/>
-<img src="Images/Demonstration2.gif" width=50%/>
-<br/>
+| Login+Comment        | Review + Ranking           | 
+| ------------- |:-------------:| 
+| <img src="Images/Demonstration1.gif" width=50%/>      | <img src="Images/Demonstration2.gif" width=50%/> |
+
 </p>
 
 Link: https://tubasite.herokuapp.com 
