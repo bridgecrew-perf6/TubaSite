@@ -16,7 +16,21 @@ Have you ever got confused seeing generous comments but with a low rating meanwh
 Tuba site is a tuba review website.  It provides analysis results such as highest average rating results, highest average comment rating results, and top mentioned word identification.
 
 
-# 2.  📝 Implementation
+
+# 2. 📌 Structure
+
+### A. 💎 Full Stack Framework (MERN)
+* Mongodb
+* Express
+* React
+* Node
+
+### B. 🚀 NLP Plugin
+* Express.ai (Python)
+* Amazon Lambda
+* Amazon Gateway
+
+# 3.  📝 Implementation
 
 1. Fill in your mongodb database uri inside the config/key.js file
 ``` javascript
@@ -45,20 +59,6 @@ npm run dev
 ```
 
 4. Go to http://localhost:3000
-
-# 3. 📌 Structure
-
-### A. 💎 Full Stack Framework (MERN)
-* Mongodb
-* Express
-* React
-* Node
-
-### B. 🚀 NLP Plugin
-* Express.ai (Python)
-* Amazon Lambda
-* Amazon Gateway
-
 
 # 4.💡 Reflection
 
