@@ -1,9 +1,11 @@
 # TubaSite
 <br/>
 <p align="center">
-<img src="Images/logo.png" width="400px">
+<img src="Images/logo.png" width="400px" />
 </p>
 <br/>
+
+
 | Login+Comment        | Review + Ranking           | 
 | ------------- |:-------------:| 
 | <img src="Images/Demonstration1.gif" backgroundColor= white width=100%/>   | <img src="Images/Demonstration2.gif" width=100%/> |
