@@ -33,7 +33,7 @@ npm run dev
 
 ## 3. 📌 Structure
 
-<img src="Images/Graph.png" width="500px">
+<img src="Images/Graph.png" width="700px">
 
 
 ### A. 💎 Full Stack Framework (MERN)
